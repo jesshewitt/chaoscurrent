@@ -11,3 +11,5 @@ dist/
 
 # tool cache from local scripts
 .cache/
+
+.claude
