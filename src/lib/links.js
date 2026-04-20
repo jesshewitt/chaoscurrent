@@ -24,6 +24,11 @@ export async function getByTopic(slug) {
     return all.filter((e) => (e.topics ?? []).includes(slug))
 }
 
+export async function getByPerson(slug) {
+    const all = await getLinks()
+    return all.filter((e) => (e.people ?? []).includes(slug))
+}
+
 export async function getRecent(limit = 6) {
     const all = await getLinks()
     return sortByAdded(all).slice(0, limit)
