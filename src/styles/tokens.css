@@ -37,8 +37,9 @@
     --s-6: 4rem;
 
     /* widths */
-    --w-read: clamp(36ch, 90vw, 68ch);
-    --w-list: clamp(36ch, 90vw, 84ch);
+    /* in rem so font loading does not reflow horizontally */
+    --w-read: clamp(20rem, 90vw, 40rem);
+    --w-list: clamp(20rem, 90vw, 52rem);
 }
 
 :root[data-theme="light"] {

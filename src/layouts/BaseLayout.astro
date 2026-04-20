@@ -4,6 +4,8 @@ import "@/styles/typography.css"
 import "@/styles/base.css"
 import Header from "@/components/Header.astro"
 import Footer from "@/components/Footer.astro"
+import spectral400 from "@fontsource/spectral/files/spectral-latin-400-normal.woff2?url"
+import spectral500 from "@fontsource/spectral/files/spectral-latin-500-normal.woff2?url"
 
 const {
     title = "Chaos Current",
@@ -22,6 +24,9 @@ const url = canonical ?? Astro.url.toString()
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={url} />
+
+        <link rel="preload" href={spectral400} as="font" type="font/woff2" crossorigin />
+        <link rel="preload" href={spectral500} as="font" type="font/woff2" crossorigin />
 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
