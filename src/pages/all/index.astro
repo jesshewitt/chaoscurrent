@@ -50,7 +50,9 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
         const root = document.querySelector("[data-filter-root]")
         if (root) {
             const searchInput = root.querySelector("#filter-search")
-            const chips = [...root.querySelectorAll(".chip")]
+            const checkboxes = [...root.querySelectorAll("input[type=checkbox][data-axis]")]
+            const typeCountEl = root.querySelector('[data-count="type"]')
+            const topicCountEl = root.querySelector('[data-count="topic"]')
             const countEl = root.querySelector("#result-count")
             const clearBtn = root.querySelector("#clear-filters")
             const wraps = [...document.querySelectorAll(".entry-wrap")]
@@ -87,13 +89,16 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
             }
 
             function applyState() {
-                for (const chip of chips) {
-                    const axis = chip.dataset.axis
-                    const value = chip.dataset.value
+                for (const cb of checkboxes) {
+                    const axis = cb.dataset.axis
+                    const value = cb.dataset.value
                     const set = axis === "type" ? state.types : state.topics
-                    chip.setAttribute("aria-pressed", set.has(value) ? "true" : "false")
+                    cb.checked = set.has(value)
                 }
                 searchInput.value = state.q
+
+                typeCountEl.textContent = state.types.size > 0 ? state.types.size : ""
+                topicCountEl.textContent = state.topics.size > 0 ? state.topics.size : ""
 
                 let allowed
                 if (state.q.trim().length > 0) {
@@ -124,15 +129,19 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 countEl.textContent =
                     shown === total ? `${total} entries` : `${shown} of ${total} entries`
                 emptyState.hidden = shown !== 0
+
+                const hasFilters =
+                    state.q.length > 0 || state.types.size > 0 || state.topics.size > 0
+                clearBtn.hidden = !hasFilters
             }
 
-            for (const chip of chips) {
-                chip.addEventListener("click", () => {
-                    const axis = chip.dataset.axis
-                    const value = chip.dataset.value
+            for (const cb of checkboxes) {
+                cb.addEventListener("change", () => {
+                    const axis = cb.dataset.axis
+                    const value = cb.dataset.value
                     const set = axis === "type" ? state.types : state.topics
-                    if (set.has(value)) set.delete(value)
-                    else set.add(value)
+                    if (cb.checked) set.add(value)
+                    else set.delete(value)
                     writeHash()
                     applyState()
                 })

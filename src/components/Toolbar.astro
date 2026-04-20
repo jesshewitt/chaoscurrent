@@ -13,36 +13,39 @@ const { topics = [] } = Astro.props
         />
     </label>
 
-    <div class="chip-row" aria-label="Filter by type">
-        {TYPES.map((t) => (
-            <button
-                type="button"
-                class="chip"
-                data-axis="type"
-                data-value={t}
-                aria-pressed="false"
-            >{TYPE_LABELS[t]}</button>
-        ))}
-    </div>
+    <div class="filter-row">
+        <details class="filter-dropdown" name="filter-group">
+            <summary>
+                <span class="filter-dropdown-label">Type</span>
+                <span class="filter-dropdown-count" data-count="type"></span>
+            </summary>
+            <div class="filter-options" role="group" aria-label="Filter by type">
+                {TYPES.map((t) => (
+                    <label class="filter-option">
+                        <input type="checkbox" data-axis="type" data-value={t} />
+                        <span>{TYPE_LABELS[t]}</span>
+                    </label>
+                ))}
+            </div>
+        </details>
 
-    <details class="more-topics">
-        <summary class="label">Topics</summary>
-        <div class="chip-row" aria-label="Filter by topic">
-            {topics.map((topic) => (
-                <button
-                    type="button"
-                    class="chip"
-                    data-axis="topic"
-                    data-value={topic.slug}
-                    aria-pressed="false"
-                >{topic.label}</button>
-            ))}
-        </div>
-    </details>
+        <details class="filter-dropdown" name="filter-group">
+            <summary>
+                <span class="filter-dropdown-label">Topic</span>
+                <span class="filter-dropdown-count" data-count="topic"></span>
+            </summary>
+            <div class="filter-options" role="group" aria-label="Filter by topic">
+                {topics.map((topic) => (
+                    <label class="filter-option">
+                        <input type="checkbox" data-axis="topic" data-value={topic.slug} />
+                        <span>{topic.label}</span>
+                    </label>
+                ))}
+            </div>
+        </details>
 
-    <div class="toolbar-meta">
         <span id="result-count" class="meta" aria-live="polite"></span>
-        <button type="button" id="clear-filters" class="reset">Clear</button>
+        <button type="button" id="clear-filters" class="reset" hidden>Clear</button>
     </div>
 </div>
 
@@ -57,6 +60,7 @@ const { topics = [] } = Astro.props
         display: flex;
         flex-direction: column;
         gap: var(--s-1);
+        z-index: 10;
     }
     #filter-search {
         width: 100%;
@@ -68,36 +72,92 @@ const { topics = [] } = Astro.props
         font-family: var(--font-body);
         font-size: var(--fs-16);
     }
-    .chip-row {
+    .filter-row {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.4ch;
+        gap: var(--s-1);
+        align-items: center;
     }
-    .chip {
-        border: 1px solid var(--rule);
+    .filter-dropdown {
+        position: relative;
+    }
+    .filter-dropdown summary {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5ch;
+        padding: 6px 12px;
         background: transparent;
-        color: var(--ink-mute);
-        padding: 4px 10px;
+        border: 1px solid var(--rule);
         border-radius: 999px;
+        color: var(--ink-mute);
         font-family: var(--font-ui);
         font-size: var(--fs-12);
         letter-spacing: 0.1em;
         text-transform: uppercase;
         cursor: pointer;
+        list-style: none;
+        user-select: none;
     }
-    .chip[aria-pressed="true"] {
+    .filter-dropdown summary::-webkit-details-marker { display: none; }
+    .filter-dropdown summary::after {
+        content: "▾";
+        font-size: 10px;
+        opacity: 0.7;
+        transition: transform 120ms ease-out;
+    }
+    .filter-dropdown[open] summary {
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+    .filter-dropdown[open] summary::after {
+        transform: rotate(180deg);
+    }
+    .filter-dropdown-count:empty { display: none; }
+    .filter-dropdown-count:not(:empty) {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 18px;
+        height: 18px;
+        padding: 0 6px;
         background: var(--gold);
-        border-color: var(--gold);
         color: var(--bg);
+        border-radius: 999px;
+        font-size: 10px;
+        letter-spacing: 0;
     }
-    .more-topics summary {
-        cursor: pointer;
-        padding: 4px 0;
+    .filter-options {
+        position: absolute;
+        top: calc(100% + 6px);
+        left: 0;
+        min-width: 14rem;
+        max-height: 60vh;
+        overflow-y: auto;
+        background: var(--bg-elev);
+        border: 1px solid var(--rule);
+        border-radius: 4px;
+        padding: var(--s-1);
+        z-index: 20;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
     }
-    .toolbar-meta {
+    .filter-option {
         display: flex;
         align-items: center;
-        gap: var(--s-2);
+        gap: 0.5ch;
+        padding: 6px 8px;
+        cursor: pointer;
+        font-family: var(--font-ui);
+        font-size: var(--fs-12);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--ink);
+        border-radius: 2px;
+    }
+    .filter-option:hover {
+        background: color-mix(in srgb, var(--accent) 10%, transparent);
+    }
+    .filter-option input {
+        accent-color: var(--accent);
     }
     .reset {
         background: transparent;
@@ -107,4 +167,5 @@ const { topics = [] } = Astro.props
         font-size: var(--fs-12);
         cursor: pointer;
     }
+    .reset[hidden] { display: none; }
 </style>
