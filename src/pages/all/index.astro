@@ -38,6 +38,11 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 </div>
             ))}
         </div>
+
+        <div id="empty-state" class="empty-state" hidden>
+            <p>No results. Try removing a tag or broadening your search.</p>
+            <button type="button" id="empty-clear" class="reset">Clear all filters</button>
+        </div>
     </section>
 
     <script>
@@ -50,6 +55,8 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
             const countEl = root.querySelector("#result-count")
             const clearBtn = root.querySelector("#clear-filters")
             const wraps = [...document.querySelectorAll(".entry-wrap")]
+            const emptyState = document.getElementById("empty-state")
+            const emptyClear = document.getElementById("empty-clear")
 
             const raw = document.getElementById("search-data").textContent
             const { docs, options } = JSON.parse(raw)
@@ -117,6 +124,7 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 const total = wraps.length
                 countEl.textContent =
                     shown === total ? `${total} entries` : `${shown} of ${total} entries`
+                emptyState.hidden = shown !== 0
             }
 
             for (const chip of chips) {
@@ -137,13 +145,16 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 applyState()
             })
 
-            clearBtn.addEventListener("click", () => {
+            function clearAll() {
                 state.q = ""
                 state.types.clear()
                 state.topics.clear()
                 writeHash()
                 applyState()
-            })
+            }
+
+            clearBtn.addEventListener("click", clearAll)
+            emptyClear.addEventListener("click", clearAll)
 
             window.addEventListener("hashchange", () => {
                 readHash()
@@ -166,4 +177,26 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
     }
     .all .label { margin-bottom: var(--s-1); }
     #entries { margin-top: var(--s-3); }
+
+    .empty-state {
+        margin: var(--s-4) 0;
+        padding: var(--s-3);
+        border: 1px dashed var(--rule);
+        border-radius: 4px;
+        text-align: center;
+    }
+    .empty-state p { margin: 0 0 var(--s-1); color: var(--ink-mute); }
+    .empty-state .reset {
+        background: transparent;
+        border: 1px solid var(--accent);
+        color: var(--accent);
+        padding: 6px 14px;
+        border-radius: 999px;
+        font-family: var(--font-ui);
+        font-size: var(--fs-12);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .empty-state .reset:hover { color: var(--accent-bright); border-color: var(--accent-bright); }
 </style>
