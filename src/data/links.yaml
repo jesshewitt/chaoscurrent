@@ -38,3 +38,86 @@
   annotation: |
     Carroll's own ongoing site, home of essays and announcements.
   added: "2026-04-19"
+
+- id: carroll-chaos-magic-in-a-nutshell
+  title: "Chaos Magic in a Nutshell"
+  url: "https://www.specularium.org/wizardry"
+  type: essay
+  author: "Peter J. Carroll"
+  topics:
+    - theory
+    - paradigm-shifting
+  annotation: |
+    A short, dense statement of chaos magic as practice. Carroll defines magic as
+    the use of imaginary phenomena to create real effects and walks through
+    belief as a tool, gnosis, and the magical link in fewer words than most
+    introductions take to clear their throat.
+  added: "2026-04-19"
+
+- id: hine-oven-ready-chaos
+  title: "Oven-Ready Chaos"
+  url: "http://www.chaosmatrix.org/library/chaos/texts/orchaos.html"
+  type: essay
+  author: "Phil Hine"
+  year: 1992
+  topics:
+    - theory
+    - ritual
+    - sigils
+    - gnosis
+  annotation: |
+    Hine's expanded online edition of an early chapbook (originally titled
+    Condensed Chaos before that name was reused for his 1995 book). Practical
+    exercises in sigil work, gnosis, banishing, and group ritual. One of the
+    most-circulated free chaos magic texts on the web.
+  added: "2026-04-19"
+
+- id: frater-ud-models-of-magick
+  title: "Models of Magick"
+  url: "http://www.chaosmatrix.org/library/chaos/texts/model.html"
+  type: essay
+  author: "Frater U∴D∴"
+  topics:
+    - theory
+    - paradigm-shifting
+  annotation: |
+    The landmark essay that introduced the modern "models of magic" framework:
+    spirit, energy, psychological, information, and meta. The intellectual
+    scaffolding behind every practitioner who has ever said "let me try a
+    different paradigm."
+  added: "2026-04-19"
+
+- id: spare-book-of-pleasure
+  title: "The Book of Pleasure (Self-Love): The Psychology of Ecstasy"
+  url: "https://hermetic.com/spare/pleasure"
+  type: essay
+  author: "Austin Osman Spare"
+  year: 1913
+  topics:
+    - theory
+    - sigils
+    - gnosis
+    - history
+  annotation: |
+    Spare's foundational treatise. The Sacred Alphabet of Desire, the Death
+    Posture, and the original sigil method, written in his characteristic
+    feverish prose. Required reading for anyone tracing chaos magic back to
+    its source.
+  added: "2026-04-19"
+
+- id: dukes-ssotbme-revised
+  title: "SSOTBME Revised: An Essay on Magic"
+  url: "https://www.shiftingedges.com/ssotbme.pdf"
+  type: essay
+  author: "Ramsey Dukes (Lionel Snell)"
+  year: 1974
+  topics:
+    - theory
+    - ethics
+    - history
+  annotation: |
+    Snell's deceptively gentle essay arguing that magic is a fourth way of
+    perceiving reality alongside science, art, and religion. Predates and helped
+    midwife the chaos current. Still the best introduction for the
+    philosophically inclined.
+  added: "2026-04-19"
