@@ -16,7 +16,7 @@
 
     /* type */
     --font-body: "Spectral", "Iowan Old Style", Palatino, Georgia, serif;
-    --font-ui: -apple-system, system-ui, sans-serif;
+    --font-ui: "Inter Variable", -apple-system, system-ui, sans-serif;
     --font-mono: ui-monospace, "SF Mono", Menlo, monospace;
 
     /* scale */

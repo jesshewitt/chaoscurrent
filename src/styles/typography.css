@@ -1,5 +1,6 @@
 @import "@fontsource/spectral/400.css";
 @import "@fontsource/spectral/500.css";
+@import "@fontsource-variable/inter/wght.css";
 
 html {
     font-family: var(--font-body);
