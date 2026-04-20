@@ -1,0 +1,41 @@
+@import "@fontsource/spectral/400.css";
+@import "@fontsource/spectral/500.css";
+
+html {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--ink);
+    background: var(--bg);
+}
+
+h1, h2, h3, h4 {
+    color: var(--ink-strong);
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    line-height: 1.2;
+    margin: 0 0 var(--s-2) 0;
+}
+
+h1 { font-size: var(--fs-36); }
+h2 { font-size: var(--fs-28); }
+h3 { font-size: var(--fs-22); }
+h4 { font-size: var(--fs-18); }
+
+.label {
+    font-family: var(--font-ui);
+    font-size: var(--fs-12);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent-mute);
+}
+
+.meta {
+    color: var(--ink-mute);
+    font-size: var(--fs-14);
+}
+
+code, pre {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+}
