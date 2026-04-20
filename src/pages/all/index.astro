@@ -170,27 +170,28 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 applyState()
             })
 
+            function isOpen() { return filterPanel.classList.contains("is-open") }
             function openPanel() {
-                filterPanel.hidden = false
+                filterPanel.classList.add("is-open")
                 filterToggle.setAttribute("aria-expanded", "true")
             }
             function closePanel() {
-                filterPanel.hidden = true
+                filterPanel.classList.remove("is-open")
                 filterToggle.setAttribute("aria-expanded", "false")
             }
             filterToggle.addEventListener("click", (e) => {
                 e.stopPropagation()
-                if (filterPanel.hidden) openPanel()
-                else closePanel()
+                if (isOpen()) closePanel()
+                else openPanel()
             })
             document.addEventListener("click", (e) => {
-                if (filterPanel.hidden) return
+                if (!isOpen()) return
                 if (filterPanel.contains(e.target)) return
                 if (filterToggle.contains(e.target)) return
                 closePanel()
             })
             document.addEventListener("keydown", (e) => {
-                if (e.key === "Escape" && !filterPanel.hidden) closePanel()
+                if (e.key === "Escape" && isOpen()) closePanel()
             })
 
             readHash()
