@@ -67,4 +67,23 @@ describe("mergeStatus", () => {
         const next = mergeStatus(prior, { status: "ok", finalUrl: null }, "2026-04-15T00:00:00Z")
         expect(next.deadStreak).toBe(0)
     })
+
+    it("applies the two-strike rule to dead-no-archive too", () => {
+        const prior = { status: "ok", deadStreak: 0, lastChecked: null, finalUrl: null }
+        const first = mergeStatus(
+            prior,
+            { status: "dead-no-archive", finalUrl: null },
+            "2026-04-08T00:00:00Z"
+        )
+        expect(first.status).toBe("ok")
+        expect(first.deadStreak).toBe(1)
+
+        const second = mergeStatus(
+            first,
+            { status: "dead-no-archive", finalUrl: null },
+            "2026-04-15T00:00:00Z"
+        )
+        expect(second.status).toBe("dead-no-archive")
+        expect(second.deadStreak).toBe(2)
+    })
 })

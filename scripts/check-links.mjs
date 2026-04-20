@@ -28,9 +28,11 @@ export function classify({ ok, status, redirectedTo, originalHost, timedOut }) {
 
 export function mergeStatus(prior, observation, timestamp) {
     const priorStreak = prior?.deadStreak ?? 0
-    if (observation.status === "dead") {
+    const isDeadish =
+        observation.status === "dead" || observation.status === "dead-no-archive"
+    if (isDeadish) {
         const streak = priorStreak + 1
-        const status = streak >= 2 ? "dead" : prior?.status ?? "ok"
+        const status = streak >= 2 ? observation.status : prior?.status ?? "ok"
         return {
             status,
             lastChecked: timestamp,

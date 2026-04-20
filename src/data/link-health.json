@@ -1,23 +1,4 @@
 {
-  "lastRun": "2026-04-20T02:17:07.812Z",
-  "entries": {
-    "carroll-liber-null": {
-      "status": "dead-no-archive",
-      "lastChecked": "2026-04-20T02:17:07.812Z",
-      "finalUrl": null,
-      "deadStreak": 0
-    },
-    "hine-condensed-chaos": {
-      "status": "dead-no-archive",
-      "lastChecked": "2026-04-20T02:17:07.812Z",
-      "finalUrl": null,
-      "deadStreak": 0
-    },
-    "specularium": {
-      "status": "ok",
-      "lastChecked": "2026-04-20T02:17:07.812Z",
-      "finalUrl": null,
-      "deadStreak": 0
-    }
-  }
+    "lastRun": null,
+    "entries": {}
 }
