@@ -15,10 +15,18 @@ body.nav-open {
     overflow: hidden;
 }
 
-/* Opt the root out of view transitions entirely so swaps are instant
-   instead of snapshotting and crossfading. */
+/* Kill every view-transition animation so ClientRouter swaps content
+   in a single frame, with no snapshot and no crossfade. */
 html {
     view-transition-name: none;
+}
+::view-transition-group(*),
+::view-transition-image-pair(*),
+::view-transition-old(*),
+::view-transition-new(*) {
+    animation: none !important;
+    animation-duration: 0s !important;
+    mix-blend-mode: normal !important;
 }
 
 /* Header layout */

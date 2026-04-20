@@ -33,7 +33,7 @@ const url = canonical ?? Astro.url.toString()
         <link rel="preload" href={spectral500} as="font" type="font/woff2" crossorigin />
         <link rel="preload" href={interWght} as="font" type="font/woff2" crossorigin />
 
-        <ClientRouter />
+        <ClientRouter fallback="none" />
 
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
