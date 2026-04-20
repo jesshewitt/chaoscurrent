@@ -31,9 +31,9 @@
   people:
     - phil-hine
   annotation: |
-    An accessible introduction with exercises you can sit down and do.
-    Friendlier than Carroll, just as practical. The classic recommendation for
-    newcomers who want a single book to start with.
+    An introduction to chaos magic covering sigils, gnosis, banishing, and
+    basic ritual, built around practical exercises. Plain language, short
+    chapters.
   added: "2026-04-19"
 
 - id: carroll-liber-kaos
@@ -49,9 +49,8 @@
   people:
     - peter-carroll
   annotation: |
-    Carroll's second major book and the more theoretical of the pair. Aeonics,
-    magical mathematics, and a complete IOT flavored training course. Heavier
-    going than Liber Null but rewards the effort.
+    Carroll's second major book. Covers aeonic theory, magical mathematics,
+    and the Illuminates of Thanateros training system in detail.
   added: "2026-04-19"
 
 - id: hine-prime-chaos
@@ -67,9 +66,9 @@
   people:
     - phil-hine
   annotation: |
-    Hine's companion to Condensed Chaos, published around the same time. Goes
-    deeper on ritual structures, evocation, group work, and possession. Less
-    primer, more practitioner's notebook. Foreword by Grant Morrison.
+    Hine's companion to Condensed Chaos, published around the same time.
+    Covers ritual structures, evocation, group work, and possession in
+    greater depth. Foreword by Grant Morrison.
   added: "2026-04-19"
 
 - id: sherwin-book-of-results
@@ -101,9 +100,8 @@
   people:
     - frater-ud
   annotation: |
-    The deepest practical guide to sigil work in print. Multiple methods,
-    exhaustive coverage of construction, charging, and firing. If you only own
-    one book about sigils, own this.
+    A practical guide to sigil work covering multiple methods, construction,
+    charging, and firing. Includes exercises and variations.
   added: "2026-04-19"
 
 - id: vitimus-hands-on-chaos-magic
@@ -119,8 +117,8 @@
   people:
     - andrieh-vitimus
   annotation: |
-    Vitimus's irreverent, exercise heavy course. Modern, friendly, results
-    oriented. A good companion or alternative to Hine for the same job.
+    An exercise-heavy course built around the Ovayki current, structured
+    around repeated practice rather than theory.
   added: "2026-04-19"
 
 - id: wachter-six-ways
@@ -137,9 +135,9 @@
   people:
     - aidan-wachter
   annotation: |
-    Wachter's handbook drawing from chaos magic, animism, and folk practice.
-    Sigils, servitors, candle work, talismans, and spirit ecology in plain
-    language. Self published and widely loved.
+    A handbook drawing from chaos magic, animism, and folk practice. Covers
+    sigils, servitors, candle work, talismans, and spirit ecology. Self
+    published.
   added: "2026-04-19"
 
 - id: carroll-this-is-chaos
@@ -158,10 +156,10 @@
     - ivy-corvus
     - ramsey-dukes
   annotation: |
-    Thirteen essays from current chaos magic practitioners edited by Carroll,
+    Thirteen essays by current chaos magic practitioners, edited by Carroll,
     with a foreword by Ronald Hutton. Contributors include Aidan Wachter,
     Carl Abrahamsson, Dave Lee, Ivy Corvus, Julian Vayne, Lionel Snell, and
-    others. A snapshot of where the current is now.
+    others.
   added: "2026-04-19"
 
 - id: corvus-pagan-portals-chaos-magic
@@ -177,9 +175,9 @@
   people:
     - ivy-corvus
   annotation: |
-    A current beginner's guide. Short, plainspoken, practical, structured as
-    theory then praxis. A recommended starting point for someone today who
-    wants the shortest path from "what is this" to "how do I try it."
+    A short beginner's guide in the Pagan Portals series, structured in two
+    halves: theory and praxis. Covers basic chaos magic concepts and
+    introductory exercises.
   added: "2026-04-19"
 
 - id: dukes-ssotbme-revised
@@ -195,10 +193,9 @@
   people:
     - ramsey-dukes
   annotation: |
-    Snell's deceptively gentle book arguing that magic is a fourth way of
-    perceiving reality alongside science, art, and religion. Predates and
-    helped midwife the chaos current. Still the best introduction for the
-    philosophically inclined.
+    Snell's 1974 essay arguing that magic is a fourth mode of perceiving
+    reality alongside science, art, and religion. Predates the chaos magic
+    movement and influenced it directly.
   added: "2026-04-19"
 
 - id: specularium
@@ -227,10 +224,9 @@
   people:
     - peter-carroll
   annotation: |
-    A short, dense statement of chaos magic as practice. Carroll defines magic
-    as the use of imaginary phenomena to create real effects and walks through
-    belief as a tool, gnosis, and the magical link in fewer words than most
-    introductions take to clear their throat.
+    A short statement of chaos magic as practice. Carroll defines magic as
+    the use of imaginary phenomena to create real effects and outlines
+    belief as a tool, gnosis, and the magical link.
   added: "2026-04-19"
 
 - id: spare-book-of-pleasure
@@ -247,10 +243,9 @@
   people:
     - austin-osman-spare
   annotation: |
-    Spare's foundational treatise. The Sacred Alphabet, the Alphabet of
-    Desire, the Death Posture, and the original sigil method, written in his
-    characteristic feverish prose. Required reading for anyone tracing chaos
-    magic back to its source.
+    Spare's foundational treatise covering the Sacred Alphabet, the
+    Alphabet of Desire, the Death Posture, and the original sigil method.
+    A direct source for the chaos magic sigil tradition.
   added: "2026-04-19"
 
 - id: lee-chaotopia
@@ -281,9 +276,9 @@
   people:
     - aidan-wachter
   annotation: |
-    Wachter's author site. Information on his books (Six Ways, Weaving Fate,
-    Changeable), plus links to his Patreon community and Discord server. The
-    animism adjacent voice in the chaos current.
+    Wachter's author site. Information on his books (Six Ways, Weaving
+    Fate, Changeable), plus links to his Patreon community and Discord
+    server.
   added: "2026-04-19"
 
 - id: rune-soup
@@ -313,10 +308,10 @@
     - history
     - evocation
   annotation: |
-    Alexander Eth's Western esoterica podcast. Primarily ceremonial and
-    grimoire focused, with chaos magicians appearing as guests alongside
-    Solomonic practitioners, scholars, and spirit workers. Careful
-    interviewing, long form episodes.
+    Alexander Eth's Western esoterica podcast. Primary focus is ceremonial
+    and grimoire magic, with chaos magicians appearing as guests alongside
+    Solomonic practitioners, scholars, and spirit workers. Long form
+    interview format.
   added: "2026-04-19"
 
 - id: ramsey-dukes-youtube
@@ -331,9 +326,8 @@
   people:
     - ramsey-dukes
   annotation: |
-    Lionel Snell's short video essays in the Ramsey Dukes voice. Meditations
-    on the philosophy of magic, many of them filmed outdoors in a field.
-    Quiet, dry, essential.
+    Lionel Snell's short video essays in the Ramsey Dukes voice.
+    Philosophical discussions of magic, many filmed outdoors.
   added: "2026-04-19"
 
 - id: sigil-engine
@@ -359,10 +353,9 @@
     - gnosis
     - ritual
   annotation: |
-    Reddit's main chaos magic subreddit. Highly uneven but the largest
-    general discussion venue online. Beginners asking first ritual questions,
-    long time practitioners trading techniques, debate about whether
-    something counts as chaos magic.
+    Reddit's main chaos magic subreddit. A general discussion venue covering
+    beginner questions, technique discussions, and debate about what falls
+    under the chaos magic umbrella.
   added: "2026-04-19"
 
 - id: chaos-matrix
@@ -375,10 +368,9 @@
     - history
     - ritual
   annotation: |
-    The site this directory is a spiritual successor to. Dates from the early
-    web era. Hosts a large library of foundational essays by Carroll, Hine,
-    Frater U∴D∴, and others that are otherwise hard to find online. Served
-    over plain HTTP; browsers will flag it as "Not Secure."
+    An early-web chaos magic library dating from the 1990s. Hosts
+    foundational essays by Carroll, Hine, Frater U∴D∴, and others. Served
+    over plain HTTP, so browsers display a "Not Secure" warning.
   added: "2026-04-19"
 
 - id: biroco-kaos-archive
@@ -392,8 +384,8 @@
   people:
     - joel-biroco
   annotation: |
-    Biroco's underground occult magazine, founded in 1985, with the last
-    issue (#14) in 2002. The archive preserves back issues and a record of
+    Joel Biroco's occult magazine, founded in 1985 with the final issue
+    (#14) in 2002. The archive hosts back issues and historical material on
     the 1980s and early 2000s occult scene.
   added: "2026-04-19"
 
@@ -412,10 +404,10 @@
     - kerry-thornley
     - robert-anton-wilson
   annotation: |
-    The Discordian holy text by Greg Hill (Malaclypse the Younger) and Kerry
-    Thornley (Lord Omar Khayyam Ravenhurst), with a foreword by Robert Anton
-    Wilson in later editions. Not chaos magic proper but essential context.
-    Most chaos magicians have read it; many were radicalized by it.
+    The Discordian holy text by Greg Hill (Malaclypse the Younger) and
+    Kerry Thornley (Lord Omar Khayyam Ravenhurst), with a foreword by
+    Robert Anton Wilson in later editions. Discordianism is a
+    philosophical influence on chaos magic.
   added: "2026-04-19"
 
 - id: carroll-the-epoch
@@ -445,9 +437,9 @@
     - theory
     - history
   annotation: |
-    A contemporary online magazine covering chaos magic philosophy, interviews
-    with practitioners, and related occult news. One of the few currently
-    active editorial sites for the scene rather than just a personal blog.
+    An online magazine covering chaos magic philosophy, interviews with
+    practitioners, and related occult news. Editorial format with multiple
+    contributors.
   added: "2026-04-19"
 
 - id: weird-studies
@@ -460,10 +452,9 @@
     - postmodern
     - divination
   annotation: |
-    Academic and philosophical podcast hosted by Phil Ford and J. F. Martel.
-    Not a chaos magic show, but the frame of mind is adjacent. The weird,
-    the occult, divination, and the limits of rational thought. Many chaos
-    magicians list it as a regular listen.
+    Academic and philosophical podcast hosted by Phil Ford and J. F.
+    Martel. Topics include the weird, the occult, divination, and the
+    limits of rational thought.
   added: "2026-04-19"
 
 - id: pagan-chaos-magic-podcast
@@ -476,9 +467,9 @@
     - ritual
     - sigils
   annotation: |
-    Ki'a Dragon's chaos magic podcast, running 2009 to 2019 with 23 episodes.
-    Paradigms, intent, sigils, and related topics. Archived rather than
-    ongoing, but worth mining for specific topics.
+    Ki'a Dragon's chaos magic podcast, running 2009 to 2019 with 23
+    episodes. Topics include paradigms, intent, sigils, and related
+    practice. Archived, not ongoing.
   added: "2026-04-19"
 
 - id: angelas-symposium
@@ -491,10 +482,9 @@
     - history
     - postmodern
   annotation: |
-    Dr Angela Puca's YouTube channel. Academic study of esotericism,
+    Dr Angela Puca's YouTube channel. Academic treatment of esotericism,
     witchcraft, paganism, and shamanism, with interviews of practitioners
-    including chaos magicians. Best source on YouTube for rigorous,
-    footnoted treatment of the subject.
+    including chaos magicians.
   added: "2026-04-19"
 
 - id: trinary-toolkit
@@ -519,9 +509,8 @@
     - theory
     - history
   annotation: |
-    Reddit's broader occult subreddit. Larger than r/chaosmagick and less
-    focused, but useful for context, questions that cross traditions, and
-    access to a wider practitioner pool.
+    Reddit's general occult subreddit. Broader in scope than r/chaosmagick,
+    covering questions across traditions.
   added: "2026-04-19"
 
 - id: iot-british-isles
@@ -533,10 +522,9 @@
     - ritual
     - theory
   annotation: |
-    The British section of the IOT, the oldest chaos magic magical order.
-    The site has essays, event listings, membership information, and a
-    record of the section's work. Closest thing to an official entry point
-    for the order.
+    The British section of the Illuminates of Thanateros, a chaos magic
+    magical order founded in 1978. The site hosts essays, event listings,
+    membership information, and a record of the section's work.
   added: "2026-04-19"
 
 - id: hermetic-topy
@@ -552,8 +540,8 @@
   annotation: |
     Preserved materials from the Temple ov Psychick Youth, Genesis
     P-Orridge's late 20th century psychic magic network. Bulletins, sigil
-    sheets, ritual ephemera. Influential on the wider chaos current by
-    osmosis.
+    sheets, and ritual documents. TOPY practices influenced the broader
+    chaos magic scene.
   added: "2026-04-19"
 
 - id: sacred-texts-chaos
@@ -583,10 +571,9 @@
   people:
     - hakim-bey
   annotation: |
-    Hakim Bey's 1991 manifesto on ontological anarchism and fleeting zones
-    of autonomy. Not magic, but adjacent. Near universal reading in the 90s
-    and early 2000s chaos magic scene; its fingerprints are on much of the
-    practice that followed.
+    Hakim Bey's 1991 manifesto on ontological anarchism and temporary
+    autonomous zones. Widely circulated in the 1990s and 2000s chaos magic
+    scene as cultural and philosophical context.
   added: "2026-04-19"
 
 - id: chapman-advanced-magick-for-beginners
@@ -602,9 +589,7 @@
   people:
     - alan-chapman
   annotation: |
-    Chapman's counterintuitively titled primer. Works as a single volume
-    first book on chaos magic, structured around a small set of principles
-    and practical exercises. Often recommended in practitioner communities
-    as the cleanest modern starting point. Free to read in full on the
-    Internet Archive.
+    A single volume chaos magic book by Alan Chapman. Structured around a
+    small set of principles and practical exercises. Full text is
+    available on the Internet Archive.
   added: "2026-04-20"

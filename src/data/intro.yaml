@@ -8,11 +8,11 @@ sections:
       kind: entries
       entries:
           - ref: chapman-advanced-magick-for-beginners
-            note: "Often recommended as the single best first book. Counterintuitively titled; actually a primer."
+            note: "A single volume primer by Alan Chapman, structured around a few core principles and practical exercises."
           - ref: hine-condensed-chaos
-            note: "Friendlier than Carroll, and an obvious next read or parallel read."
+            note: "Practical exercises in sigils, gnosis, banishing, and basic ritual. Plain language, short chapters."
           - ref: carroll-liber-null
-            note: "The foundational text. Denser. Read after the first two settle in."
+            note: "The foundational chaos magic primer. Covers sigils, gnosis, the magical pact, and the practice of magical psychology."
 
     - heading: "Ideas"
       kind: topics
@@ -27,8 +27,8 @@ sections:
       kind: entries
       entries:
           - ref: carroll-liber-kaos
-            note: "Carroll's theoretical framework, for when the basics feel solid."
+            note: "Carroll's theoretical framework. Covers aeonic theory, magical mathematics, and the IOT training system."
           - ref: hine-prime-chaos
-            note: "Hine's practitioner's notebook. Ritual structures, evocation, group work."
+            note: "Covers ritual structures, evocation, group work, and possession. Foreword by Grant Morrison."
           - ref: frater-ud-practical-sigil-magic
-            note: "The deep dive on sigils. Methods, charging, firing, variations."
+            note: "A detailed guide to sigil work covering multiple methods, charging, firing, and variations."
