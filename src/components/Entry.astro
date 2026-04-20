@@ -1,5 +1,5 @@
 ---
-const { entry } = Astro.props
+const { entry, note } = Astro.props
 const { title, href, url, author, year, topics = [], annotation, isPreserved, isGone } = entry
 
 function formatByline(author, year) {
@@ -10,6 +10,7 @@ function formatByline(author, year) {
 }
 
 const byline = formatByline(author, year)
+const displayAnnotation = note ?? annotation
 ---
 <article class="entry" id={entry.id}>
     <div class="entry-head">
@@ -22,7 +23,7 @@ const byline = formatByline(author, year)
         {isGone && <span class="pill pill-mute">No longer available</span>}
     </div>
     {byline && <p class="entry-byline meta">{byline}</p>}
-    <p class="entry-annotation">{annotation}</p>
+    <p class="entry-annotation">{displayAnnotation}</p>
     {topics.length > 0 && (
         <ul class="entry-topics" aria-label="Topics">
             {topics.map((t) => (
