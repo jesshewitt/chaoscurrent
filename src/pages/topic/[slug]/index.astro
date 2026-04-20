@@ -1,0 +1,43 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import Entry from "@/components/Entry.astro"
+import { getCollection } from "astro:content"
+import { getByTopic, sortByTitle } from "@/lib/links.js"
+
+export async function getStaticPaths() {
+    const topics = await getCollection("topics")
+    return topics.map((t) => ({
+        params: { slug: t.data.slug },
+        props: { topic: t.data }
+    }))
+}
+
+const { topic } = Astro.props
+const entries = sortByTitle(await getByTopic(topic.slug))
+---
+<BaseLayout
+    title={`${topic.label} :: Chaos Current`}
+    description={topic.description}
+>
+    <section class="topic">
+        <p class="label">Chaos Current / Topic</p>
+        <h1>{topic.label}</h1>
+        <p class="topic-blurb">{topic.description}</p>
+        <p class="meta">{entries.length} {entries.length === 1 ? "entry" : "entries"} tagged {topic.slug}.</p>
+
+        <div class="entries">
+            {entries.map((e) => <Entry entry={e} />)}
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .topic {
+        max-width: var(--w-list);
+        margin: var(--s-4) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .topic .label { margin-bottom: var(--s-1); }
+    .topic-blurb { font-size: var(--fs-18); }
+    .entries { margin-top: var(--s-3); }
+</style>
