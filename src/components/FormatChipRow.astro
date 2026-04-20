@@ -1,0 +1,59 @@
+---
+import { TYPES, TYPE_LABELS, pluralOf } from "@/lib/taxonomy.js"
+const { counts = {} } = Astro.props
+---
+<section class="format-chip-row" aria-label="Browse by format">
+    <h2 class="label">Browse by format</h2>
+    <ul>
+        {TYPES.map((t) => (
+            <li>
+                <a class="format-chip" href={`/${pluralOf(t)}/`}>
+                    <span class="format-chip-label">{TYPE_LABELS[t]}</span>
+                    <span class="format-chip-count">{counts[t] ?? 0}</span>
+                </a>
+            </li>
+        ))}
+    </ul>
+</section>
+
+<style>
+    .format-chip-row {
+        max-width: var(--w-list);
+        margin: var(--s-6) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .format-chip-row .label {
+        margin-bottom: var(--s-2);
+    }
+    .format-chip-row ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5ch;
+    }
+    .format-chip {
+        display: inline-flex;
+        align-items: baseline;
+        gap: 0.6ch;
+        padding: 4px 10px;
+        border: 1px solid var(--rule);
+        border-radius: 999px;
+        color: var(--ink-mute);
+        font-family: var(--font-ui);
+        font-size: var(--fs-12);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        transition: color 120ms ease-out, border-color 120ms ease-out;
+    }
+    .format-chip:hover,
+    .format-chip:focus-visible {
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+    .format-chip-count {
+        color: var(--ink-mute);
+        opacity: 0.7;
+    }
+</style>
