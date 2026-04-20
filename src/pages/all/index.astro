@@ -51,8 +51,8 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
         if (root) {
             const searchInput = root.querySelector("#filter-search")
             const checkboxes = [...root.querySelectorAll("input[type=checkbox][data-axis]")]
-            const typeCountEl = root.querySelector('[data-count="type"]')
-            const topicCountEl = root.querySelector('[data-count="topic"]')
+            const filterDropdown = root.querySelector("#filter-dropdown")
+            const filterBadge = root.querySelector("#filter-badge")
             const countEl = root.querySelector("#result-count")
             const clearBtn = root.querySelector("#clear-filters")
             const wraps = [...document.querySelectorAll(".entry-wrap")]
@@ -97,8 +97,8 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 }
                 searchInput.value = state.q
 
-                typeCountEl.textContent = state.types.size > 0 ? state.types.size : ""
-                topicCountEl.textContent = state.topics.size > 0 ? state.topics.size : ""
+                const totalActive = state.types.size + state.topics.size
+                filterBadge.textContent = totalActive > 0 ? totalActive : ""
 
                 let allowed
                 if (state.q.trim().length > 0) {
