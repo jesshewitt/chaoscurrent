@@ -1,7 +1,6 @@
 ---
 import ChaosStar from "@/components/ChaosStar.astro"
 import ThemeToggle from "@/components/ThemeToggle.astro"
-import { TYPES, TYPE_LABELS, pluralOf } from "@/lib/taxonomy.js"
 
 const curated = [
     { href: "/intro/", label: "Intro" },
@@ -11,13 +10,7 @@ const curated = [
     { href: "/about/", label: "About" }
 ]
 
-const mobileNav = [
-    { href: "/intro/", label: "Intro" },
-    { href: "/topics/", label: "Topics" },
-    ...TYPES.map((t) => ({ href: `/${pluralOf(t)}/`, label: TYPE_LABELS[t] })),
-    { href: "/all/", label: "All" },
-    { href: "/about/", label: "About" }
-]
+const mobileNav = curated
 ---
 <header class="site-header">
     <a class="brand" href="/" aria-label="Chaos Current home">
