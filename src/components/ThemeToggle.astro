@@ -41,9 +41,8 @@
 </style>
 
 <script>
-    function initThemeToggle() {
-        const btn = document.getElementById("theme-toggle")
-        if (!btn) return
+    const btn = document.getElementById("theme-toggle")
+    if (btn) {
         btn.addEventListener("click", () => {
             const root = document.documentElement
             const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches
@@ -53,5 +52,4 @@
             try { localStorage.setItem("theme", next) } catch (e) {}
         })
     }
-    document.addEventListener("astro:page-load", initThemeToggle)
 </script>
