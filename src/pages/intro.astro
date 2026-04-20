@@ -27,7 +27,12 @@ const topicMap = new Map(topicCollection.map((t) => [t.data.slug, t.data]))
         <p class="label">Chaos Current / Intro</p>
         <h1>Intro</h1>
 
-        <p class="intro-lede">{parsed.intro}</p>
+        <p class="intro-lede">
+            Chaos magic is a contemporary magical practice that treats belief
+            as a tool and is eclectic in its techniques. This page is a
+            starting point for newcomers. The full index lives at
+            <a href="/topics/">Topics</a> and <a href="/all/">All</a>.
+        </p>
 
         {sections.map((s) => (
             <section class="intro-section">
@@ -57,11 +62,6 @@ const topicMap = new Map(topicCollection.map((t) => [t.data.slug, t.data]))
             </section>
         ))}
 
-        <p class="intro-footer meta">
-            Looking for everything? Try <a href="/all/">All</a> or browse
-            <a href="/topics/">Topics</a>. To suggest something, email
-            <a href="mailto:curator@chaoscurrent.org">curator@chaoscurrent.org</a>.
-        </p>
     </section>
 </BaseLayout>
 
@@ -103,9 +103,5 @@ const topicMap = new Map(topicCollection.map((t) => [t.data.slug, t.data]))
     }
     .entries {
         margin-top: var(--s-2);
-    }
-    .intro-footer {
-        max-width: var(--w-read);
-        margin-top: var(--s-6);
     }
 </style>

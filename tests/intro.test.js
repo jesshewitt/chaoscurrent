@@ -2,7 +2,6 @@ import { describe, it, expect } from "vitest"
 import { parseIntroData, resolveIntroSections } from "@/lib/intro.js"
 
 const sampleYaml = `
-intro: "Hello"
 sections:
   - heading: "Foundations"
     kind: entries
@@ -17,9 +16,8 @@ sections:
 `
 
 describe("parseIntroData", () => {
-    it("returns intro text and sections", () => {
+    it("returns sections", () => {
         const parsed = parseIntroData(sampleYaml)
-        expect(parsed.intro).toBe("Hello")
         expect(parsed.sections).toHaveLength(2)
         expect(parsed.sections[0].heading).toBe("Foundations")
         expect(parsed.sections[0].kind).toBe("entries")
@@ -28,7 +26,6 @@ describe("parseIntroData", () => {
 
     it("throws on unknown section kind", () => {
         const bad = `
-intro: "x"
 sections:
   - heading: "Bad"
     kind: chaos

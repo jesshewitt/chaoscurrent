@@ -19,7 +19,6 @@ const topicsSection = z.object({
 const section = z.discriminatedUnion("kind", [entriesSection, topicsSection])
 
 const introSchema = z.object({
-    intro: z.string().min(1),
     sections: z.array(section).min(1)
 })
 
