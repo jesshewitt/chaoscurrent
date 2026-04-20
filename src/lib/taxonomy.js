@@ -6,8 +6,7 @@ export const TYPES = [
     "video",
     "tool",
     "community",
-    "archive",
-    "adjacent"
+    "archive"
 ]
 
 export const TYPE_LABELS = {
@@ -18,8 +17,7 @@ export const TYPE_LABELS = {
     video: "Videos",
     tool: "Tools",
     community: "Communities",
-    archive: "Archives",
-    adjacent: "Adjacent"
+    archive: "Archives"
 }
 
 export const TYPE_BLURBS = {
@@ -30,8 +28,7 @@ export const TYPE_BLURBS = {
     video: "Lectures and video essays",
     tool: "Sigil generators, oracles, and other utilities",
     community: "Places to talk about magic with other magicians",
-    archive: "Older and archival material still findable online",
-    adjacent: "Currents next door: Discordianism, postmodern occultism, cousins"
+    archive: "Older and archival material still findable online"
 }
 
 export const FEATURED_TOPICS = [
@@ -51,8 +48,7 @@ const PLURAL_TO_SINGULAR = {
     videos: "video",
     tools: "tool",
     communities: "community",
-    archives: "archive",
-    adjacent: "adjacent"
+    archives: "archive"
 }
 
 export function isType(value) {

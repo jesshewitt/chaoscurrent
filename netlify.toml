@@ -27,3 +27,8 @@
     from = "/topic/paradigm-shifting/"
     to = "/topic/paradigms/"
     status = 301
+
+[[redirects]]
+    from = "/adjacent/"
+    to = "/topic/adjacent/"
+    status = 301

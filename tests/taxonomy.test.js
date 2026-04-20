@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest"
 import { TYPES, TYPE_LABELS, isType, typeFor, FEATURED_TOPICS } from "@/lib/taxonomy.js"
 
 describe("taxonomy TYPES", () => {
-    it("contains the nine canonical types in order", () => {
+    it("contains the eight canonical types in order", () => {
         expect(TYPES).toEqual([
             "essay",
             "book",
@@ -11,8 +11,7 @@ describe("taxonomy TYPES", () => {
             "video",
             "tool",
             "community",
-            "archive",
-            "adjacent"
+            "archive"
         ])
     })
 

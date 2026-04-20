@@ -32,13 +32,13 @@ const featuredTopicsWithCounts = await Promise.all(
         <p class="label">Chaos Current</p>
         <h1>A directory of chaos magic.</h1>
         <p class="lede">
-            Chaos magic treats belief as a tool. Borrow what works, drop what
-            doesn't, and don't sweat the signage. This is a running index of
-            books, essays, blogs, podcasts, tools, communities, and archives,
-            for people new to it and people already up to their elbows.
+            Chaos magic is a contemporary magical practice that treats belief
+            as a tool and draws techniques from wherever they work. This site
+            is a curated index of books, essays, blogs, podcasts, videos,
+            tools, communities, and archives.
         </p>
         <p class="intro-cta">
-            <a href="/intro/">New here? Start with the intro.</a>
+            New to chaos magic? There's a <a href="/intro/">short intro</a>.
         </p>
     </section>
 
@@ -62,12 +62,13 @@ const featuredTopicsWithCounts = await Promise.all(
 
 <style>
     .intro {
-        max-width: var(--w-read);
+        max-width: var(--w-list);
         margin: var(--s-5) auto var(--s-4);
         padding: 0 var(--s-2);
     }
-    .intro h1 { margin-top: 0; }
-    .intro .lede { color: var(--ink); font-size: var(--fs-18); }
+    .intro h1 { margin-top: 0; max-width: var(--w-read); }
+    .intro .lede { color: var(--ink); font-size: var(--fs-18); max-width: var(--w-read); }
+    .intro-cta { max-width: var(--w-read); }
     .intro-cta {
         margin-top: var(--s-3);
         font-size: var(--fs-18);

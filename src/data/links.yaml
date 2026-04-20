@@ -392,13 +392,14 @@
 - id: principia-discordia
   title: "Principia Discordia"
   url: "https://archive.org/details/PrincipiaDiscordia_201806"
-  type: adjacent
+  type: book
   author: "Malaclypse the Younger and Lord Omar Khayyam Ravenhurst"
   year: 1963
   topics:
     - postmodern
     - theory
     - history
+    - adjacent
   people:
     - malaclypse-the-younger
     - kerry-thornley
@@ -561,13 +562,14 @@
 - id: hakim-bey-taz
   title: "T.A.Z.: The Temporary Autonomous Zone"
   url: "https://hermetic.com/bey/taz_cont"
-  type: adjacent
+  type: book
   author: "Hakim Bey (Peter Lamborn Wilson)"
   year: 1991
   topics:
     - postmodern
     - theory
     - history
+    - adjacent
   people:
     - hakim-bey
   annotation: |
