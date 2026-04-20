@@ -1,0 +1,42 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import Entry from "@/components/Entry.astro"
+import { getCollection } from "astro:content"
+import { getByPerson, sortByTitle } from "@/lib/links.js"
+
+export async function getStaticPaths() {
+    const people = await getCollection("people")
+    return people.map((p) => ({
+        params: { slug: p.data.slug },
+        props: { person: p.data }
+    }))
+}
+
+const { person } = Astro.props
+const entries = sortByTitle(await getByPerson(person.slug))
+---
+<BaseLayout
+    title={`${person.name} :: Chaos Current`}
+    description={person.description}
+>
+    <section class="person">
+        <p class="label">Chaos Current / Person</p>
+        <h1>{person.name}</h1>
+        <p class="person-bio">{person.description}</p>
+        <p class="meta">{entries.length} {entries.length === 1 ? "entry" : "entries"}</p>
+
+        <div class="entries">
+            {entries.map((e) => <Entry entry={e} />)}
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .person {
+        max-width: var(--w-list);
+        margin: var(--s-4) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .person-bio { font-size: var(--fs-18); max-width: var(--w-read); }
+    .entries { margin-top: var(--s-3); }
+</style>
