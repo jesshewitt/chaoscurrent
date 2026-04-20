@@ -47,8 +47,9 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
     <script>
         import Fuse from "fuse.js"
 
-        const root = document.querySelector("[data-filter-root]")
-        if (root) {
+        function initFilter() {
+            const root = document.querySelector("[data-filter-root]")
+            if (!root) return
             const searchInput = root.querySelector("#filter-search")
             const chips = [...root.querySelectorAll(".chip")]
             const countEl = root.querySelector("#result-count")
@@ -155,16 +156,22 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
             clearBtn.addEventListener("click", clearAll)
             emptyClear.addEventListener("click", clearAll)
 
-            window.addEventListener("hashchange", () => {
+            const hashHandler = () => {
                 readHash()
                 applyState()
-            })
+            }
+            window.addEventListener("hashchange", hashHandler)
+            document.addEventListener("astro:before-swap", () => {
+                window.removeEventListener("hashchange", hashHandler)
+            }, { once: true })
 
             readHash()
             applyState()
 
             if (location.hash === "#search") searchInput.focus()
         }
+
+        document.addEventListener("astro:page-load", initFilter)
     </script>
 </BaseLayout>
 
