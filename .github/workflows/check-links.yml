@@ -1,0 +1,29 @@
+name: check-links
+on:
+  schedule:
+    - cron: "0 3 * * 0"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run check-links
+      - name: Commit updated health file
+        run: |
+          if ! git diff --quiet src/data/link-health.json; then
+              git config user.name "chaoscurrent-bot"
+              git config user.email "bot@chaoscurrent.org"
+              git add src/data/link-health.json
+              git commit -m "chore: update link health"
+              git push
+          else
+              echo "no changes"
+          fi
