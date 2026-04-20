@@ -399,3 +399,193 @@
     Kerry Thornley. Not chaos magic proper but essential context. Most chaos
     magicians have read it, many were radicalized by it.
   added: "2026-04-19"
+
+- id: carroll-the-epoch
+  title: "The Epoch"
+  url: "https://specularium.org/peter-j-carroll/the-epoch"
+  type: essay
+  author: "Peter J. Carroll"
+  topics:
+    - theory
+    - paradigm-shifting
+  annotation: |
+    Carroll's later synthesis. A revised framework of aeonic theory and
+    chaoist metaphysics, picking up where Liber Kaos left off. For the
+    theoretically inclined reader who is already sold on the basics.
+  added: "2026-04-19"
+
+- id: chaos-magick-news
+  title: "Chaos Magick News"
+  url: "https://www.chaosmagicknews.com/"
+  type: blog
+  topics:
+    - theory
+    - history
+  annotation: |
+    A contemporary online magazine covering chaos magic philosophy, interviews
+    with practitioners, and related occult news. One of the few currently
+    active editorial sites for the scene rather than just a personal blog.
+  added: "2026-04-19"
+
+- id: weird-studies
+  title: "Weird Studies"
+  url: "https://www.weirdstudies.com/"
+  type: podcast
+  author: "Phil Ford and J. F. Martel"
+  topics:
+    - theory
+    - postmodern
+    - divination
+  annotation: |
+    Academic and philosophical podcast hosted by Phil Ford and J. F. Martel.
+    Not a chaos magic show, but the frame of mind is adjacent. The weird,
+    the occult, divination, and the limits of rational thought. Many chaos
+    magicians list it as a regular listen.
+  added: "2026-04-19"
+
+- id: pagan-chaos-magic-podcast
+  title: "Pagan Chaos Magic"
+  url: "https://podcasts.apple.com/us/podcast/pagan-chaos-magic/id302031534"
+  type: podcast
+  topics:
+    - theory
+    - ritual
+    - sigils
+  annotation: |
+    A long running podcast explicitly about chaos magic practice. Interviews,
+    field reports, technique discussions. Uneven, but the deepest back
+    catalog of any show in the category.
+  added: "2026-04-19"
+
+- id: angelas-symposium
+  title: "Angela's Symposium"
+  url: "https://www.youtube.com/channel/UCPSbip_LX2AxbGeAQfLp-Ig"
+  type: video
+  author: "Dr Angela Puca"
+  topics:
+    - theory
+    - history
+    - postmodern
+  annotation: |
+    Dr Angela Puca's YouTube channel. Academic study of esotericism,
+    witchcraft, paganism, and shamanism, with interviews of practitioners
+    including chaos magicians. Best source on YouTube for rigorous,
+    footnoted treatment of the subject.
+  added: "2026-04-19"
+
+- id: trinary-toolkit
+  title: "Trinary Toolkit"
+  url: "https://www.chaostarot.com/app/"
+  type: tool
+  topics:
+    - sigils
+    - divination
+  annotation: |
+    A browser based toolbox for practical magic. Seven sigil methods (Spare,
+    planetary kameas, Rose Cross, Witch's Wheel, and others), tarot and
+    I Ching decks, runes, a Dreamachine, pathworking exercises, ritual
+    guides, and cut up tools. All client side, nothing stored.
+  added: "2026-04-19"
+
+- id: reddit-occult
+  title: "r/occult"
+  url: "https://www.reddit.com/r/occult/"
+  type: community
+  topics:
+    - theory
+    - history
+  annotation: |
+    Reddit's broader occult subreddit. Larger than r/chaosmagick and less
+    focused, but useful for context, questions that cross traditions, and
+    access to a wider practitioner pool.
+  added: "2026-04-19"
+
+- id: iot-british-isles
+  title: "Illuminates of Thanateros (British Isles)"
+  url: "https://iotbritishisles.com/"
+  type: community
+  topics:
+    - group-practice
+    - ritual
+    - theory
+  annotation: |
+    The British section of the IOT, the oldest chaos magic magical order.
+    The site has essays, event listings, membership information, and a
+    record of the section's work. Closest thing to an official entry point
+    for the order.
+  added: "2026-04-19"
+
+- id: hermetic-topy
+  title: "TOPY Archive at Hermetic.com"
+  url: "https://hermetic.com/topy/"
+  type: archive
+  topics:
+    - history
+    - ritual
+    - sigils
+  annotation: |
+    Preserved materials from the Temple ov Psychick Youth, Genesis
+    P-Orridge's late 20th century psychic magic network. Bulletins, sigil
+    sheets, ritual ephemera. Influential on the wider chaos current by
+    osmosis.
+  added: "2026-04-19"
+
+- id: sacred-texts-chaos
+  title: "Sacred-Texts Chaos Section"
+  url: "https://sacred-texts.com/eso/chaos/"
+  type: archive
+  topics:
+    - theory
+    - sigils
+    - history
+  annotation: |
+    John Bruno Hare's long running esoteric library includes a chaos magic
+    section with full text reproductions of Spare, Liber Null style
+    material, and other foundational works.
+  added: "2026-04-19"
+
+- id: hakim-bey-taz
+  title: "T.A.Z.: The Temporary Autonomous Zone"
+  url: "https://hermetic.com/bey/taz_cont"
+  type: adjacent
+  author: "Hakim Bey (Peter Lamborn Wilson)"
+  year: 1991
+  topics:
+    - postmodern
+    - theory
+    - history
+  annotation: |
+    Hakim Bey's 1991 manifesto on ontological anarchism and fleeting zones
+    of autonomy. Not magic, but adjacent. Near universal reading in the 90s
+    and early 2000s chaos magic scene; its fingerprints are on much of the
+    practice that followed.
+  added: "2026-04-19"
+
+- id: thelema-org
+  title: "Thelema.org"
+  url: "https://www.thelema.org/"
+  type: adjacent
+  topics:
+    - ritual
+    - godforms
+    - history
+  annotation: |
+    Primary reference site for Thelemic magick. Crowley was not a chaos
+    magician but every chaos magician has read him. This is the cleanest
+    contemporary hub for the material.
+  added: "2026-04-19"
+
+- id: disinfo-archive
+  title: "disinfo.com"
+  url: "https://disinfo.com/"
+  type: adjacent
+  topics:
+    - postmodern
+    - history
+    - music-and-culture
+  annotation: |
+    The successor to the Disinformation imprint and Disinfo TV. Published
+    Morrison, Thornley, and much of the 90s postmodern occultism that fed
+    the chaos current. Somewhat reduced today, but the archive is still
+    worth keeping a pointer to.
+  added: "2026-04-19"
