@@ -28,6 +28,7 @@ h4 { font-size: var(--fs-18); }
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--accent-mute);
+    margin: 0 0 var(--s-3) 0;
 }
 
 .meta {
