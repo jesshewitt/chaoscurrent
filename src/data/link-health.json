@@ -1,4 +1,239 @@
 {
-    "lastRun": null,
-    "entries": {}
+  "lastRun": "2026-04-20T04:34:51.006Z",
+  "entries": {
+    "carroll-liber-null": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "hine-condensed-chaos": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 1
+    },
+    "carroll-liber-kaos": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "hine-prime-chaos": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 1
+    },
+    "sherwin-book-of-results": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "frater-ud-practical-sigil-magic": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "vitimus-hands-on-chaos-magic": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "wachter-six-ways": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "carroll-this-is-chaos": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "corvus-pagan-portals-chaos-magic": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "specularium": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "carroll-chaos-magic-in-a-nutshell": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "hine-oven-ready-chaos": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "frater-ud-models-of-magick": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "spare-book-of-pleasure": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "dukes-ssotbme-revised": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "lee-chaotopia": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "wachter-site": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "rune-soup": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "glitch-bottle": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "ramsey-dukes-youtube": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "sigil-engine": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "reddit-chaosmagick": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 1
+    },
+    "chaos-matrix": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "biroco-kaos-archive": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "principia-discordia": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "carroll-the-epoch": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "chaos-magick-news": {
+      "status": "redirect",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": "https://chaosmagicknews.com/",
+      "deadStreak": 0
+    },
+    "weird-studies": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "pagan-chaos-magic-podcast": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "angelas-symposium": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "trinary-toolkit": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "reddit-occult": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 1
+    },
+    "iot-british-isles": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "hermetic-topy": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "sacred-texts-chaos": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "hakim-bey-taz": {
+      "status": "ok",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": null,
+      "deadStreak": 0
+    },
+    "thelema-org": {
+      "status": "redirect",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": "https://thelema.org/",
+      "deadStreak": 0
+    },
+    "disinfo-archive": {
+      "status": "redirect",
+      "lastChecked": "2026-04-20T04:34:51.006Z",
+      "finalUrl": "https://www.disinfo.com/",
+      "deadStreak": 0
+    }
+  }
 }
