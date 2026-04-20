@@ -1,0 +1,20 @@
+---
+const { size = 24, title = "Chaos star" } = Astro.props
+---
+<svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    role="img"
+    aria-label={title}
+    fill="none"
+    stroke="currentColor"
+    stroke-width="1.25"
+    stroke-linecap="round"
+>
+    <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+    <line x1="12" y1="1.5" x2="12" y2="22.5" />
+    <line x1="1.5" y1="12" x2="22.5" y2="12" />
+    <line x1="4.2" y1="4.2" x2="19.8" y2="19.8" />
+    <line x1="19.8" y1="4.2" x2="4.2" y2="19.8" />
+</svg>
