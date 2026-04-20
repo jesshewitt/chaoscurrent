@@ -4,15 +4,16 @@ import ThemeToggle from "@/components/ThemeToggle.astro"
 import { TYPES, TYPE_LABELS, pluralOf } from "@/lib/taxonomy.js"
 
 const curated = [
-    { href: "/essays/", label: "Essays" },
-    { href: "/blogs/", label: "Blogs" },
-    { href: "/podcasts/", label: "Podcasts" },
+    { href: "/intro/", label: "Intro" },
+    { href: "/topics/", label: "Topics" },
     { href: "/tools/", label: "Tools" },
     { href: "/all/", label: "All" },
     { href: "/about/", label: "About" }
 ]
 
 const mobileNav = [
+    { href: "/intro/", label: "Intro" },
+    { href: "/topics/", label: "Topics" },
     ...TYPES.map((t) => ({ href: `/${pluralOf(t)}/`, label: TYPE_LABELS[t] })),
     { href: "/all/", label: "All" },
     { href: "/about/", label: "About" }
