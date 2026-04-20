@@ -1,0 +1,110 @@
+---
+import { TYPES, TYPE_LABELS } from "@/lib/taxonomy.js"
+const { topics = [] } = Astro.props
+---
+<div class="toolbar" data-filter-root>
+    <label class="search-label">
+        <span class="visually-hidden">Search</span>
+        <input
+            id="filter-search"
+            type="search"
+            placeholder="Search titles, authors, topics..."
+            autocomplete="off"
+        />
+    </label>
+
+    <div class="chip-row" aria-label="Filter by type">
+        {TYPES.map((t) => (
+            <button
+                type="button"
+                class="chip"
+                data-axis="type"
+                data-value={t}
+                aria-pressed="false"
+            >{TYPE_LABELS[t]}</button>
+        ))}
+    </div>
+
+    <details class="more-topics">
+        <summary class="label">Topics</summary>
+        <div class="chip-row" aria-label="Filter by topic">
+            {topics.map((topic) => (
+                <button
+                    type="button"
+                    class="chip"
+                    data-axis="topic"
+                    data-value={topic.slug}
+                    aria-pressed="false"
+                >{topic.label}</button>
+            ))}
+        </div>
+    </details>
+
+    <div class="toolbar-meta">
+        <span id="result-count" class="meta" aria-live="polite"></span>
+        <button type="button" id="clear-filters" class="reset">Clear</button>
+    </div>
+</div>
+
+<style>
+    .toolbar {
+        position: sticky;
+        top: 64px;
+        background: color-mix(in srgb, var(--bg) 92%, transparent);
+        backdrop-filter: blur(8px);
+        padding: var(--s-2) 0;
+        border-bottom: 1px solid var(--rule);
+        display: flex;
+        flex-direction: column;
+        gap: var(--s-1);
+    }
+    #filter-search {
+        width: 100%;
+        padding: 10px 12px;
+        background: var(--bg-elev);
+        border: 1px solid var(--rule);
+        color: var(--ink);
+        border-radius: 4px;
+        font-family: var(--font-body);
+        font-size: var(--fs-16);
+    }
+    .chip-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4ch;
+    }
+    .chip {
+        border: 1px solid var(--rule);
+        background: transparent;
+        color: var(--ink-mute);
+        padding: 4px 10px;
+        border-radius: 999px;
+        font-family: var(--font-ui);
+        font-size: var(--fs-12);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+    .chip[aria-pressed="true"] {
+        background: var(--gold);
+        border-color: var(--gold);
+        color: var(--bg);
+    }
+    .more-topics summary {
+        cursor: pointer;
+        padding: 4px 0;
+    }
+    .toolbar-meta {
+        display: flex;
+        align-items: center;
+        gap: var(--s-2);
+    }
+    .reset {
+        background: transparent;
+        border: 0;
+        color: var(--accent);
+        font-family: var(--font-ui);
+        font-size: var(--fs-12);
+        cursor: pointer;
+    }
+</style>

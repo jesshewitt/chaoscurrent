@@ -1,0 +1,169 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import Toolbar from "@/components/Toolbar.astro"
+import Entry from "@/components/Entry.astro"
+import { getLinks } from "@/lib/links.js"
+import { buildSearchDocuments, FUSE_OPTIONS } from "@/lib/search-index.js"
+import { getCollection } from "astro:content"
+
+const entries = await getLinks()
+const docs = buildSearchDocuments(entries)
+const topicCollection = await getCollection("topics")
+const topics = topicCollection.map((t) => t.data)
+
+const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
+---
+<BaseLayout
+    title="Everything :: Chaos Current"
+    description="Browse every entry in the Chaos Current directory with filtering and search."
+>
+    <section class="all">
+        <p class="label">Chaos Current / Everything</p>
+        <h1>Everything</h1>
+        <p class="meta">All {entries.length} entries in one list.</p>
+
+        <Toolbar topics={topics} />
+
+        <script id="search-data" type="application/json" set:html={searchData}></script>
+
+        <div id="entries">
+            {entries.map((e) => (
+                <div
+                    class="entry-wrap"
+                    data-id={e.id}
+                    data-type={e.type}
+                    data-topics={(e.topics ?? []).join(",")}
+                >
+                    <Entry entry={e} />
+                </div>
+            ))}
+        </div>
+    </section>
+
+    <script>
+        import Fuse from "fuse.js"
+
+        const root = document.querySelector("[data-filter-root]")
+        if (root) {
+            const searchInput = root.querySelector("#filter-search")
+            const chips = [...root.querySelectorAll(".chip")]
+            const countEl = root.querySelector("#result-count")
+            const clearBtn = root.querySelector("#clear-filters")
+            const wraps = [...document.querySelectorAll(".entry-wrap")]
+
+            const raw = document.getElementById("search-data").textContent
+            const { docs, options } = JSON.parse(raw)
+            const fuse = new Fuse(docs, options)
+
+            const state = {
+                q: "",
+                types: new Set(),
+                topics: new Set()
+            }
+
+            function readHash() {
+                const hash = location.hash.replace(/^#/, "")
+                if (!hash) return
+                const params = new URLSearchParams(hash)
+                state.q = params.get("q") ?? ""
+                state.types = new Set((params.get("type") ?? "").split(",").filter(Boolean))
+                state.topics = new Set((params.get("topic") ?? "").split(",").filter(Boolean))
+            }
+
+            function writeHash() {
+                const params = new URLSearchParams()
+                if (state.q) params.set("q", state.q)
+                if (state.types.size > 0) params.set("type", [...state.types].join(","))
+                if (state.topics.size > 0) params.set("topic", [...state.topics].join(","))
+                const hash = params.toString()
+                const url = hash ? `#${hash}` : location.pathname
+                history.replaceState(null, "", url)
+            }
+
+            function applyState() {
+                for (const chip of chips) {
+                    const axis = chip.dataset.axis
+                    const value = chip.dataset.value
+                    const set = axis === "type" ? state.types : state.topics
+                    chip.setAttribute("aria-pressed", set.has(value) ? "true" : "false")
+                }
+                searchInput.value = state.q
+
+                let allowed
+                if (state.q.trim().length > 0) {
+                    allowed = new Set(fuse.search(state.q).map((r) => r.item.id))
+                } else {
+                    allowed = null
+                }
+
+                let shown = 0
+                for (const w of wraps) {
+                    const id = w.dataset.id
+                    const type = w.dataset.type
+                    const topics = w.dataset.topics.split(",").filter(Boolean)
+
+                    const typeOk =
+                        state.types.size === 0 || state.types.has(type)
+                    const topicOk =
+                        state.topics.size === 0 ||
+                        [...state.topics].every((t) => topics.includes(t))
+                    const searchOk = allowed === null || allowed.has(id)
+
+                    const visible = typeOk && topicOk && searchOk
+                    w.hidden = !visible
+                    if (visible) shown++
+                }
+
+                const total = wraps.length
+                countEl.textContent =
+                    shown === total ? `${total} entries` : `${shown} of ${total} entries`
+            }
+
+            for (const chip of chips) {
+                chip.addEventListener("click", () => {
+                    const axis = chip.dataset.axis
+                    const value = chip.dataset.value
+                    const set = axis === "type" ? state.types : state.topics
+                    if (set.has(value)) set.delete(value)
+                    else set.add(value)
+                    writeHash()
+                    applyState()
+                })
+            }
+
+            searchInput.addEventListener("input", () => {
+                state.q = searchInput.value
+                writeHash()
+                applyState()
+            })
+
+            clearBtn.addEventListener("click", () => {
+                state.q = ""
+                state.types.clear()
+                state.topics.clear()
+                writeHash()
+                applyState()
+            })
+
+            window.addEventListener("hashchange", () => {
+                readHash()
+                applyState()
+            })
+
+            readHash()
+            applyState()
+
+            if (location.hash === "#search") searchInput.focus()
+        }
+    </script>
+</BaseLayout>
+
+<style>
+    .all {
+        max-width: var(--w-list);
+        margin: var(--s-4) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .all .label { margin-bottom: var(--s-1); }
+    #entries { margin-top: var(--s-3); }
+</style>
