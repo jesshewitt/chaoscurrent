@@ -1,0 +1,40 @@
+- id: carroll-liber-null
+  title: "Liber Null & Psychonaut"
+  url: "https://archive.org/details/LiberNullPsychonaut"
+  type: book
+  author: "Peter J. Carroll"
+  year: 1987
+  topics:
+    - theory
+    - sigils
+    - ritual
+  annotation: |
+    The founding primer for modern chaos magic technique.
+    Sigils, gnosis, the magical pact in one volume.
+  added: "2026-04-19"
+
+- id: hine-condensed-chaos
+  title: "Condensed Chaos"
+  url: "https://www.amazon.com/Condensed-Chaos-Introduction-Chaos-Magic/dp/1561841188"
+  type: book
+  author: "Phil Hine"
+  year: 1995
+  topics:
+    - theory
+    - ritual
+    - paradigm-shifting
+  annotation: |
+    An accessible introduction with exercises you can actually sit down and do.
+  added: "2026-04-19"
+
+- id: specularium
+  title: "Specularium"
+  url: "https://www.specularium.org/"
+  type: blog
+  author: "Peter J. Carroll"
+  topics:
+    - theory
+    - history
+  annotation: |
+    Carroll's own ongoing site, home of essays and announcements.
+  added: "2026-04-19"
