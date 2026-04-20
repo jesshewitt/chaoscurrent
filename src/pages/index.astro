@@ -1,12 +1,28 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro"
-import CategoryGrid from "@/components/CategoryGrid.astro"
+import TopicGrid from "@/components/TopicGrid.astro"
+import FormatChipRow from "@/components/FormatChipRow.astro"
 import Entry from "@/components/Entry.astro"
-import { getLinks, getRecent, countsByType } from "@/lib/links.js"
+import { getCollection } from "astro:content"
+import { getLinks, getRecent, countsByType, getByTopic } from "@/lib/links.js"
+import { FEATURED_TOPICS } from "@/lib/taxonomy.js"
 
 const all = await getLinks()
 const counts = countsByType(all)
 const recent = await getRecent(6)
+
+const topicCollection = await getCollection("topics")
+const topicsBySlug = new Map(topicCollection.map((t) => [t.data.slug, t.data]))
+
+const featuredTopicsWithCounts = await Promise.all(
+    FEATURED_TOPICS
+        .map((slug) => topicsBySlug.get(slug))
+        .filter(Boolean)
+        .map(async (t) => ({
+            ...t,
+            count: (await getByTopic(t.slug)).length
+        }))
+)
 ---
 <BaseLayout
     title="Chaos Current"
@@ -21,9 +37,18 @@ const recent = await getRecent(6)
             books, essays, blogs, podcasts, tools, communities, and archives,
             for people new to it and people already up to their elbows.
         </p>
+        <p class="intro-cta">
+            <a href="/intro/">New here? Start with the intro.</a>
+        </p>
     </section>
 
-    <CategoryGrid counts={counts} />
+    <TopicGrid topics={featuredTopicsWithCounts} />
+
+    <p class="browse-all-topics">
+        <a href="/topics/">Browse all topics →</a>
+    </p>
+
+    <FormatChipRow counts={counts} />
 
     {recent.length > 0 && (
         <section class="recent">
@@ -43,6 +68,29 @@ const recent = await getRecent(6)
     }
     .intro h1 { margin-top: 0; }
     .intro .lede { color: var(--ink); font-size: var(--fs-18); }
+    .intro-cta {
+        margin-top: var(--s-3);
+        font-size: var(--fs-18);
+    }
+    .intro-cta a {
+        color: var(--accent);
+        font-weight: 500;
+    }
+    .intro-cta a:hover { color: var(--accent-bright); }
+
+    .browse-all-topics {
+        max-width: var(--w-list);
+        margin: var(--s-2) auto 0;
+        padding: 0 var(--s-2);
+        text-align: right;
+        font-size: var(--fs-14);
+    }
+    .browse-all-topics a {
+        color: var(--ink-mute);
+    }
+    .browse-all-topics a:hover {
+        color: var(--accent);
+    }
 
     .recent {
         max-width: var(--w-list);
