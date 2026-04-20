@@ -1,0 +1,34 @@
+intro: |
+    Chaos magic is a results first approach to practice that treats belief
+    as a tool. This page is a short path in for people who are new. If you
+    want the full index, try Topics or All.
+
+sections:
+    - heading: "Foundations"
+      kind: entries
+      entries:
+          - ref: chapman-advanced-magick-for-beginners
+            note: "Often recommended as the single best first book. Counterintuitively titled; actually a primer."
+          - ref: hine-condensed-chaos
+            note: "Friendlier than Carroll, and an obvious next read or parallel read."
+          - ref: carroll-liber-null
+            note: "The foundational text. Denser. Read after the first two settle in."
+
+    - heading: "Ideas"
+      kind: topics
+      topics:
+          - theory
+          - sigils
+          - gnosis
+          - paradigms
+          - history
+
+    - heading: "Further"
+      kind: entries
+      entries:
+          - ref: carroll-liber-kaos
+            note: "Carroll's theoretical framework, for when the basics feel solid."
+          - ref: hine-prime-chaos
+            note: "Hine's practitioner's notebook. Ritual structures, evocation, group work."
+          - ref: frater-ud-practical-sigil-magic
+            note: "The deep dive on sigils. Methods, charging, firing, variations."
