@@ -249,3 +249,153 @@
     midwife the chaos current. Still the best introduction for the
     philosophically inclined.
   added: "2026-04-19"
+
+- id: lee-chaotopia
+  title: "Chaotopia"
+  url: "https://chaotopia.com/"
+  type: blog
+  author: "Dave Lee"
+  topics:
+    - theory
+    - ritual
+    - group-practice
+  annotation: |
+    Dave Lee's personal site. IOT practitioner and author of Chaotopia and
+    Bright From the Well. Essays, blog posts, course listings, and a long
+    record of group ritual work.
+  added: "2026-04-19"
+
+- id: wachter-site
+  title: "Aidan Wachter"
+  url: "https://www.aidanwachter.com/"
+  type: blog
+  author: "Aidan Wachter"
+  topics:
+    - ritual
+    - sigils
+    - servitors
+  annotation: |
+    Author of Six Ways and a frequent voice in the animist adjacent chaos
+    current. Newsletter, reading lists, and a store for his self published
+    books and talismans.
+  added: "2026-04-19"
+
+- id: rune-soup
+  title: "Rune Soup"
+  url: "https://runesoup.com/"
+  type: podcast
+  author: "Gordon White"
+  topics:
+    - theory
+    - ritual
+    - history
+  annotation: |
+    Gordon White's long running show. Conversations with practitioners,
+    academics, and outliers about magic, animism, and spirit work. Broad in
+    scope but rooted in chaos magic methodology.
+  added: "2026-04-19"
+
+- id: glitch-bottle
+  title: "Glitch Bottle"
+  url: "https://www.glitchbottle.com/"
+  type: podcast
+  author: "Alexander Eth"
+  topics:
+    - ritual
+    - history
+    - evocation
+  annotation: |
+    Alexander Eth's Western esoterica podcast. Chaos magicians appear as
+    regular guests alongside Solomonic ceremonialists, academics, and spirit
+    workers. Careful interviewing, long form episodes.
+  added: "2026-04-19"
+
+- id: ramsey-dukes-youtube
+  title: "Ramsey Dukes on YouTube"
+  url: "https://www.youtube.com/@RamseyDukes"
+  type: video
+  author: "Ramsey Dukes (Lionel Snell)"
+  topics:
+    - theory
+    - ethics
+    - postmodern
+  annotation: |
+    Lionel Snell's short video essays in the Ramsey Dukes voice. Meditations
+    on the philosophy of magic, many of them filmed outdoors in a field.
+    Quiet, dry, essential.
+  added: "2026-04-19"
+
+- id: sigil-engine
+  title: "Sigil Engine"
+  url: "https://www.sigilengine.com/"
+  type: tool
+  author: "Darragh Mason and David Tidman"
+  topics:
+    - sigils
+  annotation: |
+    Interactive sigil generator. Type a statement of intent and the page
+    converts your keystroke timing and letter frequencies against a Crowley
+    text into a unique glyph. Downloads as image and stencil.
+  added: "2026-04-19"
+
+- id: reddit-chaosmagick
+  title: "r/chaosmagick"
+  url: "https://www.reddit.com/r/chaosmagick/"
+  type: community
+  topics:
+    - theory
+    - sigils
+    - gnosis
+    - ritual
+  annotation: |
+    Reddit's main chaos magic subreddit. Highly uneven but the largest
+    general discussion venue online. Beginners asking first ritual questions,
+    long time practitioners trading techniques, debate about whether
+    something counts as chaos magic.
+  added: "2026-04-19"
+
+- id: chaos-matrix
+  title: "Chaos Matrix"
+  url: "http://www.chaosmatrix.org/"
+  type: archive
+  topics:
+    - theory
+    - sigils
+    - history
+    - ritual
+  annotation: |
+    The site this directory is a spiritual successor to. Dates from the early
+    web era. Hosts a large library of foundational essays by Carroll, Hine,
+    Frater U∴D∴, and others that are otherwise hard to find online. Served
+    over plain HTTP; browsers will flag it.
+  added: "2026-04-19"
+
+- id: biroco-kaos-archive
+  title: "KAOS Magazine Archive"
+  url: "https://www.biroco.com/kaos/"
+  type: archive
+  author: "Joel Biroco"
+  topics:
+    - history
+    - theory
+  annotation: |
+    Joel Biroco's occult magazine, published 1980s and early 2000s. The back
+    issues are archived on his site with a history of the KAOS-Babalon
+    current and the broader occult scene of that era.
+  added: "2026-04-19"
+
+- id: principia-discordia
+  title: "Principia Discordia"
+  url: "https://archive.org/details/PrincipiaDiscordia_201806"
+  type: adjacent
+  author: "Malaclypse the Younger and Lord Omar Khayyam Ravenhurst"
+  year: 1963
+  topics:
+    - postmodern
+    - theory
+    - history
+  annotation: |
+    The Discordian holy text, with contributions from Robert Anton Wilson and
+    Kerry Thornley. Not chaos magic proper but essential context. Most chaos
+    magicians have read it, many were radicalized by it.
+  added: "2026-04-19"
