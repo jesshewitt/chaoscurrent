@@ -1,0 +1,48 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import Entry from "@/components/Entry.astro"
+import { TYPES, TYPE_LABELS, TYPE_BLURBS, pluralOf, typeFor } from "@/lib/taxonomy.js"
+import { getByType, sortByTitle, sortByAdded } from "@/lib/links.js"
+
+export async function getStaticPaths() {
+    return TYPES.map((t) => ({ params: { type: pluralOf(t) } }))
+}
+
+const { type: plural } = Astro.params
+const singular = typeFor(plural)
+if (!singular) throw new Error(`Unknown type plural: ${plural}`)
+
+const raw = await getByType(singular)
+
+const SORT_BY_YEAR_DESC = new Set(["book", "essay", "archive"])
+const entries = SORT_BY_YEAR_DESC.has(singular) ? sortByAdded(raw) : sortByTitle(raw)
+
+const label = TYPE_LABELS[singular]
+const blurb = TYPE_BLURBS[singular]
+---
+<BaseLayout
+    title={`${label} :: Chaos Current`}
+    description={blurb}
+>
+    <section class="category">
+        <p class="label">Chaos Current / {label}</p>
+        <h1>{label}</h1>
+        <p class="category-blurb">{blurb}</p>
+        <p class="meta">{entries.length} {entries.length === 1 ? "entry" : "entries"}</p>
+
+        <div class="entries">
+            {entries.map((e) => <Entry entry={e} />)}
+        </div>
+    </section>
+</BaseLayout>
+
+<style>
+    .category {
+        max-width: var(--w-list);
+        margin: var(--s-4) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .category .label { margin-bottom: var(--s-1); }
+    .category-blurb { font-size: var(--fs-18); color: var(--ink); }
+    .entries { margin-top: var(--s-3); }
+</style>
