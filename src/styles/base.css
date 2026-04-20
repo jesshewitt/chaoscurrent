@@ -11,6 +11,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+body.nav-open {
+    overflow: hidden;
+}
+
 a {
     color: var(--accent);
     font-weight: 500;
