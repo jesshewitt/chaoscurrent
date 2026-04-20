@@ -1,0 +1,29 @@
+{
+    "name": "chaoscurrent",
+    "version": "0.1.0",
+    "private": true,
+    "type": "module",
+    "description": "Chaos Current: a curated directory of chaos magic resources.",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "check": "astro check",
+        "test": "vitest run",
+        "test:watch": "vitest",
+        "check-links": "node scripts/check-links.mjs",
+        "check-contrast": "node scripts/contrast-check.mjs",
+        "gen-og": "node scripts/gen-og.mjs"
+    },
+    "dependencies": {
+        "astro": "^5.0.0",
+        "zod": "^3.23.0",
+        "@fontsource/spectral": "^5.2.0",
+        "fuse.js": "^7.0.0",
+        "js-yaml": "^4.1.0"
+    },
+    "devDependencies": {
+        "sharp": "^0.33.5",
+        "vitest": "^2.1.0"
+    }
+}

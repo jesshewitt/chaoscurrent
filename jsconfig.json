@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "module": "esnext",
+        "target": "esnext",
+        "moduleResolution": "bundler",
+        "checkJs": false,
+        "paths": {
+            "@/*": ["src/*"]
+        }
+    },
+    "include": ["src/**/*", "scripts/**/*", "tests/**/*"],
+    "exclude": ["node_modules", "dist", ".astro"]
+}
