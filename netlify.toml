@@ -16,7 +16,7 @@
         X-Frame-Options = "DENY"
         X-Content-Type-Options = "nosniff"
         Referrer-Policy = "strict-origin-when-cross-origin"
-        Content-Security-Policy = "default-src 'self'; img-src 'self' https://web.archive.org data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self'; connect-src 'self'"
+        Content-Security-Policy = "default-src 'self'; img-src 'self' https://web.archive.org data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; script-src 'self' 'unsafe-inline'; connect-src 'self'"
 
 [[redirects]]
     from = "/feed/"
