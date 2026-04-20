@@ -9,7 +9,7 @@ sections:
           - ref: carroll-liber-null
             note: "The foundational chaos magic primer. Covers sigils, gnosis, the magical pact, and the practice of magical psychology."
 
-    - heading: "Ideas"
+    - heading: "Topics"
       kind: topics
       topics:
           - theory
