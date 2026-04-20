@@ -1,0 +1,101 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import TopicGrid from "@/components/TopicGrid.astro"
+import { getCollection } from "astro:content"
+import { getByTopic } from "@/lib/links.js"
+import { FEATURED_TOPICS } from "@/lib/taxonomy.js"
+
+const topicCollection = await getCollection("topics")
+const allTopics = topicCollection.map((t) => t.data)
+
+const topicsWithCounts = await Promise.all(
+    allTopics.map(async (t) => ({
+        ...t,
+        count: (await getByTopic(t.slug)).length
+    }))
+)
+
+const featured = FEATURED_TOPICS
+    .map((slug) => topicsWithCounts.find((t) => t.slug === slug))
+    .filter(Boolean)
+
+const other = topicsWithCounts
+    .filter((t) => !FEATURED_TOPICS.includes(t.slug))
+    .sort((a, b) => a.label.localeCompare(b.label))
+---
+<BaseLayout
+    title="Topics :: Chaos Current"
+    description="Browse chaos magic resources by subject."
+>
+    <section class="topics-page">
+        <p class="label">Chaos Current / Topics</p>
+        <h1>Topics</h1>
+        <p class="topics-intro">Browse by subject across every format.</p>
+
+        <TopicGrid topics={featured} />
+
+        {other.length > 0 && (
+            <section class="other-topics">
+                <h2 class="label">Other topics</h2>
+                <ul>
+                    {other.map((t) => (
+                        <li>
+                            <a href={`/topic/${t.slug}/`}>
+                                <span class="other-topic-label">{t.label}</span>
+                                <span class="other-topic-count meta">{t.count}</span>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+        )}
+    </section>
+</BaseLayout>
+
+<style>
+    .topics-page {
+        max-width: var(--w-list);
+        margin: var(--s-4) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .topics-intro {
+        font-size: var(--fs-18);
+        margin-bottom: var(--s-3);
+    }
+    .other-topics {
+        margin-top: var(--s-5);
+    }
+    .other-topics ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--s-1) var(--s-3);
+    }
+    .other-topics a {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 6px 0;
+        color: var(--ink);
+        border-bottom: 1px solid var(--rule);
+    }
+    .other-topics a:hover .other-topic-label {
+        color: var(--accent-bright);
+    }
+    .other-topic-label {
+        color: var(--accent);
+        font-weight: 500;
+    }
+    .other-topic-count {
+        font-size: var(--fs-12);
+        color: var(--ink-mute);
+    }
+
+    @media (max-width: 480px) {
+        .other-topics ul {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
