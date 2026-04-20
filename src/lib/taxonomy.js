@@ -23,15 +23,15 @@ export const TYPE_LABELS = {
 }
 
 export const TYPE_BLURBS = {
-    essay: "Writings on chaos magic worth reading.",
-    book: "Books. In print, out of print, classics, and newer arrivals.",
-    blog: "Active blogs.",
-    podcast: "Conversations about magic.",
-    video: "Lectures and video essays.",
-    tool: "Sigil generators, oracles, and other utilities.",
-    community: "Places to talk about magic with other magicians.",
-    archive: "Older and archival material still findable online.",
-    adjacent: "Currents next door: Discordianism, postmodern occultism, cousins."
+    essay: "Writings on chaos magic",
+    book: "In print, out of print, classics, newer arrivals",
+    blog: "Active blogs",
+    podcast: "Conversations about magic",
+    video: "Lectures and video essays",
+    tool: "Sigil generators, oracles, and other utilities",
+    community: "Places to talk about magic with other magicians",
+    archive: "Older and archival material still findable online",
+    adjacent: "Currents next door: Discordianism, postmodern occultism, cousins"
 }
 
 const PLURAL_TO_SINGULAR = {
