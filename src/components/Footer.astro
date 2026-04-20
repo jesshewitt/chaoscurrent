@@ -1,3 +1,32 @@
 ---
+import healthJson from "@/data/link-health.json"
+const lastRun = healthJson.lastRun ?? null
+const lastRunDate = lastRun ? new Date(lastRun).toISOString().slice(0, 10) : null
+const year = new Date().getFullYear()
 ---
-<footer></footer>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <p class="meta">
+            Chaos Current, {year}. Site code MIT. Annotations CC BY 4.0.
+        </p>
+        <p class="meta">
+            {lastRunDate ? `Link health last checked ${lastRunDate}.` : "Link health not yet checked."}
+        </p>
+        <p class="meta">
+            <a href="https://github.com/your-user/chaoscurrent">Source on GitHub</a>
+        </p>
+    </div>
+</footer>
+
+<style>
+    .site-footer {
+        margin-top: var(--s-6);
+        padding: var(--s-4) clamp(var(--s-2), 4vw, var(--s-4));
+        border-top: 1px solid var(--rule);
+    }
+    .footer-inner {
+        max-width: var(--w-list);
+        margin: 0 auto;
+    }
+    .footer-inner p { margin: 0 0 var(--s-1); }
+</style>
