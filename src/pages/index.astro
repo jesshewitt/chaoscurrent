@@ -1,13 +1,55 @@
 ---
-const title = "Chaos Current"
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import CategoryGrid from "@/components/CategoryGrid.astro"
+import Entry from "@/components/Entry.astro"
+import { getLinks, getRecent, countsByType } from "@/lib/links.js"
+
+const all = await getLinks()
+const counts = countsByType(all)
+const recent = await getRecent(6)
 ---
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>{title}</title>
-    </head>
-    <body>
-        <h1>{title}</h1>
-        <p>Scaffold is up.</p>
-    </body>
-</html>
+<BaseLayout
+    title="Chaos Current"
+    description="A curated directory of chaos magic resources for newcomers and practitioners."
+>
+    <section class="intro">
+        <p class="label">Chaos Current</p>
+        <h1>A directory of chaos magic, carefully kept.</h1>
+        <p class="lede">
+            Chaos magic is a results first approach to practice that treats
+            belief as a tool and takes its symbols from wherever they work.
+            This site is a curated index of books, essays, blogs, podcasts,
+            tools, communities, and archives for people new to the current
+            and people already working in it.
+        </p>
+    </section>
+
+    <CategoryGrid counts={counts} />
+
+    {recent.length > 0 && (
+        <section class="recent">
+            <h2 class="label">Recently added</h2>
+            <div class="recent-list">
+                {recent.map((e) => <Entry entry={e} />)}
+            </div>
+        </section>
+    )}
+</BaseLayout>
+
+<style>
+    .intro {
+        max-width: var(--w-read);
+        margin: var(--s-5) auto var(--s-4);
+        padding: 0 var(--s-2);
+    }
+    .intro .label { margin-bottom: var(--s-1); }
+    .intro h1 { margin-top: 0; }
+    .intro .lede { color: var(--ink); font-size: var(--fs-18); }
+
+    .recent {
+        max-width: var(--w-list);
+        margin: var(--s-6) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .recent .label { margin-bottom: var(--s-2); }
+</style>
