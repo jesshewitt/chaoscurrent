@@ -11,7 +11,7 @@ export default defineConfig({
     },
     compressHTML: true,
     prefetch: {
-        defaultStrategy: "viewport"
+        defaultStrategy: "load"
     },
     vite: {
         resolve: {
