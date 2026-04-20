@@ -24,17 +24,13 @@ const displayAnnotation = note ?? annotation
     </div>
     {byline && <p class="entry-byline meta">{byline}</p>}
     <p class="entry-annotation">{displayAnnotation}</p>
-    {topics.length > 0 && (
-        <ul class="entry-topics" aria-label="Topics">
-            {topics.map((t) => (
-                <li><a href={`/topic/${t}/`} class="topic-chip">{t}</a></li>
-            ))}
-        </ul>
-    )}
-    {people.length > 0 && (
-        <ul class="entry-people" aria-label="People">
+    {(topics.length > 0 || people.length > 0) && (
+        <ul class="entry-tags" aria-label="Tags">
             {people.map((slug) => (
                 <li><a href={`/person/${slug}/`} class="person-chip">{slug}</a></li>
+            ))}
+            {topics.map((t) => (
+                <li><a href={`/topic/${t}/`} class="topic-chip">{t}</a></li>
             ))}
         </ul>
     )}
@@ -75,7 +71,7 @@ const displayAnnotation = note ?? annotation
         margin: 0.2ch 0 0;
         color: var(--ink);
     }
-    .entry-topics {
+    .entry-tags {
         list-style: none;
         padding: 0;
         margin: var(--s-1) 0 0;
@@ -96,14 +92,6 @@ const displayAnnotation = note ?? annotation
         color: var(--bg);
         background: var(--gold);
         border-color: var(--gold);
-    }
-    .entry-people {
-        list-style: none;
-        padding: 0;
-        margin: var(--s-1) 0 0;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.4ch;
     }
     .person-chip {
         display: inline-block;
