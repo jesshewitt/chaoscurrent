@@ -100,7 +100,7 @@ body.nav-open {
 .mobile-nav nav {
     max-width: var(--w-list);
     margin: 0 auto;
-    padding: var(--s-3) clamp(var(--s-2), 4vw, var(--s-4));
+    padding: var(--s-2) clamp(var(--s-2), 4vw, var(--s-4));
 }
 .mobile-nav ul {
     list-style: none;
@@ -110,9 +110,9 @@ body.nav-open {
 .mobile-nav li + li { border-top: 1px solid var(--rule); }
 .mobile-nav a {
     display: block;
-    padding: var(--s-2) 0;
+    padding: 0.7rem 0;
     font-family: var(--font-ui);
-    font-size: var(--fs-18);
+    font-size: var(--fs-14);
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--ink);
