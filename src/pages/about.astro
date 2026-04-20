@@ -1,0 +1,66 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+
+const curatorEmail = "TBD@chaoscurrent.org"
+---
+<BaseLayout
+    title="About :: Chaos Current"
+    description="What Chaos Current is, how it is curated, and how to suggest a link."
+>
+    <article class="about">
+        <p class="label">Chaos Current / About</p>
+        <h1>About</h1>
+
+        <h2>What this site is</h2>
+        <p>
+            Chaos Current is a curated directory of resources on chaos magic.
+            It catalogs books, essays, blogs, podcasts, videos, tools,
+            communities, archives, and adjacent currents worth knowing about.
+        </p>
+
+        <h2>Curation</h2>
+        <p>
+            Every entry here has been visited. Annotations are written from the
+            actual material, not from memory. Entries are added through a manual
+            editorial pass rather than through open submissions.
+        </p>
+
+        <h2>Suggest a link</h2>
+        <p>
+            Email the curator at
+            <a href={`mailto:${curatorEmail}`}>{curatorEmail}</a>
+            with the URL, a short description, and why it is worth including.
+            Not every suggestion will land in the corpus. Out of scope material,
+            low signal posts, and commercial pitches are declined.
+        </p>
+
+        <h2>Dead links</h2>
+        <p>
+            When a link on this site no longer resolves, we rewrite it to the
+            matching Wayback Machine snapshot and show a Preserved badge. If
+            no snapshot exists, the entry stays visible but the link is
+            disabled and flagged for the next curation pass.
+        </p>
+
+        <h2>License</h2>
+        <p>
+            Site code is released under the MIT license. Annotations are
+            available under Creative Commons BY 4.0.
+        </p>
+
+        <h2>Colophon</h2>
+        <p>
+            Built with Astro. Typeset in Spectral. Hosted on Netlify. Source code
+            lives on GitHub. Link health runs weekly via GitHub Actions.
+        </p>
+    </article>
+</BaseLayout>
+
+<style>
+    .about {
+        max-width: var(--w-read);
+        margin: var(--s-4) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .about .label { margin-bottom: var(--s-1); }
+</style>

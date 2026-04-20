@@ -1,0 +1,22 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+---
+<BaseLayout title="Not found :: Chaos Current" description="Page not found.">
+    <section class="notfound">
+        <p class="label">404</p>
+        <h1>Nothing here.</h1>
+        <p>
+            That page is gone or never existed. Try the
+            <a href="/">home page</a> or browse
+            <a href="/all/">everything</a>.
+        </p>
+    </section>
+</BaseLayout>
+
+<style>
+    .notfound {
+        max-width: var(--w-read);
+        margin: var(--s-5) auto 0;
+        padding: 0 var(--s-2);
+    }
+</style>
