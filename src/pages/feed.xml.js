@@ -46,10 +46,11 @@ export async function GET() {
         .join("")
 
     const body = `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chaos Current</title>
     <link>${SITE}/</link>
+    <atom:link href="${SITE}/feed.xml" rel="self" type="application/rss+xml" />
     <description>Recently added entries in the Chaos Current directory.</description>
     <language>en</language>
     ${items}
