@@ -1,0 +1,121 @@
+- slug: peter-carroll
+  name: "Peter J. Carroll"
+  description: |
+    Co-founder of the Illuminates of Thanateros and author of Liber Null,
+    Liber Kaos, and later works. A central figure in the formulation of
+    modern chaos magic.
+
+- slug: phil-hine
+  name: "Phil Hine"
+  description: |
+    Author of Condensed Chaos and Prime Chaos. Known for accessible,
+    practical writing and an eclectic approach.
+
+- slug: austin-osman-spare
+  name: "Austin Osman Spare"
+  aliases:
+      - "Austin Spare"
+      - "A. O. Spare"
+  description: |
+    Early 20th century artist and occultist. Originator of sigil magic and
+    the death posture. A direct source for the chaos current.
+
+- slug: ramsey-dukes
+  name: "Ramsey Dukes"
+  aliases:
+      - "Lionel Snell"
+  description: |
+    Pen name of Lionel Snell. Author of SSOTBME and a long running commentator
+    on the philosophy of magic. Predates and helped midwife the chaos current.
+
+- slug: ray-sherwin
+  name: "Ray Sherwin"
+  description: |
+    Co-originator of chaos magic. Author of The Book of Results (1978), the
+    first published book on chaos magic, and The Theatre of Magick.
+
+- slug: frater-ud
+  name: "Frater U∴D∴"
+  description: |
+    German chaos magician and author of Practical Sigil Magic and High Magic.
+    Originated the widely used five-models framework in his essay Models of
+    Magick.
+
+- slug: alan-chapman
+  name: "Alan Chapman"
+  description: |
+    British chaos magician and author of Advanced Magick for Beginners, widely
+    recommended as a single volume starting point.
+
+- slug: andrieh-vitimus
+  name: "Andrieh Vitimus"
+  description: |
+    American practitioner and author of Hands-On Chaos Magic. Known for an
+    irreverent, exercise heavy, results oriented approach.
+
+- slug: aidan-wachter
+  name: "Aidan Wachter"
+  description: |
+    Author of Six Ways and other titles. Animism adjacent voice in the
+    contemporary chaos current.
+
+- slug: dave-lee
+  name: "Dave Lee"
+  description: |
+    IOT founding member and author of Chaotopia! and Bright From the Well.
+    Long record of ritual and breathwork practice.
+
+- slug: ivy-corvus
+  name: "Ivy Corvus"
+  description: |
+    Author of Pagan Portals: Chaos Magic (2026), a recent plainspoken primer.
+
+- slug: gordon-white
+  name: "Gordon White"
+  description: |
+    Host of the Rune Soup podcast and author of several books. Rooted in chaos
+    magic methodology, broad in subject matter with strong animist leanings.
+
+- slug: joel-biroco
+  name: "Joel Biroco"
+  description: |
+    Editor of KAOS magazine (1985 to 2002). A central figure in the 1980s
+    chaos current and the KAOS-Babalon 156 thread.
+
+- slug: robert-anton-wilson
+  name: "Robert Anton Wilson"
+  description: |
+    Author of Illuminatus! (with Robert Shea), Cosmic Trigger, and Prometheus
+    Rising. Wrote forewords for later editions of Principia Discordia. A
+    philosophical source for the chaos current through model agnosticism and
+    reality tunnels.
+
+- slug: malaclypse-the-younger
+  name: "Malaclypse the Younger"
+  aliases:
+      - "Greg Hill"
+  description: |
+    Pen name of Greg Hill, co-author of the Principia Discordia. Central
+    figure in Discordianism.
+
+- slug: kerry-thornley
+  name: "Kerry Thornley"
+  aliases:
+      - "Lord Omar Khayyam Ravenhurst"
+  description: |
+    Co-author of the Principia Discordia, writing as Lord Omar Khayyam
+    Ravenhurst.
+
+- slug: hakim-bey
+  name: "Hakim Bey"
+  aliases:
+      - "Peter Lamborn Wilson"
+  description: |
+    Pen name of Peter Lamborn Wilson. Author of T.A.Z., an influential
+    adjacent text from 1991.
+
+- slug: genesis-p-orridge
+  name: "Genesis P-Orridge"
+  description: |
+    Founder of Thee Temple ov Psychick Youth (TOPY) and of Throbbing Gristle.
+    Central figure in the intersection of magic and industrial culture.

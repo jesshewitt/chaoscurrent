@@ -13,6 +13,7 @@ const linkEntrySchema = z.object({
     author: z.string().min(1).optional(),
     year: z.number().int().min(1500).max(2100).optional(),
     topics: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
+    people: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
     annotation: z.string().min(1),
     added: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "added must be ISO date YYYY-MM-DD")
 })
@@ -20,6 +21,13 @@ const linkEntrySchema = z.object({
 const topicEntrySchema = z.object({
     slug: z.string().regex(/^[a-z0-9-]+$/),
     label: z.string().min(1),
+    description: z.string().min(1)
+})
+
+const personEntrySchema = z.object({
+    slug: z.string().regex(/^[a-z0-9-]+$/),
+    name: z.string().min(1),
+    aliases: z.array(z.string().min(1)).default([]),
     description: z.string().min(1)
 })
 
@@ -33,4 +41,9 @@ const topics = defineCollection({
     schema: topicEntrySchema
 })
 
-export const collections = { links, topics }
+const people = defineCollection({
+    loader: file("src/data/people.yaml"),
+    schema: personEntrySchema
+})
+
+export const collections = { links, topics, people }
