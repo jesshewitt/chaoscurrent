@@ -34,6 +34,15 @@ export const TYPE_BLURBS = {
     adjacent: "Currents next door: Discordianism, postmodern occultism, cousins"
 }
 
+export const FEATURED_TOPICS = [
+    "theory",
+    "history",
+    "sigils",
+    "gnosis",
+    "ritual",
+    "paradigms"
+]
+
 const PLURAL_TO_SINGULAR = {
     essays: "essay",
     books: "book",

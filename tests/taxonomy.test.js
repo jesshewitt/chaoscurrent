@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest"
-import { TYPES, TYPE_LABELS, isType, typeFor } from "@/lib/taxonomy.js"
+import { TYPES, TYPE_LABELS, isType, typeFor, FEATURED_TOPICS } from "@/lib/taxonomy.js"
 
 describe("taxonomy TYPES", () => {
     it("contains the nine canonical types in order", () => {
@@ -34,5 +34,22 @@ describe("taxonomy TYPES", () => {
         expect(typeFor("book")).toBe("book")
         expect(typeFor("books")).toBe("book")
         expect(typeFor("nonsense")).toBe(null)
+    })
+})
+
+describe("FEATURED_TOPICS", () => {
+    it("contains exactly six slugs", () => {
+        expect(FEATURED_TOPICS).toHaveLength(6)
+    })
+
+    it("lists the agreed featured slugs in order", () => {
+        expect(FEATURED_TOPICS).toEqual([
+            "theory",
+            "history",
+            "sigils",
+            "gnosis",
+            "ritual",
+            "paradigms"
+        ])
     })
 })
