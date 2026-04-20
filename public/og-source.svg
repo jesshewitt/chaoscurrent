@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+    <rect width="1200" height="630" fill="#0a0a0c"/>
+    <g transform="translate(600,280)" stroke="#c88a8a" stroke-width="3" stroke-linecap="round" fill="none">
+        <circle cx="0" cy="0" r="6" fill="#c88a8a"/>
+        <line x1="0" y1="-120" x2="0" y2="120"/>
+        <line x1="-120" y1="0" x2="120" y2="0"/>
+        <line x1="-85" y1="-85" x2="85" y2="85"/>
+        <line x1="85" y1="-85" x2="-85" y2="85"/>
+    </g>
+    <text x="600" y="500" text-anchor="middle"
+          font-family="Georgia, 'Iowan Old Style', serif"
+          font-size="56" fill="#f2ece0">Chaos Current</text>
+    <text x="600" y="560" text-anchor="middle"
+          font-family="Arial, sans-serif" font-size="22"
+          fill="#998e7a" letter-spacing="6">A DIRECTORY</text>
+</svg>

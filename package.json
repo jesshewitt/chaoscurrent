@@ -6,7 +6,7 @@
     "description": "Chaos Current: a curated directory of chaos magic resources.",
     "scripts": {
         "dev": "astro dev",
-        "build": "astro build",
+        "build": "node scripts/gen-og.mjs && astro build",
         "preview": "astro preview",
         "check": "astro check",
         "test": "vitest run",
