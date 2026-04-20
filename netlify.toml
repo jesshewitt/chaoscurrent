@@ -32,3 +32,8 @@
     from = "/adjacent/"
     to = "/topic/adjacent/"
     status = 301
+
+[[redirects]]
+    from = "/topic/postmodern/"
+    to = "/topics/"
+    status = 301
