@@ -9,6 +9,8 @@
     - sigils
     - ritual
     - gnosis
+  people:
+    - peter-carroll
   annotation: |
     The founding primer for modern chaos magic technique. Sigils, gnosis, the
     magical pact, the practice of magical psychology. The 2022 Weiser Classics
@@ -26,6 +28,8 @@
     - theory
     - ritual
     - paradigms
+  people:
+    - phil-hine
   annotation: |
     An accessible introduction with exercises you can sit down and do.
     Friendlier than Carroll, just as practical. The classic recommendation for
@@ -42,6 +46,8 @@
     - theory
     - ritual
     - paradigms
+  people:
+    - peter-carroll
   annotation: |
     Carroll's second major book and the more theoretical of the pair. Aeonics,
     magical mathematics, and a complete IOT flavored training course. Heavier
@@ -58,6 +64,8 @@
     - ritual
     - evocation
     - group-practice
+  people:
+    - phil-hine
   annotation: |
     Hine's companion to Condensed Chaos, published around the same time. Goes
     deeper on ritual structures, evocation, group work, and possession. Less
@@ -74,6 +82,8 @@
     - sigils
     - theory
     - history
+  people:
+    - ray-sherwin
   annotation: |
     The first published book on chaos magic, written and self published by Ray
     Sherwin alongside Carroll's earliest work. A short, sigil focused primer
@@ -88,6 +98,8 @@
   year: 2012
   topics:
     - sigils
+  people:
+    - frater-ud
   annotation: |
     The deepest practical guide to sigil work in print. Multiple methods,
     exhaustive coverage of construction, charging, and firing. If you only own
@@ -104,6 +116,8 @@
     - ritual
     - sigils
     - gnosis
+  people:
+    - andrieh-vitimus
   annotation: |
     Vitimus's irreverent, exercise heavy course. Modern, friendly, results
     oriented. A good companion or alternative to Hine for the same job.
@@ -120,6 +134,8 @@
     - sigils
     - servitors
     - evocation
+  people:
+    - aidan-wachter
   annotation: |
     Wachter's handbook drawing from chaos magic, animism, and folk practice.
     Sigils, servitors, candle work, talismans, and spirit ecology in plain
@@ -135,6 +151,12 @@
   topics:
     - theory
     - ritual
+  people:
+    - peter-carroll
+    - aidan-wachter
+    - dave-lee
+    - ivy-corvus
+    - ramsey-dukes
   annotation: |
     Thirteen essays from current chaos magic practitioners edited by Carroll,
     with a foreword by Ronald Hutton. Contributors include Aidan Wachter,
@@ -152,6 +174,8 @@
     - theory
     - sigils
     - ritual
+  people:
+    - ivy-corvus
   annotation: |
     A current beginner's guide. Short, plainspoken, practical, structured as
     theory then praxis. A recommended starting point for someone today who
@@ -168,6 +192,8 @@
     - theory
     - ethics
     - history
+  people:
+    - ramsey-dukes
   annotation: |
     Snell's deceptively gentle book arguing that magic is a fourth way of
     perceiving reality alongside science, art, and religion. Predates and
@@ -183,6 +209,8 @@
   topics:
     - theory
     - history
+  people:
+    - peter-carroll
   annotation: |
     Carroll's own ongoing site, home of essays and announcements.
   added: "2026-04-19"
@@ -196,6 +224,8 @@
   topics:
     - theory
     - paradigms
+  people:
+    - peter-carroll
   annotation: |
     A short, dense statement of chaos magic as practice. Carroll defines magic
     as the use of imaginary phenomena to create real effects and walks through
@@ -214,6 +244,8 @@
     - sigils
     - gnosis
     - history
+  people:
+    - austin-osman-spare
   annotation: |
     Spare's foundational treatise. The Sacred Alphabet, the Alphabet of
     Desire, the Death Posture, and the original sigil method, written in his
@@ -230,6 +262,8 @@
     - theory
     - ritual
     - group-practice
+  people:
+    - dave-lee
   annotation: |
     Dave Lee's personal site. IOT founding member and author of Chaotopia!.
     Links out to his Patreon and Teachable for essays and structured courses.
@@ -244,6 +278,8 @@
     - ritual
     - sigils
     - servitors
+  people:
+    - aidan-wachter
   annotation: |
     Wachter's author site. Information on his books (Six Ways, Weaving Fate,
     Changeable), plus links to his Patreon community and Discord server. The
@@ -259,6 +295,8 @@
     - theory
     - ritual
     - history
+  people:
+    - gordon-white
   annotation: |
     Gordon White's long running show. Conversations with practitioners,
     academics, and outliers about magic, animism, and spirit work. Broad in
@@ -290,6 +328,8 @@
     - theory
     - ethics
     - postmodern
+  people:
+    - ramsey-dukes
   annotation: |
     Lionel Snell's short video essays in the Ramsey Dukes voice. Meditations
     on the philosophy of magic, many of them filmed outdoors in a field.
@@ -349,6 +389,8 @@
   topics:
     - history
     - theory
+  people:
+    - joel-biroco
   annotation: |
     Biroco's underground occult magazine, founded in 1985, with the last
     issue (#14) in 2002. The archive preserves back issues and a record of
@@ -365,6 +407,10 @@
     - postmodern
     - theory
     - history
+  people:
+    - malaclypse-the-younger
+    - kerry-thornley
+    - robert-anton-wilson
   annotation: |
     The Discordian holy text by Greg Hill (Malaclypse the Younger) and Kerry
     Thornley (Lord Omar Khayyam Ravenhurst), with a foreword by Robert Anton
@@ -382,6 +428,8 @@
     - theory
     - paradigms
     - godforms
+  people:
+    - peter-carroll
   annotation: |
     Carroll and Kaybryn's chaos magic system from 2014, combining aeonic
     theory with a contemporary magical pantheon and ritual practice. Includes
@@ -499,6 +547,8 @@
     - history
     - ritual
     - sigils
+  people:
+    - genesis-p-orridge
   annotation: |
     Preserved materials from the Temple ov Psychick Youth, Genesis
     P-Orridge's late 20th century psychic magic network. Bulletins, sigil
@@ -530,6 +580,8 @@
     - postmodern
     - theory
     - history
+  people:
+    - hakim-bey
   annotation: |
     Hakim Bey's 1991 manifesto on ontological anarchism and fleeting zones
     of autonomy. Not magic, but adjacent. Near universal reading in the 90s
@@ -547,6 +599,8 @@
     - theory
     - ritual
     - paradigms
+  people:
+    - alan-chapman
   annotation: |
     Chapman's counterintuitively titled primer. Works as a single volume
     first book on chaos magic, structured around a small set of principles
