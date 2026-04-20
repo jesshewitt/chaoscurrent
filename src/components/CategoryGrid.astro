@@ -1,0 +1,47 @@
+---
+import { TYPES, TYPE_LABELS, TYPE_BLURBS, pluralOf } from "@/lib/taxonomy.js"
+const { counts = {} } = Astro.props
+---
+<section class="category-grid" aria-label="Browse by category">
+    {TYPES.map((t) => (
+        <a class="tile" href={`/${pluralOf(t)}/`}>
+            <span class="tile-label label">{TYPE_LABELS[t]}</span>
+            <span class="tile-blurb">{TYPE_BLURBS[t]}</span>
+            <span class="tile-count meta">{counts[t] ?? 0} entries</span>
+        </a>
+    ))}
+</section>
+
+<style>
+    .category-grid {
+        display: grid;
+        gap: var(--s-2);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        max-width: var(--w-list);
+        margin: 0 auto;
+    }
+    .tile {
+        display: flex;
+        flex-direction: column;
+        gap: var(--s-1);
+        padding: var(--s-2);
+        background: var(--bg-elev);
+        border: 1px solid var(--rule);
+        border-radius: 4px;
+        color: var(--ink);
+        transition: border-color 120ms ease-out;
+    }
+    .tile:hover {
+        border-color: var(--accent);
+    }
+    .tile-label { color: var(--ink-strong); }
+    .tile-blurb { flex: 1; font-size: var(--fs-14); }
+    .tile-count { margin: 0; }
+
+    @media (max-width: 720px) {
+        .category-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+        .category-grid { grid-template-columns: 1fr; }
+    }
+</style>
