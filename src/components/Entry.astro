@@ -1,0 +1,114 @@
+---
+const { entry } = Astro.props
+const { title, href, url, author, year, topics = [], annotation, isPreserved, isGone } = entry
+
+function formatByline(author, year) {
+    if (author && year) return `${author}, ${year}`
+    if (author) return author
+    if (year) return String(year)
+    return null
+}
+
+const byline = formatByline(author, year)
+---
+<article class="entry" id={entry.id}>
+    <div class="entry-head">
+        {isGone ? (
+            <span class="entry-title gone">{title}</span>
+        ) : (
+            <a class="entry-title" href={href} rel="noopener">{title}</a>
+        )}
+        {isPreserved && <span class="pill pill-gold">Preserved via Wayback</span>}
+        {isGone && <span class="pill pill-mute">No longer available</span>}
+    </div>
+    {byline && <p class="entry-byline meta">{byline}</p>}
+    <p class="entry-annotation">{annotation}</p>
+    {topics.length > 0 && (
+        <ul class="entry-topics" aria-label="Topics">
+            {topics.map((t) => (
+                <li><a href={`/topic/${t}/`} class="topic-chip">{t}</a></li>
+            ))}
+        </ul>
+    )}
+    {(isPreserved || isGone) && (
+        <p class="entry-original meta">
+            Original URL: <span class="original-url">{url}</span>
+        </p>
+    )}
+</article>
+
+<style>
+    .entry {
+        padding: var(--s-2) 0;
+        border-bottom: 1px solid var(--rule);
+    }
+    .entry:last-child { border-bottom: 0; }
+
+    .entry-head {
+        display: flex;
+        align-items: baseline;
+        gap: var(--s-1);
+        flex-wrap: wrap;
+    }
+    .entry-title {
+        font-family: var(--font-body);
+        font-size: var(--fs-18);
+        color: var(--accent);
+        font-weight: 500;
+    }
+    .entry-title.gone {
+        color: var(--ink-mute);
+        text-decoration: line-through;
+    }
+    .entry-byline {
+        margin: 2px 0 0.6ch;
+    }
+    .entry-annotation {
+        margin: 0.2ch 0 0;
+        color: var(--ink);
+    }
+    .entry-topics {
+        list-style: none;
+        padding: 0;
+        margin: var(--s-1) 0 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4ch;
+    }
+    .topic-chip {
+        display: inline-block;
+        padding: 2px 8px;
+        border: 1px solid var(--rule);
+        border-radius: 999px;
+        font-family: var(--font-ui);
+        font-size: var(--fs-12);
+        letter-spacing: 0.1em;
+        color: var(--ink-mute);
+    }
+    .topic-chip:hover {
+        color: var(--bg);
+        background: var(--gold);
+        border-color: var(--gold);
+    }
+    .pill {
+        display: inline-block;
+        padding: 2px 8px;
+        border-radius: 999px;
+        font-family: var(--font-ui);
+        font-size: 10px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    .pill-gold { background: var(--gold); color: var(--bg); }
+    .pill-mute { background: var(--accent-mute); color: var(--ink); }
+
+    .entry-original {
+        margin: 0.6ch 0 0;
+        font-size: var(--fs-12);
+    }
+    .original-url {
+        font-family: var(--font-mono);
+        color: var(--ink-mute);
+        word-break: break-all;
+    }
+</style>
