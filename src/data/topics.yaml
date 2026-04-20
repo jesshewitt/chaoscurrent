@@ -28,8 +28,8 @@
 - slug: godforms
   label: Godforms
   description: Working with deity forms across pantheons
-- slug: paradigm-shifting
-  label: Paradigm shifting
+- slug: paradigms
+  label: Paradigms
   description: The core chaos magic skill of adopting and discarding belief
 - slug: group-practice
   label: Group practice

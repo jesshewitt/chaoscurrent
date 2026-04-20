@@ -22,3 +22,8 @@
     from = "/feed/"
     to = "/feed.xml"
     status = 301
+
+[[redirects]]
+    from = "/topic/paradigm-shifting/"
+    to = "/topic/paradigms/"
+    status = 301
