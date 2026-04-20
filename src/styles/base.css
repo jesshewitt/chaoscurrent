@@ -15,11 +15,10 @@ body.nav-open {
     overflow: hidden;
 }
 
-/* Kill the default Astro ClientRouter fade so the swap is instant */
-::view-transition-old(root),
-::view-transition-new(root) {
-    animation: none;
-    mix-blend-mode: normal;
+/* Opt the root out of view transitions entirely so swaps are instant
+   instead of snapshotting and crossfading. */
+html {
+    view-transition-name: none;
 }
 
 /* Header layout */
