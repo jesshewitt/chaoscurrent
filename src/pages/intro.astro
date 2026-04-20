@@ -1,0 +1,111 @@
+---
+import { readFile } from "node:fs/promises"
+import path from "node:path"
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import Entry from "@/components/Entry.astro"
+import { getCollection } from "astro:content"
+import { parseIntroData, resolveIntroSections } from "@/lib/intro.js"
+import { getLinks } from "@/lib/links.js"
+
+const introYamlText = await readFile(
+    path.resolve(process.cwd(), "src/data/intro.yaml"),
+    "utf8"
+)
+const parsed = parseIntroData(introYamlText)
+
+const links = await getLinks()
+const sections = resolveIntroSections(parsed.sections, links)
+
+const topicCollection = await getCollection("topics")
+const topicMap = new Map(topicCollection.map((t) => [t.data.slug, t.data]))
+---
+<BaseLayout
+    title="Intro :: Chaos Current"
+    description="A short, curated entry point for people new to chaos magic."
+>
+    <section class="intro-page">
+        <p class="label">Chaos Current / Intro</p>
+        <h1>Intro</h1>
+
+        <p class="intro-lede">{parsed.intro}</p>
+
+        {sections.map((s) => (
+            <section class="intro-section">
+                <h2 class="label">{s.heading}</h2>
+                {s.kind === "entries" && (
+                    <div class="entries">
+                        {s.entries.map((e) => (
+                            <Entry entry={e.link} note={e.note} />
+                        ))}
+                    </div>
+                )}
+                {s.kind === "topics" && (
+                    <ul class="topic-chips" aria-label={`${s.heading} topics`}>
+                        {s.topics.map((slug) => {
+                            const topic = topicMap.get(slug)
+                            if (!topic) return null
+                            return (
+                                <li>
+                                    <a href={`/topic/${topic.slug}/`} class="topic-chip">
+                                        {topic.label}
+                                    </a>
+                                </li>
+                            )
+                        })}
+                    </ul>
+                )}
+            </section>
+        ))}
+
+        <p class="intro-footer meta">
+            Looking for everything? Try <a href="/all/">All</a> or browse
+            <a href="/topics/">Topics</a>. To suggest something, email
+            <a href="mailto:curator@chaoscurrent.org">curator@chaoscurrent.org</a>.
+        </p>
+    </section>
+</BaseLayout>
+
+<style>
+    .intro-page {
+        max-width: var(--w-list);
+        margin: var(--s-4) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .intro-lede {
+        max-width: var(--w-read);
+        font-size: var(--fs-18);
+    }
+    .intro-section {
+        margin-top: var(--s-5);
+    }
+    .topic-chips {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4ch;
+    }
+    .topic-chip {
+        display: inline-block;
+        padding: 4px 10px;
+        border: 1px solid var(--rule);
+        border-radius: 999px;
+        font-family: var(--font-ui);
+        font-size: var(--fs-12);
+        letter-spacing: 0.1em;
+        color: var(--ink-mute);
+    }
+    .topic-chip:hover {
+        color: var(--bg);
+        background: var(--gold);
+        border-color: var(--gold);
+    }
+    .entries {
+        margin-top: var(--s-2);
+    }
+    .intro-footer {
+        max-width: var(--w-read);
+        margin-top: var(--s-6);
+    }
+</style>
