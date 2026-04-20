@@ -169,6 +169,17 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 applyState()
             })
 
+            document.addEventListener("click", (e) => {
+                if (!filterDropdown.hasAttribute("open")) return
+                if (filterDropdown.contains(e.target)) return
+                filterDropdown.removeAttribute("open")
+            })
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape" && filterDropdown.hasAttribute("open")) {
+                    filterDropdown.removeAttribute("open")
+                }
+            })
+
             readHash()
             applyState()
 
