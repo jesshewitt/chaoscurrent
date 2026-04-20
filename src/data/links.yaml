@@ -1,6 +1,6 @@
 - id: carroll-liber-null
   title: "Liber Null & Psychonaut"
-  url: "https://archive.org/details/LiberNullPsychonaut"
+  url: "https://redwheelweiser.com/book/liber-null-psychonaut-9781578637669/"
   type: book
   author: "Peter J. Carroll"
   year: 1987
@@ -8,14 +8,17 @@
     - theory
     - sigils
     - ritual
+    - gnosis
   annotation: |
-    The founding primer for modern chaos magic technique.
-    Sigils, gnosis, the magical pact in one volume.
+    The founding primer for modern chaos magic technique. Sigils, gnosis, the
+    magical pact, the practice of magical psychology. The 2022 Weiser Classics
+    edition adds a Ronald Hutton foreword; the 1987 original is the historical
+    text.
   added: "2026-04-19"
 
 - id: hine-condensed-chaos
   title: "Condensed Chaos"
-  url: "https://www.amazon.com/Condensed-Chaos-Introduction-Chaos-Magic/dp/1561841188"
+  url: "https://www.originalfalcon.com/condensed-chaos.php"
   type: book
   author: "Phil Hine"
   year: 1995
@@ -24,7 +27,132 @@
     - ritual
     - paradigm-shifting
   annotation: |
-    An accessible introduction with exercises you can actually sit down and do.
+    An accessible introduction with exercises you can sit down and do.
+    Friendlier than Carroll, just as practical. The classic recommendation for
+    newcomers who want a single book to start with.
+  added: "2026-04-19"
+
+- id: carroll-liber-kaos
+  title: "Liber Kaos"
+  url: "https://redwheelweiser.com/book/liber-kaos-9781578638048/"
+  type: book
+  author: "Peter J. Carroll"
+  year: 1992
+  topics:
+    - theory
+    - ritual
+    - paradigm-shifting
+  annotation: |
+    Carroll's second major book and the more theoretical of the pair. Aeonics,
+    magical mathematics, and a complete IOT flavored training course. Heavier
+    going than Liber Null but rewards the effort.
+  added: "2026-04-19"
+
+- id: hine-prime-chaos
+  title: "Prime Chaos: Adventures in Chaos Magic"
+  url: "https://www.originalfalcon.com/prime-chaos-adventures-in-chaos-magic.php"
+  type: book
+  author: "Phil Hine"
+  year: 1999
+  topics:
+    - ritual
+    - evocation
+    - group-practice
+  annotation: |
+    Hine's follow up to Condensed Chaos. Goes deeper on ritual structures,
+    evocation, group work, and possession. Less primer, more practitioner's
+    notebook.
+  added: "2026-04-19"
+
+- id: sherwin-book-of-results
+  title: "The Book of Results"
+  url: "https://www.goodreads.com/book/show/1602373.The_Book_of_Results"
+  type: book
+  author: "Ray Sherwin"
+  year: 1978
+  topics:
+    - sigils
+    - theory
+    - history
+  annotation: |
+    The first published book on chaos magic, written and self published by Ray
+    Sherwin alongside Carroll's earliest work. A short, sigil focused primer
+    that codified Spare's method for the new current.
+  added: "2026-04-19"
+
+- id: frater-ud-practical-sigil-magic
+  title: "Practical Sigil Magic: Creating Personal Symbols for Success"
+  url: "https://www.llewellyn.com/product.php?ean=9780738731537"
+  type: book
+  author: "Frater U∴D∴"
+  year: 2012
+  topics:
+    - sigils
+  annotation: |
+    The deepest practical guide to sigil work in print. Multiple methods,
+    exhaustive coverage of construction, charging, and firing. If you only own
+    one book about sigils, own this.
+  added: "2026-04-19"
+
+- id: vitimus-hands-on-chaos-magic
+  title: "Hands-On Chaos Magic: Reality Manipulation through the Ovayki Current"
+  url: "https://www.llewellyn.com/product.php?ean=9780738715087"
+  type: book
+  author: "Andrieh Vitimus"
+  year: 2009
+  topics:
+    - ritual
+    - sigils
+    - gnosis
+  annotation: |
+    Vitimus's irreverent, exercise heavy course. Modern, friendly, results
+    oriented. A good companion or alternative to Hine for the same job.
+  added: "2026-04-19"
+
+- id: wachter-six-ways
+  title: "Six Ways: Approaches & Entries for Practical Magic"
+  url: "https://www.aidanwachter.com/six-ways"
+  type: book
+  author: "Aidan Wachter"
+  year: 2018
+  topics:
+    - ritual
+    - sigils
+    - servitors
+    - evocation
+  annotation: |
+    Wachter's handbook drawing from chaos magic, animism, and folk practice.
+    Sigils, servitors, candle work, talismans, and spirit ecology in plain
+    language. Self published and widely loved.
+  added: "2026-04-19"
+
+- id: carroll-this-is-chaos
+  title: "This Is Chaos: Embracing the Future of Magic"
+  url: "https://redwheelweiser.com/book/this-is-chaos-embracing-the-future-of-magic-9781578638734/"
+  type: book
+  author: "Peter J. Carroll (editor)"
+  year: 2025
+  topics:
+    - theory
+    - ritual
+  annotation: |
+    Thirteen essays from current chaos magic practitioners, edited by Carroll
+    with a foreword by Ronald Hutton. A snapshot of where the current is now:
+    animism, Thread Theory, egregores, sorcery in the 2020s.
+  added: "2026-04-19"
+
+- id: corvus-pagan-portals-chaos-magic
+  title: "Pagan Portals: Chaos Magic"
+  url: "https://www.collectiveinkbooks.com/moon-books/our-books/pagan-portals-chaos-magic"
+  type: book
+  author: "Ivy Corvus"
+  year: 2026
+  topics:
+    - theory
+  annotation: |
+    A current beginner's guide. Short, plainspoken, practical, structured as
+    theory then praxis. A recommended starting point for someone today who
+    wants the shortest path from "what is this" to "how do I try it."
   added: "2026-04-19"
 
 - id: specularium
