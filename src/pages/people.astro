@@ -1,0 +1,42 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro"
+import PersonGrid from "@/components/PersonGrid.astro"
+import { getCollection } from "astro:content"
+import { getByPerson } from "@/lib/links.js"
+
+const peopleCollection = await getCollection("people")
+const allPeople = peopleCollection.map((p) => p.data)
+
+const peopleWithCounts = await Promise.all(
+    allPeople.map(async (p) => ({
+        ...p,
+        count: (await getByPerson(p.slug)).length
+    }))
+)
+
+const sorted = peopleWithCounts.sort((a, b) => a.name.localeCompare(b.name))
+---
+<BaseLayout
+    title="People :: Chaos Current"
+    description="Authors, editors, podcasters, and others connected to the chaos magic tradition."
+>
+    <section class="people-page">
+        <p class="label section-label">Chaos Current / People</p>
+        <h1>People</h1>
+        <p class="people-intro">Authors, editors, podcasters, and others connected to the chaos magic tradition.</p>
+
+        <PersonGrid people={sorted} />
+    </section>
+</BaseLayout>
+
+<style>
+    .people-page {
+        max-width: var(--w-list);
+        margin: var(--s-4) auto 0;
+        padding: 0 var(--s-2);
+    }
+    .people-intro {
+        font-size: var(--fs-18);
+        margin-bottom: var(--s-3);
+    }
+</style>
