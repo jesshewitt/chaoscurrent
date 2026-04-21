@@ -1,6 +1,6 @@
 - id: carroll-liber-null
   title: "Liber Null & Psychonaut"
-  url: "https://redwheelweiser.com/book/liber-null-psychonaut-9781578637669/"
+  url: "https://archive.org/details/peter-j.-carroll-liber-null-and-psychonaut-the-practice-of-chaos-magic-revised-a"
   type: book
   author: "Peter J. Carroll"
   year: 1987
@@ -11,12 +11,11 @@
     - gnosis
   people:
     - peter-carroll
-  paid: true
   annotation: |
     The founding primer for modern chaos magic technique. Sigils, gnosis, the
-    magical pact, the practice of magical psychology. The 2022 Weiser Classics
-    edition adds a Ronald Hutton foreword; the 1987 original is the historical
-    text.
+    magical pact, the practice of magical psychology. The 2022 Weiser
+    Classics revised edition adds a Ronald Hutton foreword. Full text on the
+    Internet Archive.
   added: "2026-04-19"
 
 - id: hine-condensed-chaos
