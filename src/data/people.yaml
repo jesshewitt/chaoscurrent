@@ -77,6 +77,31 @@
     Author of Pagan Portals: Chaos Magic (Moon Books, 2026).
   website: "https://www.youtube.com/@IvyTheOccultist"
 
+- slug: jaq-hawkins
+  name: "Jaq D. Hawkins"
+  description: |
+    British chaos magician and author. Understanding Chaos Magic (1996) was
+    the first widely distributed book to write up the history and elements
+    of the current for a general audience. Later works include Chaos Witch
+    and The Chaonomicon.
+  website: "http://jaqdhawkins.co.uk"
+
+- slug: julian-vayne
+  name: "Julian Vayne"
+  description: |
+    British occultist and writer. Author of Getting Higher and co-author of
+    Chaos Craft with Steve Dee. Contributor to The Blog of Baphomet and
+    senior member of the Illuminates of Thanateros.
+  website: "https://julianvayne.com"
+
+- slug: steve-dee
+  name: "Steve Dee"
+  description: |
+    British chaos magician and Amookos initiate. Co-author of Chaos Craft
+    with Julian Vayne and author of A Brush with the Divine. Contributor to
+    The Blog of Baphomet.
+  website: "https://theblogofbaphomet.com"
+
 - slug: gordon-white
   name: "Gordon White"
   description: |
@@ -125,6 +150,25 @@
     Pen name of Peter Lamborn Wilson. Author of T.A.Z. (1991), a manifesto
     on ontological anarchism adjacent to the chaos magic scene.
   website: "https://en.wikipedia.org/wiki/Hakim_Bey"
+
+- slug: william-s-burroughs
+  name: "William S. Burroughs"
+  description: |
+    American writer. Co-developed the cut-up technique with Brion Gysin,
+    treating written language as material that can be rearranged to surface
+    hidden associations. A direct technical influence on chaos magic sigil
+    practice and on the industrial and comics currents through Genesis
+    P-Orridge and Grant Morrison.
+  website: "https://en.wikipedia.org/wiki/William_S._Burroughs"
+
+- slug: aleister-crowley
+  name: "Aleister Crowley"
+  description: |
+    English occultist, founder of Thelema, and author of The Book of the
+    Law, Magick in Theory and Practice, Liber 777, and many other works.
+    An upstream influence on chaos magic through his systematic treatment
+    of ceremonial magic and the reception of his work by later currents.
+  website: "https://en.wikipedia.org/wiki/Aleister_Crowley"
 
 - slug: genesis-p-orridge
   name: "Genesis P-Orridge"

@@ -656,3 +656,95 @@
     directly on chaos magic. Morrison has described writing the series as
     itself a magical working.
   added: "2026-04-20"
+
+- id: hawkins-defining-chaos
+  title: "Defining Chaos"
+  url: "http://jaqdhawkins.co.uk/DefChaos.html"
+  type: essay
+  author: "Jaq D. Hawkins"
+  topics:
+    - theory
+    - paradigms
+  people:
+    - jaq-hawkins
+  annotation: |
+    A short essay framing chaos not as disorder but as the creative
+    principle behind magical action. Draws on dictionary definitions, a
+    quotation from Stephen Mace on the physics of sorcery, and Hawkins's
+    own reading of the current.
+  added: "2026-04-21"
+
+- id: blog-of-baphomet
+  title: "The Blog of Baphomet"
+  url: "https://theblogofbaphomet.com"
+  type: blog
+  author: "Julian Vayne, Steve Dee, Nikki Wyrd"
+  topics:
+    - theory
+    - ritual
+    - paradigms
+  people:
+    - julian-vayne
+    - steve-dee
+  annotation: |
+    A group chaos magic blog by Julian Vayne, Steve Dee, and Nikki Wyrd.
+    Mixes field reports, technique pieces, and reflections on magical
+    culture and practice in the contemporary British chaos scene.
+  added: "2026-04-21"
+
+- id: crowley-magick-in-theory-and-practice
+  title: "Magick in Theory and Practice"
+  url: "https://archive.org/details/aleister-crowley-magick-in-theory-and-practice"
+  type: book
+  author: "Aleister Crowley"
+  year: 1929
+  topics:
+    - ritual
+    - evocation
+    - theory
+  people:
+    - aleister-crowley
+  annotation: |
+    Part III of Magick (Liber ABA). Covers ritual technique in depth:
+    banishings, invocations, the construction and use of magical
+    instruments, the Mass of the Phoenix, and Crowley's theory of magical
+    energy. An upstream reference for anyone working with structured
+    ritual. Full text on the Internet Archive.
+  added: "2026-04-21"
+
+- id: crowley-liber-777
+  title: "Liber 777"
+  url: "https://archive.org/details/aleister-crowley-liber-777"
+  type: book
+  author: "Aleister Crowley"
+  year: 1909
+  topics:
+    - theory
+  people:
+    - aleister-crowley
+  annotation: |
+    A system of correspondences mapping the Tree of Life to colors, herbs,
+    gods, perfumes, and many other categories. Compiled and annotated by
+    Crowley from Golden Dawn source material and Allan Bennett's earlier
+    tables. Widely used as a reference by practitioners across traditions.
+    Full text on the Internet Archive.
+  added: "2026-04-21"
+
+- id: burroughs-cut-up-method
+  title: "The Cut-Up Method of Brion Gysin"
+  url: "https://www.ubu.com/papers/burroughs_gysin.html"
+  type: essay
+  author: "William S. Burroughs"
+  year: 1961
+  topics:
+    - sigils
+    - music-and-art
+  people:
+    - william-s-burroughs
+  annotation: |
+    Burroughs's short essay on the cut-up technique he developed with
+    Brion Gysin in 1959: take written text, cut it apart, rearrange the
+    pieces. A direct technical influence on chaos magic sigil practice
+    and on the later work of Genesis P-Orridge and Grant Morrison.
+    Hosted by UbuWeb.
+  added: "2026-04-21"
