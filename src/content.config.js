@@ -29,7 +29,8 @@ const personEntrySchema = z.object({
     slug: z.string().regex(/^[a-z0-9-]+$/),
     name: z.string().min(1),
     aliases: z.array(z.string().min(1)).default([]),
-    description: z.string().min(1)
+    description: z.string().min(1),
+    website: z.string().url().optional()
 })
 
 const links = defineCollection({

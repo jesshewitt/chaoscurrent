@@ -4,12 +4,14 @@
     Co-originator of modern chaos magic alongside Ray Sherwin. Co-founder of
     the Illuminates of Thanateros. Author of Liber Null, Liber Kaos, and
     later works.
+  website: "https://specularium.org"
 
 - slug: phil-hine
   name: "Phil Hine"
   description: |
     Author of Condensed Chaos and Prime Chaos. Writes across chaos magic
     theory, ritual, and group work.
+  website: "https://enfolding.org"
 
 - slug: austin-osman-spare
   name: "Austin Osman Spare"
@@ -19,6 +21,7 @@
   description: |
     Early 20th century artist and occultist. Originator of sigil magic and
     the death posture. A direct source for the chaos current.
+  website: "https://en.wikipedia.org/wiki/Austin_Osman_Spare"
 
 - slug: ramsey-dukes
   name: "Ramsey Dukes"
@@ -28,6 +31,7 @@
     Pen name of Lionel Snell. Author of SSOTBME (1974) and other writings on
     the philosophy of magic. SSOTBME predates the chaos magic movement and
     influenced its early development.
+  website: "https://ramseydukes.co.uk"
 
 - slug: ray-sherwin
   name: "Ray Sherwin"
@@ -40,6 +44,7 @@
   description: |
     German chaos magician and author of Practical Sigil Magic and High Magic.
     Originated the five-models framework in his essay Models of Magick.
+  website: "https://en.wikipedia.org/wiki/Ralph_Tegtmeier"
 
 - slug: alan-chapman
   name: "Alan Chapman"
@@ -50,35 +55,41 @@
   name: "Andrieh Vitimus"
   description: |
     American practitioner and author of Hands-On Chaos Magic.
+  website: "https://andriehvitimus.com"
 
 - slug: aidan-wachter
   name: "Aidan Wachter"
   description: |
     Author of Six Ways, Weaving Fate, and Changeable. Work draws on chaos
     magic, animism, and folk practice.
+  website: "https://aidanwachter.com"
 
 - slug: dave-lee
   name: "Dave Lee"
   description: |
     IOT founding member and author of Chaotopia! and Bright From the Well.
     Long record of ritual and breathwork practice.
+  website: "https://chaotopia.com"
 
 - slug: ivy-corvus
   name: "Ivy Corvus"
   description: |
     Author of Pagan Portals: Chaos Magic (Moon Books, 2026).
+  website: "https://www.youtube.com/@IvyTheOccultist"
 
 - slug: gordon-white
   name: "Gordon White"
   description: |
     Host of the Rune Soup podcast and author of several books. Topics span
     chaos magic, animism, and spirit work.
+  website: "https://runesoup.com"
 
 - slug: joel-biroco
   name: "Joel Biroco"
   description: |
     Editor of KAOS magazine (1985 to 2002). Associated with the
     KAOS-Babalon 156 current.
+  website: "https://biroco.com"
 
 - slug: robert-anton-wilson
   name: "Robert Anton Wilson"
@@ -87,6 +98,7 @@
     Rising. Wrote forewords for later editions of Principia Discordia. A
     philosophical source for the chaos current through model agnosticism and
     reality tunnels.
+  website: "https://rawilson.com"
 
 - slug: malaclypse-the-younger
   name: "Malaclypse the Younger"
@@ -95,6 +107,7 @@
   description: |
     Pen name of Greg Hill, co-author of the Principia Discordia. Central
     figure in Discordianism.
+  website: "https://en.wikipedia.org/wiki/Malaclypse_the_Younger"
 
 - slug: kerry-thornley
   name: "Kerry Thornley"
@@ -103,6 +116,7 @@
   description: |
     Co-author of the Principia Discordia, writing as Lord Omar Khayyam
     Ravenhurst.
+  website: "https://en.wikipedia.org/wiki/Kerry_Thornley"
 
 - slug: hakim-bey
   name: "Hakim Bey"
@@ -111,12 +125,14 @@
   description: |
     Pen name of Peter Lamborn Wilson. Author of T.A.Z. (1991), a manifesto
     on ontological anarchism adjacent to the chaos magic scene.
+  website: "https://en.wikipedia.org/wiki/Hakim_Bey"
 
 - slug: genesis-p-orridge
   name: "Genesis P-Orridge"
   description: |
     Founder of Thee Temple ov Psychick Youth (TOPY) and of Throbbing Gristle.
     Central figure in the intersection of magic and industrial culture.
+  website: "https://genesisporridge.com"
 
 - slug: grant-morrison
   name: "Grant Morrison"
@@ -124,3 +140,4 @@
     Scottish comics writer. Author of The Invisibles and the essay Pop
     Magic!, among many other works. Draws on chaos magic in creative output
     and public writing.
+  website: "https://grantmorrison.com"
