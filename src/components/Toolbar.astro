@@ -130,8 +130,10 @@ const { topics = [] } = Astro.props
         display: none;
         position: absolute;
         top: calc(100% + 6px);
+        left: 0;
         right: 0;
-        width: min(32rem, calc(100vw - var(--s-4)));
+        max-width: 32rem;
+        margin-left: auto;
         background: var(--bg-elev);
         border: 1px solid var(--rule);
         border-radius: 4px;
