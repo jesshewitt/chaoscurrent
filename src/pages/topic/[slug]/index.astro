@@ -20,7 +20,7 @@ const entries = sortByTitle(await getByTopic(topic.slug))
     description={topic.description}
 >
     <section class="topic">
-        <p class="label">Chaos Current / Topic</p>
+        <p class="label section-label">Chaos Current / Topic</p>
         <h1>{topic.label}</h1>
         <p class="topic-blurb">{topic.description}</p>
         <p class="meta">{entries.length} {entries.length === 1 ? "entry" : "entries"} tagged {topic.slug}.</p>

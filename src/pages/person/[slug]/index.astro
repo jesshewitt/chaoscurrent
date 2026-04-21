@@ -20,7 +20,7 @@ const entries = sortByTitle(await getByPerson(person.slug))
     description={person.description}
 >
     <section class="person">
-        <p class="label">Chaos Current / Person</p>
+        <p class="label section-label">Chaos Current / Person</p>
         <h1>{person.name}</h1>
         <p class="person-bio">{person.description}</p>
         <p class="meta">{entries.length} {entries.length === 1 ? "entry" : "entries"}</p>
