@@ -1,6 +1,6 @@
 ---
 const { entry, note } = Astro.props
-const { title, href, url, author, year, topics = [], people = [], peopleResolved = [], annotation, isPreserved, isGone } = entry
+const { title, href, url, author, year, topics = [], people = [], peopleResolved = [], paid, annotation, isPreserved, isGone } = entry
 const displayPeople = peopleResolved.length > 0
     ? peopleResolved
     : people.map((slug) => ({ slug, name: slug }))
@@ -24,6 +24,7 @@ const displayAnnotation = note ?? annotation
         )}
         {isPreserved && <span class="pill pill-gold">Preserved via Wayback</span>}
         {isGone && <span class="pill pill-mute">No longer available</span>}
+        {paid && <span class="pill pill-neutral">Paid</span>}
     </div>
     {byline && <p class="entry-byline meta">{byline}</p>}
     <p class="entry-annotation">{displayAnnotation}</p>
@@ -121,6 +122,11 @@ const displayAnnotation = note ?? annotation
     }
     .pill-gold { background: var(--gold); color: var(--bg); }
     .pill-mute { background: var(--accent-mute); color: var(--ink); }
+    .pill-neutral {
+        background: transparent;
+        border: 1px solid var(--rule);
+        color: var(--ink-mute);
+    }
 
     .entry-original {
         margin: 0.6ch 0 0;

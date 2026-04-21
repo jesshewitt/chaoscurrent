@@ -11,6 +11,7 @@
     - gnosis
   people:
     - peter-carroll
+  paid: true
   annotation: |
     The founding primer for modern chaos magic technique. Sigils, gnosis, the
     magical pact, the practice of magical psychology. The 2022 Weiser Classics
@@ -30,6 +31,7 @@
     - paradigms
   people:
     - phil-hine
+  paid: true
   annotation: |
     An introduction to chaos magic covering sigils, gnosis, banishing, and
     basic ritual, built around practical exercises. Plain language, short
@@ -48,6 +50,7 @@
     - paradigms
   people:
     - peter-carroll
+  paid: true
   annotation: |
     Carroll's second major book. Covers aeonic theory, magical mathematics,
     and the Illuminates of Thanateros training system in detail.
@@ -65,6 +68,7 @@
     - group-practice
   people:
     - phil-hine
+  paid: true
   annotation: |
     Hine's companion to Condensed Chaos, published around the same time.
     Covers ritual structures, evocation, group work, and possession in
@@ -83,6 +87,7 @@
     - history
   people:
     - ray-sherwin
+  paid: true
   annotation: |
     The first published book on chaos magic, written and self published by Ray
     Sherwin alongside Carroll's earliest work. A short, sigil focused primer
@@ -99,6 +104,7 @@
     - sigils
   people:
     - frater-ud
+  paid: true
   annotation: |
     A practical guide to sigil work covering multiple methods, construction,
     charging, and firing. Includes exercises and variations.
@@ -116,6 +122,7 @@
     - gnosis
   people:
     - andrieh-vitimus
+  paid: true
   annotation: |
     An exercise-heavy course built around the Ovayki current, structured
     around repeated practice rather than theory.
@@ -134,6 +141,7 @@
     - evocation
   people:
     - aidan-wachter
+  paid: true
   annotation: |
     A handbook drawing from chaos magic, animism, and folk practice. Covers
     sigils, servitors, candle work, talismans, and spirit ecology.
@@ -155,6 +163,7 @@
     - dave-lee
     - ivy-corvus
     - ramsey-dukes
+  paid: true
   annotation: |
     Thirteen essays by current chaos magic practitioners, edited by Carroll,
     with a foreword by Ronald Hutton. Contributors include Aidan Wachter,
@@ -174,6 +183,7 @@
     - ritual
   people:
     - ivy-corvus
+  paid: true
   annotation: |
     A short beginner's guide in the Pagan Portals series, structured in two
     halves: theory and praxis. Covers basic chaos magic concepts and
@@ -623,6 +633,7 @@
     - ritual
   people:
     - grant-morrison
+  paid: true
   annotation: |
     Morrison's comic series, published 1994 to 2000 by Vertigo. A
     conspiracy-occult epic whose plotting, characters, and sigil work draw

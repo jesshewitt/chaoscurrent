@@ -14,6 +14,7 @@ const linkEntrySchema = z.object({
     year: z.number().int().min(1500).max(2100).optional(),
     topics: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
     people: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
+    paid: z.boolean().default(false),
     annotation: z.string().min(1),
     added: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "added must be ISO date YYYY-MM-DD")
 })
