@@ -34,11 +34,14 @@ const featuredTopicsWithCounts = await Promise.all(
         <p class="lede">
             Chaos magic is a contemporary magical practice that treats belief
             as a tool and is eclectic in its techniques. This site is a
-            curated index of books, essays, blogs, podcasts, videos, tools,
+            collection of books, essays, blogs, podcasts, videos, tools,
             communities, and archives.
         </p>
         <p class="intro-cta">
             If you're new to chaos magic, the <a href="/intro/">intro</a> is a place to start.
+        </p>
+        <p class="suggest-cta">
+            Suggestions welcome at <a href="mailto:chaos@chaoscurrent.org">chaos@chaoscurrent.org</a>.
         </p>
     </section>
 
@@ -78,6 +81,13 @@ const featuredTopicsWithCounts = await Promise.all(
         font-weight: 500;
     }
     .intro-cta a:hover { color: var(--accent-bright); }
+
+    .suggest-cta {
+        max-width: var(--w-read);
+        margin-top: var(--s-2);
+        font-size: var(--fs-14);
+        color: var(--ink-mute);
+    }
 
     .browse-all-topics {
         max-width: var(--w-list);

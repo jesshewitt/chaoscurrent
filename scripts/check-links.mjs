@@ -7,7 +7,7 @@ const LINKS_FILE = "src/data/links.yaml"
 const HEALTH_FILE = "src/data/link-health.json"
 const WAYBACK_AVAILABLE = "https://archive.org/wayback/available"
 const USER_AGENT =
-    "ChaosCurrentHealthCheck/0.1 (+https://chaoscurrent.org; contact: curator@chaoscurrent.org)"
+    "ChaosCurrentHealthCheck/0.1 (+https://chaoscurrent.org; contact: chaos@chaoscurrent.org)"
 const TIMEOUT_MS = 10_000
 const CONCURRENCY = 8
 const JITTER_MS = 250

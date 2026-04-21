@@ -42,3 +42,8 @@
     from = "/topic/music-and-culture/"
     to = "/topic/music-and-art/"
     status = 301
+
+[[redirects]]
+    from = "/about/"
+    to = "/"
+    status = 301
