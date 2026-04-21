@@ -1,6 +1,9 @@
 ---
 const { entry, note } = Astro.props
-const { title, href, url, author, year, topics = [], people = [], annotation, isPreserved, isGone } = entry
+const { title, href, url, author, year, topics = [], people = [], peopleResolved = [], annotation, isPreserved, isGone } = entry
+const displayPeople = peopleResolved.length > 0
+    ? peopleResolved
+    : people.map((slug) => ({ slug, name: slug }))
 
 function formatByline(author, year) {
     if (author && year) return `${author}, ${year}`
@@ -24,10 +27,10 @@ const displayAnnotation = note ?? annotation
     </div>
     {byline && <p class="entry-byline meta">{byline}</p>}
     <p class="entry-annotation">{displayAnnotation}</p>
-    {(topics.length > 0 || people.length > 0) && (
+    {(topics.length > 0 || displayPeople.length > 0) && (
         <ul class="entry-tags" aria-label="Tags">
-            {people.map((slug) => (
-                <li><a href={`/person/${slug}/`} class="person-chip">{slug}</a></li>
+            {displayPeople.map((p) => (
+                <li><a href={`/person/${p.slug}/`} class="person-chip">{p.name}</a></li>
             ))}
             {topics.map((t) => (
                 <li><a href={`/topic/${t}/`} class="topic-chip">{t}</a></li>

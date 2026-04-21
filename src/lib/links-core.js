@@ -35,3 +35,13 @@ export function countsByType(entries) {
     for (const e of entries) counts[e.type] = (counts[e.type] ?? 0) + 1
     return counts
 }
+
+export function resolvePeople(entries, peopleMap) {
+    return entries.map((e) => ({
+        ...e,
+        peopleResolved: (e.people ?? []).map((slug) => ({
+            slug,
+            name: peopleMap.get(slug)?.name ?? slug
+        }))
+    }))
+}
