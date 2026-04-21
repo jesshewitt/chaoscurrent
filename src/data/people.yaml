@@ -1,15 +1,15 @@
 - slug: peter-carroll
   name: "Peter J. Carroll"
   description: |
-    Co-founder of the Illuminates of Thanateros and author of Liber Null,
-    Liber Kaos, and later works. A central figure in the formulation of
-    modern chaos magic.
+    Co-originator of modern chaos magic alongside Ray Sherwin. Co-founder of
+    the Illuminates of Thanateros. Author of Liber Null, Liber Kaos, and
+    later works.
 
 - slug: phil-hine
   name: "Phil Hine"
   description: |
-    Author of Condensed Chaos and Prime Chaos. Known for accessible,
-    practical writing and an eclectic approach.
+    Author of Condensed Chaos and Prime Chaos. Writes across chaos magic
+    theory, ritual, and group work.
 
 - slug: austin-osman-spare
   name: "Austin Osman Spare"
@@ -25,8 +25,9 @@
   aliases:
       - "Lionel Snell"
   description: |
-    Pen name of Lionel Snell. Author of SSOTBME and a long running commentator
-    on the philosophy of magic. Predates and helped midwife the chaos current.
+    Pen name of Lionel Snell. Author of SSOTBME (1974) and other writings on
+    the philosophy of magic. SSOTBME predates the chaos magic movement and
+    influenced its early development.
 
 - slug: ray-sherwin
   name: "Ray Sherwin"
@@ -38,26 +39,23 @@
   name: "Frater U∴D∴"
   description: |
     German chaos magician and author of Practical Sigil Magic and High Magic.
-    Originated the widely used five-models framework in his essay Models of
-    Magick.
+    Originated the five-models framework in his essay Models of Magick.
 
 - slug: alan-chapman
   name: "Alan Chapman"
   description: |
-    British chaos magician and author of Advanced Magick for Beginners, widely
-    recommended as a single volume starting point.
+    British chaos magician and author of Advanced Magick for Beginners.
 
 - slug: andrieh-vitimus
   name: "Andrieh Vitimus"
   description: |
-    American practitioner and author of Hands-On Chaos Magic. Known for an
-    irreverent, exercise heavy, results oriented approach.
+    American practitioner and author of Hands-On Chaos Magic.
 
 - slug: aidan-wachter
   name: "Aidan Wachter"
   description: |
-    Author of Six Ways and other titles. Animism adjacent voice in the
-    contemporary chaos current.
+    Author of Six Ways, Weaving Fate, and Changeable. Work draws on chaos
+    magic, animism, and folk practice.
 
 - slug: dave-lee
   name: "Dave Lee"
@@ -68,19 +66,19 @@
 - slug: ivy-corvus
   name: "Ivy Corvus"
   description: |
-    Author of Pagan Portals: Chaos Magic (2026), a recent plainspoken primer.
+    Author of Pagan Portals: Chaos Magic (Moon Books, 2026).
 
 - slug: gordon-white
   name: "Gordon White"
   description: |
-    Host of the Rune Soup podcast and author of several books. Rooted in chaos
-    magic methodology, broad in subject matter with strong animist leanings.
+    Host of the Rune Soup podcast and author of several books. Topics span
+    chaos magic, animism, and spirit work.
 
 - slug: joel-biroco
   name: "Joel Biroco"
   description: |
-    Editor of KAOS magazine (1985 to 2002). A central figure in the 1980s
-    chaos current and the KAOS-Babalon 156 thread.
+    Editor of KAOS magazine (1985 to 2002). Associated with the
+    KAOS-Babalon 156 current.
 
 - slug: robert-anton-wilson
   name: "Robert Anton Wilson"
@@ -111,8 +109,8 @@
   aliases:
       - "Peter Lamborn Wilson"
   description: |
-    Pen name of Peter Lamborn Wilson. Author of T.A.Z., an influential
-    adjacent text from 1991.
+    Pen name of Peter Lamborn Wilson. Author of T.A.Z. (1991), a manifesto
+    on ontological anarchism adjacent to the chaos magic scene.
 
 - slug: genesis-p-orridge
   name: "Genesis P-Orridge"
