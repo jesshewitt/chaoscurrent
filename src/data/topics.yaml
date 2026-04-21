@@ -37,9 +37,9 @@
 - slug: ethics
   label: Ethics
   description: Responsibility, consequence, and the boundaries of practice
-- slug: music-and-culture
-  label: Music and culture
-  description: Chaos magic in music, art, and popular culture
+- slug: music-and-art
+  label: Music and art
+  description: Chaos magic in music, visual art, comics, film, and other creative practice
 - slug: adjacent
   label: Adjacent
   description: "Currents next door: Discordianism, postmodern occultism, and other traditions that influenced or surround chaos magic"

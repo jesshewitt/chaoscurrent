@@ -37,3 +37,8 @@
     from = "/topic/postmodern/"
     to = "/topics/"
     status = 301
+
+[[redirects]]
+    from = "/topic/music-and-culture/"
+    to = "/topic/music-and-art/"
+    status = 301
