@@ -45,11 +45,10 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
     </section>
 
     <script>
-        import Fuse from "fuse.js"
-
         const root = document.querySelector("[data-filter-root]")
         if (root) {
             const searchInput = root.querySelector("#filter-search")
+            const clearSearchBtn = root.querySelector("#clear-search")
             const checkboxes = [...root.querySelectorAll("input[type=checkbox][data-axis]")]
             const filterToggle = root.querySelector("#filter-toggle")
             const filterPanel = root.querySelector("#filter-panel")
@@ -61,8 +60,14 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
             const emptyClear = document.getElementById("empty-clear")
 
             const raw = document.getElementById("search-data").textContent
-            const { docs, options } = JSON.parse(raw)
-            const fuse = new Fuse(docs, options)
+            const { docs } = JSON.parse(raw)
+            const searchIndex = docs.map((d) => ({
+                id: d.id,
+                haystack: [d.title, d.author, d.annotation, (d.topics ?? []).join(" ")]
+                    .filter(Boolean)
+                    .join(" ")
+                    .toLowerCase()
+            }))
 
             const state = {
                 q: "",
@@ -102,11 +107,18 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 filterBadge.textContent = totalActive > 0 ? totalActive : ""
 
                 let allowed
-                if (state.q.trim().length > 0) {
-                    allowed = new Set(fuse.search(state.q).map((r) => r.item.id))
+                const q = state.q.trim().toLowerCase()
+                if (q.length > 0) {
+                    allowed = new Set(
+                        searchIndex
+                            .filter((d) => d.haystack.includes(q))
+                            .map((d) => d.id)
+                    )
                 } else {
                     allowed = null
                 }
+
+                clearSearchBtn.hidden = state.q.length === 0
 
                 let shown = 0
                 for (const w of wraps) {
@@ -152,6 +164,14 @@ const searchData = JSON.stringify({ docs, options: FUSE_OPTIONS })
                 state.q = searchInput.value
                 writeHash()
                 applyState()
+            })
+
+            clearSearchBtn.addEventListener("click", () => {
+                state.q = ""
+                searchInput.value = ""
+                writeHash()
+                applyState()
+                searchInput.focus()
             })
 
             function clearAll() {

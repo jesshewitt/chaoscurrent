@@ -13,6 +13,18 @@ const { topics = [] } = Astro.props
         />
         <button
             type="button"
+            id="clear-search"
+            class="clear-search"
+            aria-label="Clear search"
+            hidden
+        >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="6" y1="6" x2="18" y2="18" />
+                <line x1="18" y1="6" x2="6" y2="18" />
+            </svg>
+        </button>
+        <button
+            type="button"
             id="filter-toggle"
             class="filter-toggle"
             aria-label="Toggle filters"
@@ -74,7 +86,7 @@ const { topics = [] } = Astro.props
     }
     #filter-search {
         width: 100%;
-        padding: 10px 48px 10px 12px;
+        padding: 10px 80px 10px 12px;
         background: var(--bg-elev);
         border: 1px solid var(--rule);
         color: var(--ink);
@@ -83,6 +95,32 @@ const { topics = [] } = Astro.props
         font-size: var(--fs-16);
         box-sizing: border-box;
     }
+    #filter-search::-webkit-search-cancel-button,
+    #filter-search::-webkit-search-decoration {
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .clear-search {
+        position: absolute;
+        top: 50%;
+        right: 44px;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 26px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: 0;
+        color: var(--ink-mute);
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 0;
+        z-index: 2;
+    }
+    .clear-search:hover { color: var(--accent); }
+    .clear-search[hidden] { display: none; }
 
     .filter-toggle {
         position: absolute;
