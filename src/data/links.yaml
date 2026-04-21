@@ -20,7 +20,7 @@
 
 - id: hine-condensed-chaos
   title: "Condensed Chaos"
-  url: "https://www.originalfalcon.com/condensed-chaos.php"
+  url: "https://archive.org/details/condensed-chaos-phil-hine"
   type: book
   author: "Phil Hine"
   year: 1995
@@ -30,16 +30,15 @@
     - paradigms
   people:
     - phil-hine
-  paid: true
   annotation: |
     An introduction to chaos magic covering sigils, gnosis, banishing, and
     basic ritual, built around practical exercises. Plain language, short
-    chapters.
+    chapters. Full text on the Internet Archive.
   added: "2026-04-19"
 
 - id: carroll-liber-kaos
   title: "Liber Kaos"
-  url: "https://redwheelweiser.com/book/liber-kaos-9781578638048/"
+  url: "https://archive.org/details/peter-j.-carroll-liber-kaos"
   type: book
   author: "Peter J. Carroll"
   year: 1992
@@ -49,15 +48,15 @@
     - paradigms
   people:
     - peter-carroll
-  paid: true
   annotation: |
     Carroll's second major book. Covers aeonic theory, magical mathematics,
-    and the Illuminates of Thanateros training system in detail.
+    and the Illuminates of Thanateros training system in detail. Full text
+    on the Internet Archive.
   added: "2026-04-19"
 
 - id: hine-prime-chaos
   title: "Prime Chaos: Adventures in Chaos Magic"
-  url: "https://www.originalfalcon.com/prime-chaos-adventures-in-chaos-magic.php"
+  url: "https://archive.org/details/prime-chaos-adventures-in-chaos-magic-phil-hine-grant-morrison"
   type: book
   author: "Phil Hine"
   year: 1993
@@ -67,11 +66,11 @@
     - group-practice
   people:
     - phil-hine
-  paid: true
   annotation: |
     Hine's companion to Condensed Chaos, published around the same time.
     Covers ritual structures, evocation, group work, and possession in
-    greater depth. Foreword by Grant Morrison.
+    greater depth. Foreword by Grant Morrison. Full text on the Internet
+    Archive.
   added: "2026-04-19"
 
 - id: sherwin-book-of-results
@@ -108,6 +107,24 @@
     A practical guide to sigil work covering multiple methods, construction,
     charging, and firing. Includes exercises and variations.
   added: "2026-04-19"
+
+- id: frater-ud-models-of-magick
+  title: "Models of Magick"
+  url: "https://sacred-texts.com/bos/bos065.htm"
+  type: essay
+  author: "Frater U∴D∴"
+  year: 1991
+  topics:
+    - theory
+    - paradigms
+  people:
+    - frater-ud
+  annotation: |
+    The essay that introduced the five-models framework for understanding
+    magical practice: spirit, energy, psychological, and information
+    models, plus a meta-model that treats them as interchangeable tools.
+    Short, widely referenced, and free to read online.
+  added: "2026-04-21"
 
 - id: vitimus-hands-on-chaos-magic
   title: "Hands-On Chaos Magic: Reality Manipulation through the Ovayki Current"
