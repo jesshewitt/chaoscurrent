@@ -630,6 +630,7 @@
     - sigils
     - music-and-art
     - technology
+    - egregores
   people:
     - grant-morrison
   annotation: |
@@ -704,6 +705,7 @@
   topics:
     - ritual
     - evocation
+    - godforms
     - theory
   people:
     - aleister-crowley
@@ -723,6 +725,7 @@
   year: 1909
   topics:
     - theory
+    - godforms
   people:
     - aleister-crowley
   annotation: |
@@ -850,4 +853,52 @@
     Erik Davis's active Substack. Ongoing dispatches on consciousness,
     technology, culture, and weird California at his own pace. Free
     posts alongside subscriber-only material.
+  added: "2026-04-22"
+
+- id: corporate-egregore
+  title: "The Corporate Egregore"
+  url: "https://hermetic.com/key23/the-corporate-egregore"
+  type: essay
+  author: "lvx23"
+  year: 2004
+  topics:
+    - egregores
+    - theory
+    - ethics
+  annotation: |
+    Reads the modern corporation as an intentional egregoric entity that
+    persists across physical, data, and aetheric space. Originally
+    published on Key23 Occulture; archived on the Hermetic Library.
+  added: "2026-04-22"
+
+- id: szul-occult-aspects-of-ai
+  title: "The Occult Aspects of Artificial Intelligence"
+  url: "https://hermetic.com/key23/the-occult-aspects-of-artificial-intelligence"
+  type: essay
+  author: "Michael Szul"
+  year: 2008
+  topics:
+    - egregores
+    - technology
+    - theory
+  annotation: |
+    Frames artificial intelligence as an emergent egregore built by the
+    sustained magical attention of computer-occult practitioners.
+    Originally published in Konton magazine; archived on the Hermetic
+    Library.
+  added: "2026-04-22"
+
+- id: dukes-egregores-video
+  title: "Egregores (video)"
+  url: "https://www.youtube.com/watch?v=7mfgd_kQKrk"
+  type: video
+  author: "Ramsey Dukes"
+  topics:
+    - egregores
+    - theory
+  people:
+    - ramsey-dukes
+  annotation: |
+    Short video essay in which Ramsey Dukes (Lionel Snell) walks through
+    what egregores are and how to think about them.
   added: "2026-04-22"
