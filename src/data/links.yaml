@@ -1020,3 +1020,92 @@
     paradigm-shifting practice. Retitled Info-Psychology in the 1987
     revision. Full text on the Internet Archive.
   added: "2026-04-22"
+
+- id: spare-anathema-of-zos
+  title: "The Anathema of Zos"
+  url: "https://hermetic.com/spare/anathema"
+  type: book
+  author: "Austin Osman Spare"
+  year: 1927
+  topics:
+    - sigils
+    - theory
+    - gnosis
+  people:
+    - austin-osman-spare
+  annotation: |
+    Spare's incantatory sermon addressed to his alter ego Zos,
+    attacking conventional belief and articulating a private magical
+    philosophy. Short, dense, and rhetorically intense. Full text on
+    the Hermetic Library.
+  added: "2026-04-22"
+
+- id: spare-focus-of-life
+  title: "The Focus of Life"
+  url: "https://hermetic.com/spare/focus_life"
+  type: book
+  author: "Austin Osman Spare"
+  year: 1921
+  topics:
+    - theory
+    - gnosis
+    - sigils
+  people:
+    - austin-osman-spare
+  annotation: |
+    Book-length philosophical and magical meditation, illustrated by
+    Spare and framed as the commentary of his alter ego Zos vel Thanatos.
+    Full text on the Hermetic Library.
+  added: "2026-04-22"
+
+- id: spare-automatic-drawing
+  title: "Automatic Drawing"
+  url: "https://hermetic.com/spare/auto_drawing"
+  type: essay
+  author: "Austin Osman Spare, Frederick Carter"
+  year: 1916
+  topics:
+    - sigils
+    - music-and-art
+    - theory
+  people:
+    - austin-osman-spare
+  annotation: |
+    Early essay on automatic drawing as a magical and artistic method,
+    co-written with Frederick Carter. Describes a subconscious
+    technique of mark-making that became the technical basis for
+    Spare's later sigil work. Full text on the Hermetic Library.
+  added: "2026-04-22"
+
+- id: hawkins-testing-limitations
+  title: "Testing Limitations"
+  url: "http://jaqdhawkins.co.uk/TLimit.html"
+  type: essay
+  author: "Jaq D. Hawkins"
+  topics:
+    - ethics
+    - theory
+  people:
+    - jaq-hawkins
+  annotation: |
+    Short essay considering magical healing and the question of when
+    intervention is appropriate. Contrasts Wiccan healing-oriented
+    practice with a chaos-magic view on the ethics and limits of
+    acting on another person's situation.
+  added: "2026-04-22"
+
+- id: hawkins-progression-sigils
+  title: "Progression Sigils"
+  url: "http://jaqdhawkins.co.uk/prog1.html"
+  type: essay
+  author: "Jaq D. Hawkins"
+  topics:
+    - sigils
+  people:
+    - jaq-hawkins
+  annotation: |
+    Two-part technique essay on progression sigils: using multiple
+    sigils to represent sequential or multi-step intent. Originally
+    published in Chaos International. Linked page is Part 1; Part 2
+    continues from there.
+  added: "2026-04-22"
