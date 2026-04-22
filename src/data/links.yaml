@@ -46,6 +46,7 @@
     - theory
     - ritual
     - beliefs
+    - technology
   people:
     - peter-carroll
   annotation: |
@@ -628,6 +629,7 @@
     - theory
     - sigils
     - music-and-art
+    - technology
   people:
     - grant-morrison
   annotation: |
@@ -683,6 +685,7 @@
     - theory
     - ritual
     - beliefs
+    - technology
   people:
     - julian-vayne
     - steve-dee
@@ -739,6 +742,7 @@
   topics:
     - sigils
     - music-and-art
+    - technology
   people:
     - william-s-burroughs
   annotation: |
@@ -811,3 +815,39 @@
     magical practice, sigils, and the writing of The Invisibles as a
     magical working. Archived on the Internet Archive.
   added: "2026-04-21"
+
+- id: davis-techgnosis-seed-crystal
+  title: "Techgnosis: Seed-Crystal"
+  url: "https://techgnosis.com/techgnosis-seed-crystal/"
+  type: essay
+  author: "Erik Davis"
+  year: 1994
+  topics:
+    - theory
+    - technology
+    - history
+  people:
+    - erik-davis
+  annotation: |
+    The long-form essay that seeded Davis's 1998 book TechGnosis.
+    Excerpted in Flame Wars (Duke University Press, 1994). Traces the
+    mystical and magical undercurrents running through information
+    technology, from medieval memory arts to cyberspace.
+  added: "2026-04-22"
+
+- id: davis-burning-shore
+  title: "Burning Shore"
+  url: "https://burningshore.com"
+  type: blog
+  author: "Erik Davis"
+  topics:
+    - technology
+    - theory
+    - adjacent
+  people:
+    - erik-davis
+  annotation: |
+    Erik Davis's active Substack. Ongoing dispatches on consciousness,
+    technology, culture, and weird California at his own pace. Free
+    posts alongside subscriber-only material.
+  added: "2026-04-22"
