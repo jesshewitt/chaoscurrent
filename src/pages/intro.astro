@@ -33,6 +33,11 @@ const topicMap = new Map(topicCollection.map((t) => [t.data.slug, t.data]))
             view the full catalog at <a href="/all/">All</a>.
         </p>
 
+        <p class="intro-note">
+            "Magic" and "magick" refer to the same practice and can be used
+            interchangeably. Spelling varies by author.
+        </p>
+
         {sections.map((s) => (
             <section class="intro-section">
                 <h2 class="label">{s.heading}</h2>
@@ -73,6 +78,12 @@ const topicMap = new Map(topicCollection.map((t) => [t.data.slug, t.data]))
     .intro-lede {
         max-width: var(--w-read);
         font-size: var(--fs-18);
+    }
+    .intro-note {
+        max-width: var(--w-read);
+        font-size: var(--fs-14);
+        color: var(--ink-mute);
+        margin-top: var(--s-2);
     }
     .intro-section {
         margin-top: var(--s-5);
