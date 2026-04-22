@@ -48,7 +48,7 @@ describe("FEATURED_TOPICS", () => {
             "sigils",
             "gnosis",
             "ritual",
-            "paradigms"
+            "beliefs"
         ])
     })
 })

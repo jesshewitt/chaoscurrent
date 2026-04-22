@@ -37,7 +37,7 @@ export const FEATURED_TOPICS = [
     "sigils",
     "gnosis",
     "ritual",
-    "paradigms"
+    "beliefs"
 ]
 
 const PLURAL_TO_SINGULAR = {

@@ -1,6 +1,6 @@
 - slug: theory
   label: Theory
-  description: Foundational ideas, belief, paradigm shifting, metaphysics
+  description: Foundational ideas and metaphysics of practice
 - slug: history
   label: History
   description: The origins of chaos magic and key practitioners
@@ -28,9 +28,9 @@
 - slug: godforms
   label: Godforms
   description: Working with deity forms across pantheons
-- slug: paradigms
-  label: Paradigms
-  description: The core chaos magic skill of adopting and discarding belief
+- slug: beliefs
+  label: Beliefs
+  description: Working with belief as a tool, paradigm shifting
 - slug: group-practice
   label: Group practice
   description: Orders, working groups, and collective rites

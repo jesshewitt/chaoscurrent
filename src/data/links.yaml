@@ -27,7 +27,7 @@
   topics:
     - theory
     - ritual
-    - paradigms
+    - beliefs
   people:
     - phil-hine
   annotation: |
@@ -45,7 +45,7 @@
   topics:
     - theory
     - ritual
-    - paradigms
+    - beliefs
   people:
     - peter-carroll
   annotation: |
@@ -116,7 +116,7 @@
   year: 1991
   topics:
     - theory
-    - paradigms
+    - beliefs
   people:
     - frater-ud
   annotation: |
@@ -246,7 +246,7 @@
   year: 2014
   topics:
     - theory
-    - paradigms
+    - beliefs
   people:
     - peter-carroll
   annotation: |
@@ -443,7 +443,7 @@
   year: 2014
   topics:
     - theory
-    - paradigms
+    - beliefs
     - godforms
   people:
     - peter-carroll
@@ -609,7 +609,7 @@
   topics:
     - theory
     - ritual
-    - paradigms
+    - beliefs
   people:
     - alan-chapman
   annotation: |
@@ -664,7 +664,7 @@
   author: "Jaq D. Hawkins"
   topics:
     - theory
-    - paradigms
+    - beliefs
   people:
     - jaq-hawkins
   annotation: |
@@ -682,7 +682,7 @@
   topics:
     - theory
     - ritual
-    - paradigms
+    - beliefs
   people:
     - julian-vayne
     - steve-dee
@@ -783,7 +783,7 @@
   topics:
     - theory
     - history
-    - paradigms
+    - beliefs
   people:
     - grant-morrison
     - robert-anton-wilson
