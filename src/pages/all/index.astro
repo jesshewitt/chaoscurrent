@@ -2,11 +2,11 @@
 import BaseLayout from "@/layouts/BaseLayout.astro"
 import Toolbar from "@/components/Toolbar.astro"
 import Entry from "@/components/Entry.astro"
-import { getLinks } from "@/lib/links.js"
+import { getLinks, sortByAdded } from "@/lib/links.js"
 import { buildSearchDocuments, FUSE_OPTIONS } from "@/lib/search-index.js"
 import { getCollection } from "astro:content"
 
-const entries = await getLinks()
+const entries = sortByAdded(await getLinks())
 const docs = buildSearchDocuments(entries)
 const topicCollection = await getCollection("topics")
 const topics = topicCollection.map((t) => t.data)
