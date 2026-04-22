@@ -13,7 +13,7 @@
     - peter-carroll
   annotation: |
     The founding primer for modern chaos magic technique. Sigils, gnosis, the
-    magical pact, the practice of magical psychology. The 2022 Weiser
+    magical pact, the practice of magical psychology. This 2022 Weiser
     Classics revised edition adds a Ronald Hutton foreword. Full text on the
     Internet Archive.
   added: "2026-04-19"
@@ -190,7 +190,7 @@
   added: "2026-04-19"
 
 - id: corvus-pagan-portals-chaos-magic
-  title: "Pagan Portals: Chaos Magic"
+  title: "Pagan Portals - Chaos Magic"
   url: "https://www.collectiveinkbooks.com/moon-books/our-books/pagan-portals-chaos-magic"
   type: book
   author: "Ivy Corvus"
@@ -213,7 +213,7 @@
   url: "https://www.shiftingedges.com/ssotbme.pdf"
   type: book
   author: "Ramsey Dukes (Lionel Snell)"
-  year: 1974
+  year: 2000
   topics:
     - theory
     - ethics
@@ -277,7 +277,7 @@
   added: "2026-04-19"
 
 - id: lee-chaotopia
-  title: "Chaotopia"
+  title: "Chaotopia!"
   url: "https://chaotopia.com/"
   type: blog
   author: "Dave Lee"
@@ -293,7 +293,7 @@
   added: "2026-04-19"
 
 - id: wachter-site
-  title: "Aidan Wachter"
+  title: "Aidan Wachter - Animism & Magic"
   url: "https://www.aidanwachter.com/"
   type: blog
   author: "Aidan Wachter"
@@ -327,7 +327,7 @@
   added: "2026-04-19"
 
 - id: glitch-bottle
-  title: "Glitch Bottle"
+  title: "GLITCH BOTTLE"
   url: "https://www.glitchbottle.com/"
   type: podcast
   author: "Alexander Eth"
@@ -442,7 +442,7 @@
   url: "https://specularium.org/peter-j-carroll/the-epoch"
   type: essay
   author: "Peter J. Carroll and Matt Kaybryn"
-  year: 2014
+  year: 2025
   topics:
     - theory
     - beliefs
@@ -450,10 +450,10 @@
   people:
     - peter-carroll
   annotation: |
-    Carroll and Kaybryn's chaos magic system from 2014, combining aeonic
-    theory with a contemporary magical pantheon and ritual practice. Includes
-    a 54 card Altar Icon Deck. A 2025 Mandrake of Oxford edition is the
-    current print.
+    Carroll and Kaybryn's chaos magic system, combining aeonic theory
+    with a contemporary magical pantheon and ritual practice. Includes
+    a 54 card Altar Icon Deck. Originally published 2014; significantly
+    revised 2025 by Mandrake of Oxford, which is the current print.
   added: "2026-04-19"
 
 - id: chaos-magick-news
@@ -513,7 +513,7 @@
   added: "2026-04-19"
 
 - id: trinary-toolkit
-  title: "Trinary Toolkit"
+  title: "Trinary Sigil Generator"
   url: "https://www.chaostarot.com/app/"
   type: tool
   topics:
@@ -758,7 +758,7 @@
   added: "2026-04-21"
 
 - id: language-is-a-virus-cut-up
-  title: "Cut-up Machine"
+  title: "The Cut-Up Machine"
   url: "https://www.languageisavirus.com/cutupmachine.html"
   type: tool
   topics:
@@ -784,7 +784,7 @@
   added: "2026-04-21"
 
 - id: morrison-disinfo-con-2000
-  title: "Disinfo.Con 2000"
+  title: "Disinfo.Con"
   url: "https://archive.org/details/youtube-0jIvlD0w1yA"
   type: video
   year: 2000
@@ -891,7 +891,7 @@
   added: "2026-04-22"
 
 - id: dukes-egregores-video
-  title: "Egregores (video)"
+  title: "Egregores"
   url: "https://www.youtube.com/watch?v=7mfgd_kQKrk"
   type: video
   author: "Ramsey Dukes"
@@ -1020,7 +1020,7 @@
   added: "2026-04-22"
 
 - id: spare-anathema-of-zos
-  title: "The Anathema of Zos"
+  title: "Anathema of Zos: The Sermon to the Hypocrites"
   url: "https://hermetic.com/spare/anathema"
   type: book
   author: "Austin Osman Spare"
