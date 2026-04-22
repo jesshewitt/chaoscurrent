@@ -137,6 +137,7 @@
     - ritual
     - sigils
     - gnosis
+    - servitors
   people:
     - andrieh-vitimus
   paid: true
@@ -939,4 +940,23 @@
     Post framing Baphomet as a synthesized godform for contemporary
     practice: a deliberately built deity constructed as a counter to
     what the writer calls the Mundane Spell of consumer reality.
+  added: "2026-04-22"
+
+- id: hine-aspects-of-evocation
+  title: "Aspects of Evocation"
+  url: "https://archive.org/details/phil-hine-aspects-of-evocation"
+  type: essay
+  author: "Phil Hine"
+  year: 1995
+  topics:
+    - evocation
+    - servitors
+    - ritual
+  people:
+    - phil-hine
+  annotation: |
+    Collection of essays written between 1988 and 1995 on the practice
+    of magical evocation, including work with constructed entities and
+    servitors. Draws on Spare, the Abra-Melin system, and the
+    industrial-culture magical scene. Full text on the Internet Archive.
   added: "2026-04-22"
