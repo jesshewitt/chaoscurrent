@@ -902,3 +902,41 @@
     Short video essay in which Ramsey Dukes (Lionel Snell) walks through
     what egregores are and how to think about them.
   added: "2026-04-22"
+
+- id: crowley-liber-astarte
+  title: "Liber Astarte vel Berylli (Liber 175)"
+  url: "https://hermetic.com/crowley/libers/lib175"
+  type: essay
+  author: "Aleister Crowley"
+  year: 1913
+  topics:
+    - godforms
+    - ritual
+    - theory
+  people:
+    - aleister-crowley
+  annotation: |
+    Crowley's technical libri on the method of Bhakti: how to choose a
+    deity, structure a devotional practice, and use that relationship as
+    the engine of magical work. A canonical reference for godform
+    practice. Full text on the Hermetic Library.
+  added: "2026-04-22"
+
+- id: baphomet-body-of-god
+  title: "On Building the Body of God"
+  url: "https://theblogofbaphomet.com/2013/10/14/on-building-the-body-of-god/"
+  type: essay
+  author: "Blog of Baphomet"
+  year: 2013
+  topics:
+    - godforms
+    - theory
+    - beliefs
+  people:
+    - julian-vayne
+    - steve-dee
+  annotation: |
+    Post framing Baphomet as a synthesized godform for contemporary
+    practice: a deliberately built deity constructed as a counter to
+    what the writer calls the Mundane Spell of consumer reality.
+  added: "2026-04-22"
