@@ -458,7 +458,7 @@
 
 - id: chaos-magick-news
   title: "Chaos Magick News"
-  url: "https://www.chaosmagicknews.com/"
+  url: "https://chaosmagicknews.com/"
   type: blog
   topics:
     - theory
@@ -643,7 +643,7 @@
 
 - id: morrison-invisibles
   title: "The Invisibles"
-  url: "https://www.dccomics.com/graphic-novels/the-invisibles-1994/the-invisibles-book-one"
+  url: "https://www.dc.com/graphic-novels/the-invisibles-1994/the-invisibles-book-one"
   type: book
   author: "Grant Morrison"
   year: 1994
@@ -773,7 +773,7 @@
 
 - id: i-ching-online
   title: "I Ching Online"
-  url: "https://ichingonline.net/"
+  url: "https://www.ichingonline.net/"
   type: tool
   topics:
     - divination
@@ -841,7 +841,7 @@
 
 - id: davis-burning-shore
   title: "Burning Shore"
-  url: "https://burningshore.com"
+  url: "https://www.burningshore.com/"
   type: blog
   author: "Erik Davis"
   topics:
