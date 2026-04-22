@@ -748,3 +748,66 @@
     and on the later work of Genesis P-Orridge and Grant Morrison.
     Hosted by UbuWeb.
   added: "2026-04-21"
+
+- id: language-is-a-virus-cut-up
+  title: "Cut-up Machine"
+  url: "https://www.languageisavirus.com/cutupmachine.html"
+  type: tool
+  topics:
+    - sigils
+    - music-and-art
+  annotation: |
+    Browser-based cut-up text generator modeled on the Burroughs and
+    Gysin technique. Paste source text, run it, and read the rearranged
+    output. The parent site collects related word and language tools in
+    the same tradition.
+  added: "2026-04-21"
+
+- id: i-ching-online
+  title: "I Ching Online"
+  url: "https://ichingonline.net/"
+  type: tool
+  topics:
+    - divination
+  annotation: |
+    Free browser-based I Ching consultation. Casts a hexagram using
+    simulated coin or yarrow-stalk methods and returns the reading with
+    line commentary and changing-line interpretation.
+  added: "2026-04-21"
+
+- id: morrison-disinfo-con-2000
+  title: "Disinfo.Con 2000"
+  url: "https://archive.org/details/youtube-0jIvlD0w1yA"
+  type: video
+  year: 2000
+  topics:
+    - theory
+    - history
+    - paradigms
+  people:
+    - grant-morrison
+    - robert-anton-wilson
+  annotation: |
+    Four-hour video of the Disinformation Company's 2000 counterculture
+    conference in New York. Includes Grant Morrison's Pop Magic! talk
+    alongside Robert Anton Wilson, Kenneth Anger, and others. Archived
+    on the Internet Archive.
+  added: "2026-04-21"
+
+- id: morrison-omega-institute-2005
+  title: "Discussion of Magic (Omega Institute)"
+  url: "https://archive.org/details/youtube-uXBePJ42kdE"
+  type: video
+  author: "Grant Morrison"
+  year: 2005
+  topics:
+    - theory
+    - ritual
+    - sigils
+  people:
+    - grant-morrison
+  annotation: |
+    Longer-form talk by Grant Morrison at the Omega Institute on
+    magical practice, sigils, and the writing of The Invisibles as a
+    magical working. Archived on the Internet Archive.
+  added: "2026-04-21"
