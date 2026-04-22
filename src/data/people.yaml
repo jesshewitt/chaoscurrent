@@ -184,3 +184,11 @@
     Weirdness. Long-running commentator on the intersection of magic,
     technology, and counterculture.
   website: "https://techgnosis.com"
+
+- slug: timothy-leary
+  name: "Timothy Leary"
+  description: |
+    American psychologist and writer. Developed the eight-circuit model
+    of consciousness. Upstream influence on chaos magic via Robert
+    Anton Wilson.
+  website: "https://en.wikipedia.org/wiki/Timothy_Leary"
