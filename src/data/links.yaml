@@ -110,7 +110,7 @@
   added: "2026-04-19"
 
 - id: frater-ud-models-of-magick
-  title: "Models of Magick"
+  title: "Models of Magic"
   url: "https://sacred-texts.com/bos/bos065.htm"
   type: essay
   author: "Frater U∴D∴"
@@ -883,10 +883,11 @@
     - technology
     - theory
   annotation: |
-    Frames artificial intelligence as an emergent egregore built by the
-    sustained magical attention of computer-occult practitioners.
-    Originally published in Konton magazine; archived on the Hermetic
-    Library.
+    Essay arguing that artificial intelligence will emerge from the
+    work of occult-minded computer programmers rather than from
+    government labs or hackers. Originally published in Konton
+    magazine; archived on the Hermetic Library. The archive tags the
+    piece with "egregore".
   added: "2026-04-22"
 
 - id: dukes-egregores-video
@@ -958,7 +959,7 @@
     Collection of essays written between 1988 and 1995 on the practice
     of magical evocation, including work with constructed entities and
     servitors. Draws on Spare, the Abra-Melin system, and the
-    industrial-culture magical scene. Full text on the Internet Archive.
+    industrial art movement. Full text on the Internet Archive.
   added: "2026-04-22"
 
 - id: baphomet-red-war-magick
@@ -975,10 +976,9 @@
     - julian-vayne
     - steve-dee
   annotation: |
-    Working through the ethics and tactics of offensive magic in the
-    red-magic current described by Dave Lee. Argues that cursing and
-    war magick have a legitimate place when deployed with clarity about
-    enemies and ends. Uses anti-fracking activism as a worked example.
+    A 2013 post on Red War Magick, a term Dave Lee uses for offensive
+    magical practice. Uses the UK anti-fracking campaign against
+    Cuadrilla as a worked example.
   added: "2026-04-22"
 
 - id: baphomet-group-wisdom-tarot
@@ -1013,12 +1013,10 @@
   people:
     - timothy-leary
   annotation: |
-    Leary's first full exposition of the eight-circuit model of
-    consciousness, framing the nervous system as a layered set of
-    reality-construction tools. Picked up by Robert Anton Wilson in
-    Prometheus Rising and, through him, widely used in chaos magic for
-    paradigm-shifting practice. Retitled Info-Psychology in the 1987
-    revision. Full text on the Internet Archive.
+    Leary's exposition of the eight-circuit model of consciousness.
+    Picked up by Robert Anton Wilson in Prometheus Rising. Retitled
+    Info-Psychology in the 1987 revision. Full text on the Internet
+    Archive.
   added: "2026-04-22"
 
 - id: spare-anathema-of-zos
@@ -1034,9 +1032,7 @@
   people:
     - austin-osman-spare
   annotation: |
-    Spare's incantatory sermon addressed to his alter ego Zos,
-    attacking conventional belief and articulating a private magical
-    philosophy. Short, dense, and rhetorically intense. Full text on
+    A short text by Austin Osman Spare, published 1927. Full text on
     the Hermetic Library.
   added: "2026-04-22"
 
@@ -1053,9 +1049,8 @@
   people:
     - austin-osman-spare
   annotation: |
-    Book-length philosophical and magical meditation, illustrated by
-    Spare and framed as the commentary of his alter ego Zos vel Thanatos.
-    Full text on the Hermetic Library.
+    A 1921 book by Austin Osman Spare. Full text on the Hermetic
+    Library.
   added: "2026-04-22"
 
 - id: spare-automatic-drawing
