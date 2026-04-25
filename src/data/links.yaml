@@ -772,16 +772,16 @@
   added: "2026-04-21"
 
 - id: i-ching-online
-  title: "I Ching Online"
-  url: "https://www.ichingonline.net/"
+  title: "I Ching"
+  url: "https://simpleiching.netlify.app"
   type: tool
   topics:
     - divination
   annotation: |
-    Free browser-based I Ching consultation. Casts a hexagram using
-    simulated coin or yarrow-stalk methods and returns the reading with
-    line commentary and changing-line interpretation.
-  added: "2026-04-21"
+    Free I Ching reference and three-coin reading app, using an
+    original public-domain English translation of Richard Wilhelm's
+    1924 German edition.
+  added: "2026-04-25"
 
 - id: morrison-disinfo-con-2000
   title: "Disinfo.Con"
