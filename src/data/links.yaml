@@ -1623,3 +1623,16 @@
     invocation, and the eight-colour pantheon. Print-on-demand via
     Lulu; canonical record on Goodreads.
   added: "2026-05-25"
+
+- id: the-console
+  title: "The Console"
+  url: "https://the-console-app.netlify.app/"
+  type: tool
+  topics:
+    - divination
+    - technology
+  annotation: |
+    A 24-card divination deck. Each card pairs a recognizable life
+    situation expressed as a tech metaphor with a systems-theoretic
+    reflection on the pattern.
+  added: "2026-05-25"
