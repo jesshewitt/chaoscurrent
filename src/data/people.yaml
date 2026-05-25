@@ -223,3 +223,24 @@
   description: |
     Host of the Lux Occult podcast. Frames her practice and the show
     through chaos magic and experimental audio-magick.
+
+- slug: stephen-mace
+  name: "Stephen Mace"
+  description: |
+    American chaos magician and author of Stealing the Fire from Heaven
+    (1984). Mace's framing of magic as sorcery engineering was a direct
+    influence on Carroll and Hine.
+
+- slug: mark-stavish
+  name: "Mark Stavish"
+  description: |
+    American occult author writing from a hermetic and Western mystery
+    tradition position. Author of Egregores: The Occult Entities That
+    Watch Over Human Destiny (2018), the modern reference book on the
+    topic.
+
+- slug: joshua-wetzel
+  name: "Joshua Wetzel"
+  description: |
+    IOT-member chaos magician and author of The Paradigmal Pirate
+    (2006), a complete chaos magic training grimoire.

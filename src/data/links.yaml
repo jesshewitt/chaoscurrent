@@ -1063,6 +1063,7 @@
   year: 1916
   topics:
     - sigils
+    - divination
     - music-and-art
     - theory
   people:
@@ -1359,4 +1360,266 @@
     Gordon White's Substack, companion to the Rune Soup podcast. Posts
     on practice, consciousness, and the wider weird. Mix of free and
     subscriber-only material. Archive of writing through 2026.
+  added: "2026-05-25"
+
+- id: rysen-fotamecus
+  title: "Fotamecus: Viral Time Expansion/Compression Servitor"
+  url: "http://www.chaosmatrix.org/library/chaos/texts/fotamec1.html"
+  type: essay
+  author: "Fenwick Kaidevis Rysen"
+  year: 1997
+  topics:
+    - servitors
+    - sigils
+    - ritual
+  annotation: |
+    The canonical case study of a group-built chaos magic servitor:
+    Fenwick Kaidevis Rysen and a working group's creation of Fotamecus,
+    a viral time-compression entity. Treats servitor construction,
+    naming, sigil binding, and propagation as practical engineering.
+    Hosted on Chaos Matrix.
+  added: "2026-05-25"
+
+- id: rysen-blame-my-servitor
+  title: "Don't Blame Me, Blame My Servitor"
+  url: "http://www.chaosmatrix.org/library/chaos/texts/fotamec2.html"
+  type: essay
+  author: "Fenwick Kaidevis Rysen"
+  year: 1998
+  topics:
+    - servitors
+    - ethics
+  annotation: |
+    Rysen's follow-up to the Fotamecus working: what happens after a
+    servitor is released into a collective, who is responsible for its
+    actions, and how to dismantle one that has outgrown its operator.
+    Hosted on Chaos Matrix.
+  added: "2026-05-25"
+
+- id: mace-stealing-the-fire
+  title: "Stealing the Fire from Heaven"
+  url: "https://openlibrary.org/books/OL8566479M/Stealing_the_Fire_from_Heaven"
+  type: book
+  author: "Stephen Mace"
+  year: 1984
+  topics:
+    - servitors
+    - theory
+    - sigils
+    - history
+  people:
+    - stephen-mace
+  paid: true
+  annotation: |
+    Stephen Mace's foundational sorcery-engineering text. Treats
+    servitors as virtual mechanics with constructible properties,
+    drawing on Spare's sigil work to outline a complete operative
+    system. A direct influence on both Carroll and Hine. Out of print;
+    canonical record on Open Library.
+  added: "2026-05-25"
+
+- id: carroll-pact-story-so-far
+  title: "The Pact (IOT): The Story So Far"
+  url: "https://hermetic.com/chaos/the-pact-the-story-so-far"
+  type: essay
+  author: "Peter J. Carroll"
+  topics:
+    - group-practice
+    - history
+    - ritual
+  people:
+    - peter-carroll
+  annotation: |
+    Peter J. Carroll's own retrospective on founding the Illuminates of
+    Thanateros: the Pact, its early years, structural decisions, and
+    its evolution into a working magical order. Reads as both history
+    and guidance for anyone considering an order. Hosted on the
+    Hermetic Library.
+  added: "2026-05-25"
+
+- id: topy-topy-is
+  title: "TOPY is…"
+  url: "https://hermetic.com/topy/topy-is"
+  type: essay
+  author: "Thee Temple ov Psychick Youth"
+  topics:
+    - group-practice
+    - history
+    - music-and-art
+  people:
+    - genesis-p-orridge
+  annotation: |
+    Thee Temple ov Psychick Youth's self-description of their
+    non-hierarchical "station and access point" organisational model
+    — the leading alternative to the IOT's order structure in the
+    1980s and 1990s chaos-adjacent world. Hosted on the Hermetic
+    Library.
+  added: "2026-05-25"
+
+- id: kennedy-maybe-logic-chaos
+  title: "Chaos Magic!!! — Peter Carroll's course at the Maybe Logic Academy"
+  url: "https://chapelperilous.us/all-posts/f/chaos-magic--peter-carrolls-course-at-the-maybe-logic-academy"
+  type: blog
+  author: "Gabriel Kennedy"
+  year: 2014
+  topics:
+    - group-practice
+    - theory
+    - history
+  people:
+    - peter-carroll
+    - robert-anton-wilson
+  annotation: |
+    Gabriel Kennedy's firsthand account of Peter Carroll's chaos magic
+    course at Robert Anton Wilson's Maybe Logic Academy. Walks through
+    the seminar's group practice methodology, exercises, and the
+    dynamics of online magical instruction.
+  added: "2026-05-25"
+
+- id: stavish-egregores
+  title: "Egregores: The Occult Entities That Watch Over Human Destiny"
+  url: "https://www.simonandschuster.com/books/Egregores/Mark-Stavish/9781620555774"
+  type: book
+  author: "Mark Stavish"
+  year: 2018
+  topics:
+    - egregores
+    - theory
+    - beliefs
+  people:
+    - mark-stavish
+  paid: true
+  annotation: |
+    The modern reference book on egregores. Not chaos magic native, but
+    universally cited in current chaos discourse on group thoughtforms
+    and corporate or national entities. Mark Stavish writes from a
+    hermetic and Western mystery tradition position.
+  added: "2026-05-25"
+
+- id: rao-memeing-things-into-reality
+  title: "The History and Future of Memeing Things Into Reality"
+  url: "https://contraptions.venkateshrao.com/p/the-history-and-future-of-memeing"
+  type: essay
+  author: "Venkatesh Rao"
+  year: 2025
+  topics:
+    - egregores
+    - technology
+    - beliefs
+  annotation: |
+    Venkatesh Rao's lay essay threading egregores, hyperstition, and
+    chaos magic meme-work into a single readable frame. Covers Kek,
+    GameStop, and QAnon as worked examples of collective
+    reality-making. Public post on Rao's Contraptions Substack.
+  added: "2026-05-25"
+
+- id: aradia-egregores-semiotic-ghosts
+  title: "Egregores & Semiotic Ghosts: Group Thoughtforms in Magic & Culture"
+  url: "https://www.patheos.com/blogs/betweentheshadows/2018/10/egregores-semiotic-ghosts/"
+  type: essay
+  author: "Sable Aradia (Diane Morrison)"
+  year: 2018
+  topics:
+    - egregores
+    - theory
+  annotation: |
+    Synthesizes Stavish, William Gibson's "semiotic ghosts", and the
+    tulpa/egregore overlap into a working theory of group thoughtforms.
+    Sable Aradia (Diane Morrison) writes from a Wicca-leaning position;
+    the piece itself is squarely on egregore theory. Hosted on Patheos.
+  added: "2026-05-25"
+
+- id: crowley-book-of-thoth
+  title: "The Book of Thoth"
+  url: "https://hermetic.com/crowley/book-of-thoth/index"
+  type: book
+  author: "Aleister Crowley"
+  year: 1944
+  topics:
+    - divination
+    - godforms
+    - theory
+  people:
+    - aleister-crowley
+  annotation: |
+    Crowley's commentary on the Thoth Tarot, illustrated by Frieda
+    Harris. The canonical Thelemic tarot text and a reference point
+    underneath every chaos magic deck in print. Full text on the
+    Hermetic Library.
+  added: "2026-05-25"
+
+- id: carroll-apophenia-and-entropy
+  title: "Apophenia and Entropy"
+  url: "https://www.specularium.org/blog/apophenia-and-entropy"
+  type: essay
+  author: "Peter J. Carroll"
+  year: 2013
+  topics:
+    - divination
+    - godforms
+    - theory
+  people:
+    - peter-carroll
+  annotation: |
+    Peter J. Carroll on apophenia — the perception of patterns in
+    randomness — as the cognitive mechanism underneath all divination.
+    Connects divinatory practice to his Apophenia godform and the
+    broader sigil and probability work of chaos magic. Hosted on
+    Specularium.
+  added: "2026-05-25"
+
+- id: marik-sigils-servitors-godforms
+  title: "Sigils, Servitors, and Godforms"
+  url: "http://www.chaosmatrix.org/library/chaos/texts/sigsergod.txt"
+  type: essay
+  author: "Marik (informally attributed)"
+  topics:
+    - godforms
+    - servitors
+    - sigils
+    - theory
+  annotation: |
+    A widely circulated 1990s chaos magic taxonomy essay distinguishing
+    sigils, servitors, egregores, and godforms as a continuum of
+    constructed entities. Bylined "Marik" by community convention;
+    formal authorship not established. Hosted on Chaos Matrix.
+  added: "2026-05-25"
+
+- id: carroll-eight-magics
+  title: "Rituals and Spell Objectives and Design in Eight Magics"
+  url: "https://hermetic.com/chaos/rituals-and-spell-objectives-and-design-in-eight-magics"
+  type: essay
+  author: "Peter J. Carroll"
+  topics:
+    - godforms
+    - ritual
+    - theory
+  people:
+    - peter-carroll
+  annotation: |
+    Carroll's standalone presentation of the eight-colour magic system
+    from Liber Kaos, including the godforms assigned to each colour:
+    Apophenia, Babalon, and the rest. The closest thing to a
+    chapter-length godform reference for the chaos current. Hosted on
+    the Hermetic Library.
+  added: "2026-05-25"
+
+- id: wetzel-paradigmal-pirate
+  title: "The Paradigmal Pirate"
+  url: "https://www.goodreads.com/book/show/21052373-the-paradigmal-pirate"
+  type: book
+  author: "Joshua Wetzel"
+  year: 2006
+  topics:
+    - godforms
+    - ritual
+    - theory
+  people:
+    - joshua-wetzel
+  paid: true
+  annotation: |
+    Joshua Wetzel's chaos magic training grimoire, written from an
+    IOT-member position. Substantial sections on godform construction,
+    invocation, and the eight-colour pantheon. Print-on-demand via
+    Lulu; canonical record on Goodreads.
   added: "2026-05-25"
