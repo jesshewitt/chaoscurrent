@@ -31,7 +31,7 @@ export async function GET() {
     const entries = sortByAdded(await getLinks()).slice(0, 25)
     const items = entries
         .map((e) => {
-            const pubDate = new Date(e.added + "T00:00:00Z").toUTCString()
+            const pubDate = new Date(e.added).toUTCString()
             const link = `${SITE}/${pluralForType(e.type)}/#${e.id}`
             return `
     <item>

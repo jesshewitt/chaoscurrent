@@ -16,7 +16,7 @@ const linkEntrySchema = z.object({
     people: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
     paid: z.boolean().default(false),
     annotation: z.string().min(1),
-    added: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "added must be ISO date YYYY-MM-DD")
+    added: z.string().datetime({ message: "added must be an ISO 8601 datetime in UTC, e.g. 2026-05-25T18:48:45Z" })
 })
 
 const topicEntrySchema = z.object({

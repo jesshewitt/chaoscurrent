@@ -8,7 +8,7 @@ const sample = [
         url: "https://example.com/a",
         type: "essay",
         annotation: "x",
-        added: "2026-04-10",
+        added: "2026-04-10T00:00:00Z",
         topics: []
     },
     {
@@ -17,7 +17,7 @@ const sample = [
         url: "https://example.com/b",
         type: "essay",
         annotation: "x",
-        added: "2026-04-19",
+        added: "2026-04-19T00:00:00Z",
         topics: []
     }
 ]
