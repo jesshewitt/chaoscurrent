@@ -192,3 +192,34 @@
     of consciousness. Upstream influence on chaos magic via Robert
     Anton Wilson.
   website: "https://en.wikipedia.org/wiki/Timothy_Leary"
+
+- slug: carl-abrahamsson
+  name: "Carl Abrahamsson"
+  description: |
+    Swedish author, editor, and filmmaker. Editor of the long-running
+    occulture journal The Fenris Wolf. Contributor to This Is Chaos
+    (2025). Writes on magic, art, psychology, and the contemporary
+    occult-cultural conversation.
+  website: "https://carlabrahamsson.com"
+
+- slug: peter-grey
+  name: "Peter Grey"
+  description: |
+    British author and co-founder of Scarlet Imprint. Writes from a
+    sabbatic witchcraft position rather than a chaos one. Included
+    in the directory as a load-bearing voice that chaos practitioners
+    read alongside their own.
+  website: "https://scarletimprint.com"
+
+- slug: douglas-batchelor
+  name: "Douglas Batchelor"
+  description: |
+    Host of the What Magic Is This? podcast. Self-identifies as a chaos
+    magician turned necromantic ritualist.
+  website: "https://whatmagicisthis.com"
+
+- slug: luxa-strata
+  name: "Luxa Strata"
+  description: |
+    Host of the Lux Occult podcast. Frames her practice and the show
+    through chaos magic and experimental audio-magick.

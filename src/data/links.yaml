@@ -237,7 +237,8 @@
   people:
     - peter-carroll
   annotation: |
-    Carroll's own ongoing site, home of essays and announcements.
+    Peter J. Carroll's site. Home of essays, announcements, and
+    excerpts from his books.
   added: "2026-04-19"
 
 - id: carroll-chaos-magic-in-a-nutshell
@@ -321,9 +322,10 @@
   people:
     - gordon-white
   annotation: |
-    Gordon White's long running show. Conversations with practitioners,
-    academics, and outliers about magic, animism, and spirit work. Broad in
-    scope but rooted in chaos magic methodology.
+    Long-running show by Gordon White, running 2014 to 2026.
+    Conversations with practitioners, academics, and outliers about
+    magic, animism, and spirit work. Broad in scope but rooted in chaos
+    magic methodology. Archived, not ongoing.
   added: "2026-04-19"
 
 - id: glitch-bottle
@@ -1104,3 +1106,257 @@
     published in Chaos International. Linked page is Part 1; Part 2
     continues from there.
   added: "2026-04-22"
+
+- id: lux-occult
+  title: "Lux Occult"
+  url: "https://podcasts.apple.com/us/podcast/lux-occult/id1525601043"
+  type: podcast
+  author: "Luxa Strata"
+  topics:
+    - theory
+    - ritual
+    - music-and-art
+  people:
+    - luxa-strata
+  annotation: |
+    Luxa Strata's podcast on magic, art, and ritual, framed through
+    chaos magic and experimental audio-magick. Episodes mix
+    conversations with practitioners and crafted audio pieces.
+    Distributed via Apple Podcasts.
+  added: "2026-05-25"
+
+- id: what-magic-is-this
+  title: "What Magic Is This?"
+  url: "https://whatmagicisthis.com/"
+  type: podcast
+  author: "Douglas Batchelor"
+  topics:
+    - theory
+    - ritual
+    - evocation
+  people:
+    - douglas-batchelor
+  annotation: |
+    Douglas Batchelor's topic-based show on magic, the occult, and the
+    weird. Batchelor self-identifies as a chaos magician turned
+    necromantic ritualist; episodes mix interviews and solo treatments
+    of practice.
+  added: "2026-05-25"
+
+- id: vitimus-deeper-down
+  title: "Deeper Down The Rabbit Hole"
+  url: "https://podcasts.apple.com/us/podcast/deeper-down-the-rabbit-hole/id434344872"
+  type: podcast
+  author: "Andrieh Vitimus"
+  topics:
+    - theory
+    - ritual
+    - sigils
+    - gnosis
+  people:
+    - andrieh-vitimus
+  annotation: |
+    Andrieh Vitimus's chaos magic podcast, running alongside his book
+    Hands-On Chaos Magic. Interviews and discussion of technique,
+    paradigm, and the contemporary scene. Distributed via Apple
+    Podcasts.
+  added: "2026-05-25"
+
+- id: vayse
+  title: "Vayse"
+  url: "https://www.vayse.co.uk/"
+  type: podcast
+  author: "Peter C Hine and Stephen James Buckley"
+  topics:
+    - theory
+    - history
+    - adjacent
+  annotation: |
+    UK podcast on mysticism, magic, and high strangeness. Long-form
+    interviews with practitioners and writers in the chaos-adjacent
+    occult orbit. Hosted by Peter C Hine and Stephen James Buckley
+    (no relation to Phil Hine).
+  added: "2026-05-25"
+
+- id: spirit-box
+  title: "Spirit Box"
+  url: "https://creators.spotify.com/pod/profile/spirit-box"
+  type: podcast
+  author: "Darragh Mason"
+  topics:
+    - ritual
+    - evocation
+    - divination
+  annotation: |
+    Darragh Mason's podcast on folklore, esoterica, and spirit work.
+    Mason is co-creator of the Sigil Engine; the show's guest list
+    regularly includes chaos magic and chaos-adjacent practitioners.
+    Distributed via Spotify.
+  added: "2026-05-25"
+
+- id: chaos-and-cunning
+  title: "Chaos and Cunning"
+  url: "https://podcasts.apple.com/us/podcast/chaos-and-cunning/id1862287401"
+  type: podcast
+  author: "Cassandra Snow and Siri Vincent Plouff"
+  year: 2025
+  topics:
+    - theory
+    - ritual
+    - ethics
+  annotation: |
+    Cassandra Snow and Siri Vincent Plouff's show on folk and chaos
+    magic from a queer liberation lens. Started in 2025.
+    Distributed via Apple Podcasts.
+  added: "2026-05-25"
+
+- id: hermitix
+  title: "Hermitix"
+  url: "https://hermitixpodcast.com/"
+  type: podcast
+  author: "James Ellis (Meta-Nomad)"
+  topics:
+    - theory
+    - adjacent
+    - technology
+  annotation: |
+    James Ellis's long-running interview show on fringe philosophy,
+    weird literature, accelerationism, and occulture. Reaches chaos
+    magic through the accelerationist-occult crossover rather than
+    directly; chaos practitioners turn up as guests.
+  added: "2026-05-25"
+
+- id: aeon-byte-gnostic-radio
+  title: "Aeon Byte Gnostic Radio"
+  url: "https://podcasts.apple.com/us/podcast/aeon-byte-gnostic-radio/id347832278"
+  type: podcast
+  author: "Miguel Conner"
+  topics:
+    - theory
+    - history
+    - adjacent
+  annotation: |
+    Miguel Conner's long-running show on gnosticism, hermeticism, and
+    the reality-hacking lineage that runs through Philip K. Dick, Jung,
+    and the wider occult. Chaos magic appears at the periphery.
+  added: "2026-05-25"
+
+- id: foolish-fish
+  title: "Foolish Fish"
+  url: "https://www.youtube.com/channel/UCVtWVX2xirq6Nybf5bumqwg"
+  type: video
+  author: "Denis Poisson"
+  topics:
+    - theory
+    - history
+    - sigils
+  annotation: |
+    Denis Poisson's YouTube channel. Occult book reviews and a
+    bi-weekly Esoteric Saturdays segment, with sustained chaos magic
+    coverage.
+  added: "2026-05-25"
+
+- id: esoterica
+  title: "Esoterica"
+  url: "https://www.youtube.com/@TheEsotericaChannel"
+  type: video
+  author: "Justin Sledge"
+  topics:
+    - history
+    - theory
+    - adjacent
+  annotation: |
+    Justin Sledge's academic YouTube channel on the history of magic,
+    alchemy, and kabbalah. Not chaos magic itself, but a constant
+    reference point for practicing chaos folk who want historical
+    grounding.
+  added: "2026-05-25"
+
+- id: hine-unfoldings
+  title: "Unfoldings"
+  url: "https://philhine.substack.com/"
+  type: blog
+  author: "Phil Hine"
+  topics:
+    - theory
+    - beliefs
+    - sigils
+    - gnosis
+  people:
+    - phil-hine
+  annotation: |
+    Phil Hine's Substack, a companion to enfolding.org. Tantra, queer
+    occulture, and chaos magic at his own pace. Mix of free and
+    subscriber-only material.
+  added: "2026-05-25"
+
+- id: vayne-newsletter
+  title: "Julian's Newsletter"
+  url: "https://julianvayne.substack.com/"
+  type: blog
+  author: "Julian Vayne"
+  topics:
+    - theory
+    - ritual
+    - ethics
+    - beliefs
+  people:
+    - julian-vayne
+  annotation: |
+    Julian Vayne's Substack. Occultism, psychedelics, and chaos magic;
+    field reports and reflective pieces. Mix of free and subscriber-only
+    material.
+  added: "2026-05-25"
+
+- id: abrahamsson-fenris-wolf
+  title: "The Fenris Wolf Newsletter"
+  url: "https://thefenriswolf.substack.com/"
+  type: blog
+  author: "Carl Abrahamsson"
+  topics:
+    - theory
+    - music-and-art
+    - adjacent
+  people:
+    - carl-abrahamsson
+  annotation: |
+    Carl Abrahamsson's Substack, named for his long-running occulture
+    journal. Magic, art, psychology, and the contemporary
+    occult-cultural conversation.
+  added: "2026-05-25"
+
+- id: grey-adder-churchyard-wall
+  title: "The Adder in the Churchyard Wall"
+  url: "https://petergreywrites.substack.com/"
+  type: blog
+  author: "Peter Grey"
+  topics:
+    - theory
+    - adjacent
+    - ethics
+  people:
+    - peter-grey
+  annotation: |
+    Peter Grey's Substack on magic, witchcraft, and nature. Grey
+    co-founded Scarlet Imprint and writes from a sabbatic witchcraft
+    position rather than a chaos one. Included as a contemporary
+    occult voice that chaos practitioners read alongside their own.
+  added: "2026-05-25"
+
+- id: rune-soup-substack
+  title: "Rune Soup (Substack)"
+  url: "https://runesoup.substack.com/"
+  type: archive
+  author: "Gordon White"
+  topics:
+    - theory
+    - ritual
+    - history
+    - adjacent
+  people:
+    - gordon-white
+  annotation: |
+    Gordon White's Substack, companion to the Rune Soup podcast. Posts
+    on practice, consciousness, and the wider weird. Mix of free and
+    subscriber-only material. Archive of writing through 2026.
+  added: "2026-05-25"
