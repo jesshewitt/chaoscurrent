@@ -3,7 +3,7 @@ sections:
       kind: entries
       entries:
           - ref: morrison-pop-magic
-            note: "Grant Morrison's short introduction to chaos magic. Covers sigils, banishing, magical consciousness, godform invocation, and the hypersigil concept realized as The Invisibles."
+            note: "Grant Morrison's short introduction to chaos magic. Covers sigils, hypersigils, banishing, magical consciousness, and godform invocation."
           - ref: chapman-advanced-magick-for-beginners
             note: "A single volume primer by Alan Chapman, structured around a few core principles and practical exercises."
           - ref: hine-condensed-chaos
