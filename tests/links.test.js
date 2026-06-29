@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest"
-import { joinHealth, sortByAdded, sortByTitle, countsByType, resolvePeople } from "@/lib/links-core.js"
+import { sortByAdded, sortByTitle, countsByType, resolvePeople } from "@/lib/links-core.js"
 
 const sample = [
     {
@@ -21,38 +21,6 @@ const sample = [
         topics: []
     }
 ]
-
-const health = {
-    lastRun: "2026-04-18T00:00:00Z",
-    entries: {
-        a: { status: "dead", lastChecked: "2026-04-18T00:00:00Z", finalUrl: null },
-        b: { status: "ok", lastChecked: "2026-04-18T00:00:00Z", finalUrl: null }
-    }
-}
-
-describe("joinHealth", () => {
-    it("merges health status onto each entry", () => {
-        const out = joinHealth(sample, health)
-        expect(out[0].health.status).toBe("dead")
-        expect(out[1].health.status).toBe("ok")
-    })
-
-    it("defaults to unchecked when no health record exists", () => {
-        const out = joinHealth(sample, { lastRun: null, entries: {} })
-        expect(out[0].health.status).toBe("unchecked")
-    })
-
-    it("for dead entries, rewrites href to wayback and keeps original url", () => {
-        const out = joinHealth(sample, health)
-        expect(out[0].href).toBe("https://web.archive.org/web/*/https://example.com/a")
-        expect(out[0].url).toBe("https://example.com/a")
-    })
-
-    it("for ok entries, href equals url", () => {
-        const out = joinHealth(sample, health)
-        expect(out[1].href).toBe("https://example.com/b")
-    })
-})
 
 describe("sortByAdded", () => {
     it("returns entries newest first", () => {

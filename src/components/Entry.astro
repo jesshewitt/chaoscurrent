@@ -1,6 +1,6 @@
 ---
 const { entry, note } = Astro.props
-const { title, href, url, author, year, topics = [], people = [], peopleResolved = [], paid, annotation, isPreserved, isGone } = entry
+const { title, url, author, year, topics = [], people = [], peopleResolved = [], paid, annotation } = entry
 const displayPeople = peopleResolved.length > 0
     ? peopleResolved
     : people.map((slug) => ({ slug, name: slug }))
@@ -17,13 +17,7 @@ const displayAnnotation = note ?? annotation
 ---
 <article class="entry" id={entry.id}>
     <div class="entry-head">
-        {isGone ? (
-            <span class="entry-title gone">{title}</span>
-        ) : (
-            <a class="entry-title" href={href} rel="noopener">{title}</a>
-        )}
-        {isPreserved && <span class="pill pill-gold">Preserved via Wayback</span>}
-        {isGone && <span class="pill pill-mute">No longer available</span>}
+        <a class="entry-title" href={url} rel="noopener">{title}</a>
         {paid && <span class="pill pill-neutral">Paid</span>}
     </div>
     {byline && <p class="entry-byline meta">{byline}</p>}
@@ -37,11 +31,6 @@ const displayAnnotation = note ?? annotation
                 <li><a href={`/topic/${t}/`} class="topic-chip">{t}</a></li>
             ))}
         </ul>
-    )}
-    {(isPreserved || isGone) && (
-        <p class="entry-original meta">
-            Original URL: <span class="original-url">{url}</span>
-        </p>
     )}
 </article>
 
@@ -63,10 +52,6 @@ const displayAnnotation = note ?? annotation
         font-size: var(--fs-18);
         color: var(--accent);
         font-weight: 500;
-    }
-    .entry-title.gone {
-        color: var(--ink-mute);
-        text-decoration: line-through;
     }
     .entry-byline {
         margin: 2px 0 0.6ch;
@@ -120,21 +105,9 @@ const displayAnnotation = note ?? annotation
         letter-spacing: 0.1em;
         text-transform: uppercase;
     }
-    .pill-gold { background: var(--gold); color: var(--bg); }
-    .pill-mute { background: var(--accent-mute); color: var(--ink); }
     .pill-neutral {
         background: transparent;
         border: 1px solid var(--rule);
         color: var(--ink-mute);
-    }
-
-    .entry-original {
-        margin: 0.6ch 0 0;
-        font-size: var(--fs-12);
-    }
-    .original-url {
-        font-family: var(--font-body);
-        color: var(--ink-mute);
-        word-break: break-all;
     }
 </style>

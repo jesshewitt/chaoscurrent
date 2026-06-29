@@ -1,8 +1,7 @@
 import { getCollection } from "astro:content"
-import healthJson from "../data/link-health.json" with { type: "json" }
-import { joinHealth, sortByAdded, resolvePeople } from "./links-core.js"
+import { sortByAdded, resolvePeople } from "./links-core.js"
 
-export { joinHealth, sortByAdded, sortByTitle, countsByType, resolvePeople } from "./links-core.js"
+export { sortByAdded, sortByTitle, countsByType, resolvePeople } from "./links-core.js"
 
 async function loadRawLinks() {
     const collection = await getCollection("links")
@@ -17,8 +16,7 @@ async function loadPeopleMap() {
 export async function getLinks() {
     const raw = await loadRawLinks()
     const peopleMap = await loadPeopleMap()
-    const withPeople = resolvePeople(raw, peopleMap)
-    return joinHealth(withPeople, healthJson)
+    return resolvePeople(raw, peopleMap)
 }
 
 export async function getByType(type) {

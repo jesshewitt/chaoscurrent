@@ -1,14 +1,19 @@
 #!/usr/bin/env node
-import { readFile, writeFile } from "node:fs/promises"
+// Report-only link checker. Reads links.yaml, checks each URL, and prints a
+// human-readable report. It deliberately writes nothing and changes no entries:
+// a human decides what to remove or update based on the report.
+import { readFile } from "node:fs/promises"
 import { load as yamlLoad } from "js-yaml"
 import path from "node:path"
 
 const LINKS_FILE = "src/data/links.yaml"
-const HEALTH_FILE = "src/data/link-health.json"
 const WAYBACK_AVAILABLE = "https://archive.org/wayback/available"
+// A browser-like UA: site-builder hosts and WAFs often serve 404/403 to
+// unknown bots, which previously produced false positives.
 const USER_AGENT =
-    "ChaosCurrentHealthCheck/0.1 (+https://chaoscurrent.org; contact: chaos@chaoscurrent.org)"
-const TIMEOUT_MS = 10_000
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 " +
+    "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+const TIMEOUT_MS = 15_000
 const CONCURRENCY = 8
 const JITTER_MS = 250
 
@@ -23,29 +28,10 @@ export function classify({ ok, status, redirectedTo, originalHost, timedOut }) {
         }
         return { status: "ok", finalUrl: null }
     }
+    // 401/403 mean access-denied, not gone — usually a bot/WAF block on a live
+    // page. Surface as "blocked" so a human verifies rather than treating as dead.
+    if (status === 401 || status === 403) return { status: "blocked", finalUrl: null }
     return { status: "dead", finalUrl: null }
-}
-
-export function mergeStatus(prior, observation, timestamp) {
-    const priorStreak = prior?.deadStreak ?? 0
-    const isDeadish =
-        observation.status === "dead" || observation.status === "dead-no-archive"
-    if (isDeadish) {
-        const streak = priorStreak + 1
-        const status = streak >= 2 ? observation.status : prior?.status ?? "ok"
-        return {
-            status,
-            lastChecked: timestamp,
-            finalUrl: observation.finalUrl ?? null,
-            deadStreak: streak
-        }
-    }
-    return {
-        status: observation.status,
-        lastChecked: timestamp,
-        finalUrl: observation.finalUrl ?? null,
-        deadStreak: 0
-    }
 }
 
 async function sleep(ms) {
@@ -63,13 +49,28 @@ async function fetchWithTimeout(url, opts) {
     }
 }
 
+const REQUEST_HEADERS = {
+    "user-agent": USER_AGENT,
+    accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "accept-language": "en-US,en;q=0.9"
+}
+
 async function checkOne(url) {
     const originalHost = new URL(url).host
-    const headers = { "user-agent": USER_AGENT }
     try {
-        let res = await fetchWithTimeout(url, { method: "HEAD", headers, redirect: "follow" })
-        if (res.status === 405 || res.status === 403) {
-            res = await fetchWithTimeout(url, { method: "GET", headers, redirect: "follow" })
+        let res = await fetchWithTimeout(url, {
+            method: "HEAD",
+            headers: REQUEST_HEADERS,
+            redirect: "follow"
+        })
+        // Many servers implement HEAD poorly and return 404/403/405/501 for a
+        // page that GET serves fine. Fall back to GET on any non-OK HEAD.
+        if (!res.ok) {
+            res = await fetchWithTimeout(url, {
+                method: "GET",
+                headers: REQUEST_HEADERS,
+                redirect: "follow"
+            })
         }
         const redirectedTo = res.redirected ? res.url : null
         return classify({
@@ -116,49 +117,69 @@ async function loadLinks() {
     return yamlLoad(body)
 }
 
-async function loadHealth() {
-    try {
-        const body = await readFile(path.resolve(process.cwd(), HEALTH_FILE), "utf8")
-        return JSON.parse(body)
-    } catch {
-        return { lastRun: null, entries: {} }
-    }
+function printSection(title, rows, format) {
+    if (rows.length === 0) return
+    console.log(`\n${title} (${rows.length}):`)
+    for (const r of rows) console.log(`  - ${format(r)}`)
 }
 
 async function main() {
     const entries = await loadLinks()
-    const prior = await loadHealth()
-    const timestamp = new Date().toISOString()
+    console.log(
+        `Checking ${entries.length} links (report-only — nothing will be modified).`
+    )
 
-    console.log(`Checking ${entries.length} links with concurrency ${CONCURRENCY}.`)
-    const observations = await pool(entries, CONCURRENCY, async (e) => {
+    const results = await pool(entries, CONCURRENCY, async (e) => {
         const obs = await checkOne(e.url)
         if (obs.status === "dead") {
-            const hasSnap = await waybackHasSnapshot(e.url)
-            if (!hasSnap) obs.status = "dead-no-archive"
+            obs.archived = await waybackHasSnapshot(e.url)
         }
-        return { id: e.id, url: e.url, obs }
+        return { id: e.id, title: e.title, url: e.url, ...obs }
     })
 
-    const next = { lastRun: timestamp, entries: { ...(prior.entries ?? {}) } }
-    let changed = false
-    for (const { id, obs } of observations) {
-        const priorRec = prior.entries?.[id]
-        const merged = mergeStatus(priorRec, obs, timestamp)
-        if (!priorRec || priorRec.status !== merged.status) changed = true
-        next.entries[id] = merged
+    const dead = results.filter((r) => r.status === "dead")
+    const blocked = results.filter((r) => r.status === "blocked")
+    const redirects = results.filter((r) => r.status === "redirect")
+    const slow = results.filter((r) => r.status === "slow")
+    const ok = results.length - dead.length - blocked.length - redirects.length - slow.length
+
+    console.log(
+        `\nSummary: ${ok} ok, ${dead.length} dead, ${blocked.length} blocked, ` +
+            `${redirects.length} redirected, ${slow.length} slow.`
+    )
+
+    printSection(
+        "DEAD — verify in a browser, then remove the entry if truly gone",
+        dead,
+        (r) => `${r.id} — ${r.url}  [wayback snapshot: ${r.archived ? "yes" : "no"}]`
+    )
+    printSection(
+        "BLOCKED — 401/403, likely a live page behind a bot/WAF block; verify manually",
+        blocked,
+        (r) => `${r.id} — ${r.url}`
+    )
+    printSection(
+        "REDIRECTED — moved to another host; consider updating the URL",
+        redirects,
+        (r) => `${r.id} — ${r.url} -> ${r.finalUrl}`
+    )
+    printSection(
+        "SLOW — timed out; usually transient, re-check before acting",
+        slow,
+        (r) => `${r.id} — ${r.url}`
+    )
+
+    if (dead.length === 0) {
+        console.log("\nNo dead links. No action needed.")
+    } else {
+        console.log(
+            "\nNothing was changed. Review the DEAD list above and remove confirmed entries by hand."
+        )
     }
 
-    await writeFile(
-        path.resolve(process.cwd(), HEALTH_FILE),
-        JSON.stringify(next, null, 2) + "\n",
-        "utf8"
-    )
-    console.log(
-        changed
-            ? "Health file updated; at least one status changed."
-            : "Health file updated; no status changes."
-    )
+    // Non-zero exit if dead links were found, so CI can flag a run for review —
+    // but the script still modifies nothing.
+    process.exitCode = dead.length > 0 ? 1 : 0
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) main()
