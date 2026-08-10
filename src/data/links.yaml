@@ -1635,3 +1635,198 @@
     their readings into a single synthesis. Offers a general reading
     or an outlook for today or tomorrow.
   added: "2026-08-10T00:00:00Z"
+
+- id: fries-visual-magick
+  title: "Visual Magick: A Manual of Freestyle Shamanism"
+  url: "https://archive.org/details/JanFries-visual-magick-1992"
+  type: book
+  author: "Jan Fries"
+  year: 1992
+  topics:
+    - sigils
+    - gnosis
+    - music-and-art
+  people:
+    - jan-fries
+  annotation: |
+    Jan Fries on "freestyle shamanism": trance, breathwork, and freehand
+    automatic drawing as a route to sigils and vision, built from Zos Kia
+    Cultus, Thelema, and Taoist sources rather than a fixed system. Full
+    text on the Internet Archive.
+  added: "2026-08-10T00:00:00Z"
+
+- id: carroll-psybermagick
+  title: "PsyberMagick"
+  url: "https://archive.org/details/peterjcarrollpsybermagick"
+  type: book
+  author: "Peter J. Carroll"
+  year: 1995
+  topics:
+    - theory
+    - beliefs
+    - technology
+  people:
+    - peter-carroll
+  annotation: |
+    Carroll's follow-up to Liber Null and Liber Kaos: short aphoristic
+    chapters and exercises that push chaos magic theory through
+    cybernetics, probability, and self-modification. Full text on the
+    Internet Archive.
+  added: "2026-08-10T00:00:00Z"
+
+- id: fries-seidways
+  title: "Seidways: Shaking, Swaying and Serpent Mysteries"
+  url: "https://archive.org/details/JanFriesSeidways"
+  type: book
+  author: "Jan Fries"
+  year: 1996
+  topics:
+    - gnosis
+    - ritual
+    - history
+  people:
+    - jan-fries
+  annotation: |
+    Jan Fries on seidr and trance technique: shaking, swaying, and
+    serpent-power methods for reaching altered states, drawn across
+    Northern European and comparative sources. Full text on the Internet
+    Archive.
+  added: "2026-08-10T00:00:00Z"
+
+- id: apikorsus
+  title: "Apikorsus: An Essay on the Diverse Practices of Chaos Magick"
+  url: "https://archive.org/details/apikorsus-chaos-magic-211"
+  type: essay
+  author: "Lincoln Order of Neuromancers"
+  year: 1986
+  topics:
+    - theory
+    - sigils
+    - ritual
+    - gnosis
+  annotation: |
+    An early chaos magic primer compiled by the Lincoln Order of
+    Neuromancers and circulated as a freely copied chainbook. Sections
+    on sigils, ritual, magical weapons, techno-shamanism, and
+    titan-gnosis. Full text on the Internet Archive.
+  added: "2026-08-10T00:00:00Z"
+
+- id: sherwin-theatre-of-magick
+  title: "The Theatre of Magick"
+  url: "https://www.kaosphorus.net/wp-content/uploads/2010/11/Theatre-of-Magick.pdf"
+  type: book
+  author: "Ray Sherwin"
+  year: 1982
+  topics:
+    - ritual
+    - gnosis
+    - theory
+  people:
+    - ray-sherwin
+  annotation: |
+    Ray Sherwin frames a magical working as a piece of theatre, moving
+    through secrecy, self-initiation, the liminal gnosis, and banishing.
+    A short 1982 book by a co-originator of chaos magic. Full PDF on
+    Kaosphorus.
+  added: "2026-08-10T00:00:00Z"
+
+- id: mace-seizing-power
+  title: "Seizing Power: Reclaiming Our Liberty Through Magick"
+  url: "https://archive.org/details/stephen-mace-seizing-power-reclaiming-our-liberty-through-magick-new-falcon-pubications-2006"
+  type: book
+  author: "Stephen Mace"
+  year: 2006
+  topics:
+    - theory
+    - egregores
+    - ethics
+  people:
+    - stephen-mace
+  annotation: |
+    Stephen Mace applies a sorcery-as-mechanics approach to the
+    corporation and the state, treated as entities that constrain
+    personal power. Reads alongside Mace's Stealing the Fire from Heaven.
+    Full text on the Internet Archive.
+  added: "2026-08-10T00:00:00Z"
+
+- id: burroughs-electronic-revolution
+  title: "The Electronic Revolution"
+  url: "https://www.ubu.com/historical/burroughs/electronic_revolution.pdf"
+  type: essay
+  author: "William S. Burroughs"
+  year: 1970
+  topics:
+    - technology
+    - sigils
+    - music-and-art
+  people:
+    - william-s-burroughs
+  annotation: |
+    Burroughs extends the cut-up method from the page to tape recorders
+    and mass media, treating recorded sound as a tool for scrambling and
+    disrupting systems of control. A 1970 companion to the cut-up work
+    that influenced chaos magic sigil practice. Full PDF hosted by
+    UbuWeb.
+  added: "2026-08-10T00:00:00Z"
+
+- id: evans-rhetoric-of-chaos-magic
+  title: "Authority, Information Organization, and Posthumanism in the Rhetoric of Chaos Magic"
+  url: "https://twu-ir.tdl.org/items/f342dece-24aa-4f54-83c4-63afe22300e6"
+  type: essay
+  author: "Woody Evans"
+  year: 2024
+  topics:
+    - theory
+    - beliefs
+    - technology
+  annotation: |
+    A 2024 doctoral dissertation reading chaos magic as rhetoric: how a
+    practice that frames itself as anti-authoritarian still draws on
+    forms of authority and tradition, examined through sigil work and
+    appeals to non-human agents. Open access via the Texas Digital
+    Library.
+  added: "2026-08-10T00:00:00Z"
+
+- id: clifton-5th-aeon-survival-guide
+  title: "My 5th Aeon Survival Guide"
+  url: "https://cliftond.substack.com"
+  type: blog
+  author: "David Clifton"
+  topics:
+    - theory
+    - history
+    - beliefs
+  annotation: |
+    David Clifton's Substack on using chaos magic to navigate the
+    present, tracing the current from Discordianism and Austin Osman
+    Spare through Ramsey Dukes.
+  added: "2026-08-10T00:00:00Z"
+
+- id: louv-ultraculture-podcast
+  title: "Ultraculture with Jason Louv"
+  url: "https://podcasts.apple.com/us/podcast/ultraculture-with-jason-louv/id1060199031"
+  type: podcast
+  author: "Jason Louv"
+  topics:
+    - theory
+    - beliefs
+    - technology
+  annotation: |
+    Jason Louv, editor of Generation Hex and Thee Psychick Bible, in
+    long-form conversation on magick, technology, and counterculture.
+  added: "2026-08-10T00:00:00Z"
+
+- id: southard-dreamachine
+  title: "Dreamachine"
+  url: "https://ccsouthard.github.io/dreamachine-webapp/"
+  type: tool
+  author: "Chaz Southard"
+  topics:
+    - gnosis
+    - technology
+  annotation: |
+    An on-screen take on the Gysin and Sommerville dreamachine: a
+    full-screen light that pulses at an adjustable frequency, viewed
+    with the eyes closed to induce flicker visuals in the alpha range.
+    Carries a photosensitive epilepsy warning.
+  added: "2026-08-10T00:00:00Z"
