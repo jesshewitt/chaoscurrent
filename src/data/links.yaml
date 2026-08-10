@@ -1621,3 +1621,17 @@
     invocation, and the eight-colour pantheon. Print-on-demand via
     Lulu; canonical record on Goodreads.
   added: "2026-05-25T23:17:19Z"
+
+- id: ayars-synthesis-oracle
+  title: "Synthesis Oracle"
+  url: "https://alex.ayars.info/experiments/synthesis"
+  type: tool
+  author: "Alex Ayars"
+  topics:
+    - divination
+  annotation: |
+    A browser oracle that consults several divination systems, among
+    them an I Ching cast and a Celtic Cross tarot spread, and combines
+    their readings into a single synthesis. Offers a general reading
+    or an outlook for today or tomorrow.
+  added: "2026-08-10T00:00:00Z"
